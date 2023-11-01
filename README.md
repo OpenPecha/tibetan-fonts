@@ -1,8 +1,8 @@
-# tibetan-fonts
+# Tibetan Fonts
 
 Public repository of open access Tibetan fonts, fonts harvested from: 
 
-## Type foundries' or designers' official websites: 
+## Type Foundries and Designers' Official Websites: 
 
 - Yalasoo, Qomolangma font family: http://www.yalasoo.com
 - Monlam Tibetan font family: https://monlamit.com/app-store/monlam-bodyig.html
@@ -12,10 +12,10 @@ Public repository of open access Tibetan fonts, fonts harvested from:
 - Khawa Sans Ume: https://github.com/Keedizhang/UmeSansBeta
 - Noto Serif Tibetan variable font, Jomolhari and Uchen: https://fonts.google.com/?subset=tibetan
 - MiSans Tibetan variable font: https://hyperos.mi.com/font/details/tibetan
-- Bhozuk Tibetan font family's official website Thempengma and other Tibetan fonts: Tibetanfonts.com
+- Bhozuk Tibetan font family's official website Thempengma and other Tibetan fonts: www.Tibetanfonts.com
 
 
-## Third-party font websites: 
+## Third-Party Fonts Websites: 
 
 - Tibetan Typography website: http://www.tibetanfont.com
 - Sonamdawa's collection: https://sonamdawa.com/gdrive/
