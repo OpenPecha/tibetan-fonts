@@ -2,14 +2,14 @@
 
 The font family named "Himalaya" is just widespread misinformation. There is no legitimate font family named "Himalaya". 
 But there is a font called "Microsoft Himalaya" and a big font family called Qomolangma, which is just the same root name for "Himalaya" in Tibetan. 
-Adding to the misconcept is the coincident of naming of the famous Tibetan keyboard: Himalaya. 
+Adding to the misconception is the coincident of naming of the famous Tibetan keyboard: Himalaya. 
 
-As a result, Microsoft being one of the earliest Tibetan Unicode fonts, and all these Tibetan fonts and keybaord having the same root name "Himalaya", 
-many Tibetans have the misconcetion of thinking that "Unicode Tibetan fonts" are called "Himalaya fonts". Many people asked me for "Himalaya fonts",
-when I gave them Microsoft Himalaya and Bigger Himalaya, they are not satisfied. Later I was told and realized that they are refering to "Unicode Tibetan fonts". 
+As a result, Microsoft being one of the earliest Tibetan Unicode fonts, and all these Tibetan fonts and keyboard having the same root name "Himalaya", 
+many Tibetans have the misconception of thinking that "Unicode Tibetan fonts" are called "Himalaya fonts". Many people asked me for "Himalaya fonts",
+when I gave them Microsoft Himalaya and Bigger Himalaya, they are not satisfied. Later I was told and realized that they are referring to "Unicode Tibetan fonts". 
 
 I believe that the above-mentioned coincidence in the naming of the fonts and keyboard is one collection of the reason for this misconception. 
-The other two are a lack of education in typogrphy (unfamiliar with the naming of fonts being "Himalaya") and the renamed and re-exported fonts 
+The other two are a lack of education in typography (unfamiliar with the naming of fonts being "Himalaya") and the renamed and re-exported fonts 
 titled "Himalaya A through M are mostly Qomolanma fonts with a mix of Monlam and TCRC (Tibetan Computer Research Center, not CTRC--China Tibetology Research Center). 
 
 
