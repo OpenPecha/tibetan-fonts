@@ -6,7 +6,7 @@ Public repository of open access Tibetan fonts, fonts harvested from:
 
 - Yalasoo, Qomolangma font family: http://www.yalasoo.com
 - Monlam Tibetan font family: https://monlamit.com/app-store/monlam-bodyig.html
-- Calligraphy of Thönmi/ Thönmi Traidition font family: http://tb.zyw.xizang.gov.cn/zwgk_2905/zwxxh/rjtgyy/
+- Calligraphy of Thönmi/ Thönmi Tradition font family: http://tb.zyw.xizang.gov.cn/zwgk_2905/zwxxh/rjtgyy/
 - Dzongkha fonts: https://www.dzongkha.gov.bt/dz/tools
 - Nitartha International's Sambhota font family: https://www.nitartha.net/store-1
 - Khawa Sans Ume: https://github.com/Keedizhang/UmeSansBeta
