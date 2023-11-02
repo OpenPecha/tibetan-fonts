@@ -2,12 +2,12 @@
 
 After careful comparison, I have come to the conclusion that the 6 fonts in CTRC (CTRC-Betsu, CTRC-BT, CTRC-Drutsa, CTRC-HT, CTRC-Tsumachu, and CTRC-Uchen) are exactly the same as 6 fonts in Qomolangma font family consisting of 17 fonts. 
 
-Judging from the dates, (CTRC font family was released on 2008, while Qomolangma in 2014) CTRC fonts are later integrated into the new font family or branding of Qomolangma. Thus, CTRC fonts are outdated files of Qomolangma font family. 
+Judging from the dates, (CTRC font family was released in 2008, while Qomolangma in 2014) CTRC fonts are later integrated into the new font family or branding of Qomolangma. Thus, CTRC fonts are outdated files of Qomolangma font family. In other word, CTRC font family was updated into Qomolangma font family.
 
 The updated fonts of CTRC in Qomolangma are as follows: 
 - CTRC-Betsu is Qomolangma-Betsu
-- CTRC-BT is Qomolangma-Sarchung. BT stands for Baiti, which is the Chinese  (Pinyin) name for sarchung, the most common Tibetan font for body text that is a lightface and is the opposite to sarchen--boldface. 
+- CTRC-BT is Qomolangma-Sarchung. BT stands for Baiti, which is the Chinese  (Pinyin) name for sarchung, the most common Tibetan font for body text that is a lightface and is the opposite of sarchen--boldface. 
 - CTRC-Drutsa is Qomolangma-Drutsa
 - CTRC-HT is Qomolangma-Sarchen, HT stands for Heiti, which is the Chinese name (Pinyin) for sarchen, that is the Tibetan boldface, similiar to bold roman fonts. 
 - CTRC-Tsumachu is Qomolangma-Tsumachu
-- CTRC-Uchen is Qomolangma-Uchen Sutung, that is a short-leg uchan style. 
+- CTRC-Uchen is Qomolangma-Uchen Sutung, that is a short-leg (sugtung) uchan style. 
