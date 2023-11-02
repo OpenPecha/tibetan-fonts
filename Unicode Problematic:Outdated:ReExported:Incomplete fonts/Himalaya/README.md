@@ -1,4 +1,4 @@
-# Biggest Misconception is Tibetan Typography Terminology and the "Himalaya" Font Family 
+# Biggest Misconception in Tibetan Typography Terminology and the "Himalaya" Font Family 
 
 The font family named "Himalaya" is just widespread misinformation. There is no legitimate font family named "Himalaya". 
 But there is a font called "Microsoft Himalaya" and a big font family called Qomolangma, which is just the same root name for "Himalaya" in Tibetan. 
