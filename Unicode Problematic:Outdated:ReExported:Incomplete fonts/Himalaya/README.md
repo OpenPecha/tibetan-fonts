@@ -13,7 +13,7 @@ The other two are a lack of education in typogrphy (unfamiliar with the naming o
 titled "Himalaya A through M are mostly Qomolanma fonts with a mix of Monlam and TCRC (Tibetan Computer Research Center, not CTRC--China Tibetology Research Center). 
 
 
-Below is a list of the actual fonts following what each of these renamed/re-exported files called "Himalaya": 
+Below is a list of the actual names of the fonts following what each of these renamed/re-exported files called "Himalaya": 
 
 - All four of "A-Himalaya", Himalaya-A, "Himalaya0", and "Himalaya_2" are Microsoft Himalaya!
 - "Himalaya-B" is Qomolangma-Uchen Sutung or CTRC-Uchen (CTRC-Uchen is an outdated version of Qomolangma Uchen-Sutung)
