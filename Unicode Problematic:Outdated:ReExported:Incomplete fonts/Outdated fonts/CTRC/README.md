@@ -1,4 +1,4 @@
-# CTRC fonts are outdated files of Qomolangma font family
+# CTRC fonts are older files of Qomolangma font family
 
 "CTRC" stands for "China Tibetology Research Center" in Beijing. The creators of the fonts are Tashi Tsering and Wangdra Gyab. 
 
