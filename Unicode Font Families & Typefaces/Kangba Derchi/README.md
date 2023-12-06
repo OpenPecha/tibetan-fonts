@@ -28,4 +28,4 @@
 **Glyph count:** 1673 (for each font)
 
 
-[^1]: འབྲུ་སྒམ། might be འབྲུ་སྒོང་། a variant of Drutsa 
+[^1]: འབྲུ་སྒམ། might be འབྲུ་སྒོང་།, short for འབྲུ་ཚ་ཞབས་སྒོང་། a variant of Drutsa 
