@@ -1,6 +1,8 @@
 # Tibetan Fonts
 
-Public repository of open access Tibetan fonts, fonts harvested from: 
+Public repository of open access Tibetan fonts.
+
+See [CATALOG.md](CATALOG.md) for a full catalog.
 
 ## Type Foundries and Designers' Official Websites: 
 
@@ -21,5 +23,6 @@ Public repository of open access Tibetan fonts, fonts harvested from:
 - Sonamdawa's collection: https://sonamdawa.com/gdrive/
 - Zangtsul IT Font website 1: https://www.zangtsul.cn/page/4583378
 - Zangtsul IT Font website 2: https://app8yh8ix8v1577.h5.xiaoeknow.com/p/decorate/page/eyJpZCI6IjQzOTc0MzYifQ
-- Lug's (sheep) Tibetan Font website: www.Tibetanfonts.weebly.com
+- Lug's (sheep) Tibetan Font website: http://www.Tibetanfonts.weebly.com
 - Tibetan Calligraphy Website, China, font page: http://www.zgzzsfw.com/h-col-137.html 
+- Fontke: https://eng.fontke.com/
