@@ -2,6 +2,8 @@
 
 Public repository of open access Tibetan fonts.
 
+### Catalog
+
 See [CATALOG.md](CATALOG.md) for a full catalog.
 
 ## Type Foundries and Designers' Official Websites: 
@@ -16,7 +18,6 @@ See [CATALOG.md](CATALOG.md) for a full catalog.
 - MiSans Tibetan variable font: https://hyperos.mi.com/font/details/tibetan
 - Bhozuk Tibetan font family's official website Thempengma and other Tibetan fonts: www.Tibetanfonts.com
 
-
 ## Third-Party Fonts Websites: 
 
 - Tibetan Typography website: http://www.tibetanfont.com
@@ -26,3 +27,10 @@ See [CATALOG.md](CATALOG.md) for a full catalog.
 - Lug's (sheep) Tibetan Font website: http://www.Tibetanfonts.weebly.com
 - Tibetan Calligraphy Website, China, font page: http://www.zgzzsfw.com/h-col-137.html 
 - Fontke: https://eng.fontke.com/
+
+### Font lists
+
+- http://luc.devroye.org/tibet.html
+- https://digitaltibetan.github.io/DigitalTibetan/docs/tibetan_fonts.html
+- https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html
+- https://collab.its.virginia.edu/wiki/tibetan-script/Legacy%20Tibetan%20Font%20Systems.html
