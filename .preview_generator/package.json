@@ -1,0 +1,25 @@
+{
+  "name": "preview_generator",
+  "version": "1.0.0",
+  "description": "Generates preview page for tibetan fonts",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OpenPecha/tibetan-fonts.git"
+  },
+  "keywords": [
+    "tibetan",
+    "fonts",
+    "preview"
+  ],
+  "author": "mz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OpenPecha/tibetan-fonts/issues"
+  },
+  "homepage": "https://github.com/OpenPecha/tibetan-fonts#readme"
+}

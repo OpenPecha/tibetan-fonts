@@ -6,6 +6,8 @@ Public repository of open access Tibetan fonts.
 
 See [CATALOG.md](CATALOG.md) for a full catalog.
 
+### See preview page [here](https://emgyrz.github.io/tibetan-fonts/)
+
 ## Type Foundries and Designers' Official Websites: 
 
 - Yalasoo, Qomolangma font family: http://www.yalasoo.com
