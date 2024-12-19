@@ -6,7 +6,22 @@ Public repository of open access Tibetan fonts.
 
 See [CATALOG.md](CATALOG.md) for a full catalog.
 
-## Type Foundries and Designers' Official Websites: 
+### Acknowledgement
+
+This collection of font was made possible through individual and institutional contributions. We want to thank:
+- the Buddhist Digital Resource Center
+- the MonlamAI project
+- the OpenPecha project
+- the Tsadra Foundation
+- Nitartha International
+- the Padmakara translation committee
+- Georg Fischer
+- Leigh Brasington
+- Chris Fynn
+
+## Resources
+
+##### Type Foundries and Designers' Official Websites: 
 
 - Yalasoo, Qomolangma font family: http://www.yalasoo.com
 - Monlam Tibetan font family: https://monlamit.com/app-store/monlam-bodyig.html
@@ -18,7 +33,7 @@ See [CATALOG.md](CATALOG.md) for a full catalog.
 - MiSans Tibetan variable font: https://hyperos.mi.com/font/details/tibetan
 - Bhozuk Tibetan font family's official website Thempengma and other Tibetan fonts: www.Tibetanfonts.com
 
-## Third-Party Fonts Websites: 
+##### Third-Party Fonts Websites: 
 
 - Tibetan Typography website: http://www.tibetanfont.com
 - Sonamdawa's collection: https://sonamdawa.com/gdrive/
@@ -28,7 +43,7 @@ See [CATALOG.md](CATALOG.md) for a full catalog.
 - Tibetan Calligraphy Website, China, font page: http://www.zgzzsfw.com/h-col-137.html 
 - Fontke: https://eng.fontke.com/
 
-### Font lists
+##### Font lists
 
 - http://luc.devroye.org/tibet.html
 - https://digitaltibetan.github.io/DigitalTibetan/docs/tibetan_fonts.html
