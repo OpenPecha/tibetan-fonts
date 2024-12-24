@@ -1,0 +1,113 @@
+SHEET 1
+
+Dependency Table
+
+Plot_Type	
+Secction_Name	
+Glyph_Name	
+Notes	
+count	
+id_array	- varying number of tabs																																																											
+
+
+SHEET 2
+
+Druk Ligature table, sorted by Display 1 and Sequence 1
+
+SEQ1
+SEQ2
+
+DIS1
+DIS2
+
+
+SEQ1 + SEQ2 --> DIS1 + DIS2
+
+
+Substitution LIGATURE plot elements
+
+Substitution data = SEQ1 + SEQ2 --> DIS1 + DIS2
+
+Preview sub-panel 18, 20, 24, 28, 32, 36 point
+
+Main plot with SEQ2 glyph in thin and DIS2 in thick outline
+ID tags in Decimal, Hex, Oct & glyphname
+
+
+---------
+
+Test combination listing
+
+Need to find this original list of stacks from Bhutan, else key it in again in Unicode.
+
+---------
+
+
+TECHNICAL MANUAL - Sheet 1 in spreadsheet "Dependency Table"
+
+Shape Classes
+--------------
+Display data = array of Decimal character values
+
+Standard Depth Characters
+Rounded Characters
+Right Downstroke Characters
+Left Downstroke Characters
+Subscribed Characters
+Reversed Left Downstrokes
+Reversed Right Downstrokes
+
+Each of these shape classes form around a left or right side commonality, such as combining point or alignment line.
+Illustrating these points and lines would be good.
+
+
+Glyph Variant Groups
+--------------------
+
+Ra-Tas
+Wa-zoors
+A-chungs
+Ya-tas
+
+Plain Shabkyus
+Steep Shabkyus
+Tied Shabkyus
+
+
+Dependency Diagrams
+-------------------
+
+Simple Dependencies - single combining dependency
+Multiple Dependencies 
+Critical Dependencies 
+
+
+Metric Dependencies
+-------------------
+
+Ra & Ragos must be of equal width
+Goyik and alternates must be half the width of the Kasho
+Shey and alternates must be of equal width
+Both Goyiks must be of equal width
+Both Tsiks must be of equal width
+La and Lago must be of equal width
+Sa and Sago must be of equal width
+Ka and its truncated variant must be of equal width
+Ga and its truncated variant must be of equal width
+
+
+Character Dictionary
+-------------------
+
+charval Decimal
+glyphname
+
+
+
+
+
+
+
+
+
+
