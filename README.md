@@ -17,7 +17,9 @@ This collection of font was made possible through individual and institutional c
 - the Padmakara translation committee
 - Georg Fischer
 - Leigh Brasington
+- Roger Espel Llima
 - Chris Fynn
+- Peter Lofting
 
 ## Resources
 
