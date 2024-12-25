@@ -14,6 +14,7 @@ This collection of font was made possible through individual and institutional c
 - the OpenPecha project
 - the Tsadra Foundation
 - Nitartha International
+- TCRC
 - the Padmakara translation committee
 - Georg Fischer
 - Leigh Brasington
