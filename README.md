@@ -52,3 +52,6 @@ This collection of font was made possible through individual and institutional c
 - https://digitaltibetan.github.io/DigitalTibetan/docs/tibetan_fonts.html
 - https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html
 - https://collab.its.virginia.edu/wiki/tibetan-script/Legacy%20Tibetan%20Font%20Systems.html
+- https://salrc.uchicago.edu/resources/fonts/available/tibetan/
+- https://www.alanwood.net/unicode/fontsbyrange.html#u0f00
+- http://www.wazu.jp/gallery/Fonts_Tibetan.html)
