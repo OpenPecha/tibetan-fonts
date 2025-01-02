@@ -20,25 +20,6 @@
 | Non-Unicode Fonts/CSXPlus/CCPR____.TTF | Courier_CSX+ | Courier_CSX+ |
 | Non-Unicode Fonts/CSXPlus/HCPR____.TTF | Helvetica_CSX+ | Helvetica_CSX+ |
 | Non-Unicode Fonts/CSXPlus/TCPR____.TTF | Times_CSX+ | Times_CSX+-Roman |
-| Non-Unicode Fonts/DakiniScripts/u10110.ttf | U10-1-10 | U10-1-10 |
-| Non-Unicode Fonts/DakiniScripts/u10120.ttf | U10-1-20 | U10-1-20 |
-| Non-Unicode Fonts/DakiniScripts/u10130.ttf | U10-1-30 | U10-1-30 |
-| Non-Unicode Fonts/DakiniScripts/u10210.ttf | U10-2-10 | U10-2-10 |
-| Non-Unicode Fonts/DakiniScripts/u10220.ttf | U10-2-20 | U10-2-20 |
-| Non-Unicode Fonts/DakiniScripts/u10230.ttf | U10-2-30 | U10-2-30 |
-| Non-Unicode Fonts/DakiniScripts/u10310.ttf | U10-3-10 | U10-3-10 |
-| Non-Unicode Fonts/DakiniScripts/u10320.ttf | U10-3-20 | U10-3-20 |
-| Non-Unicode Fonts/DakiniScripts/u10330.ttf | U10-3-30 | U10-3-30 |
-| Non-Unicode Fonts/DakiniScripts/u11110.ttf | U11-1-10 | U11-1-10 |
-| Non-Unicode Fonts/DakiniScripts/u11120.ttf | U11-1-20 | U11-1-20 |
-| Non-Unicode Fonts/DakiniScripts/u11130.ttf | U11-1-30 | U11-1-30 |
-| Non-Unicode Fonts/DakiniScripts/u11210.ttf | U11-2-10 | U11-2-10 |
-| Non-Unicode Fonts/DakiniScripts/u11220.ttf | U11-2-20 | U11-2-20 |
-| Non-Unicode Fonts/DakiniScripts/u11230.ttf | U11-2-30 | U11-2-30 |
-| Non-Unicode Fonts/DakiniScripts/u11310.ttf | U11-3-10 | U11-3-10 |
-| Non-Unicode Fonts/DakiniScripts/u11320.ttf | U11-3-20 | U11-3-20 |
-| Non-Unicode Fonts/DakiniScripts/u11330.ttf | U11-3-30 | U11-3-30 |
-| Non-Unicode Fonts/DakiniScripts/u11340.ttf | U11-3-40 | U11-3-40 |
 | Non-Unicode Fonts/DakiniScripts/u6110.ttf | U6-1-10 | U6-1-10 |
 | Non-Unicode Fonts/DakiniScripts/u6120.ttf | U6-1-20 | U6-1-20 |
 | Non-Unicode Fonts/DakiniScripts/u6130.ttf | U6-1-30 | U6-1-30 |
@@ -83,6 +64,25 @@
 | Non-Unicode Fonts/DakiniScripts/u9310.ttf | U9-3-10 | U9-3-10 |
 | Non-Unicode Fonts/DakiniScripts/u9320.ttf | U9-3-20 | U9-3-20 |
 | Non-Unicode Fonts/DakiniScripts/u9330.ttf | U9-3-30 | U9-3-30 |
+| Non-Unicode Fonts/DakiniScripts/u10110.ttf | U10-1-10 | U10-1-10 |
+| Non-Unicode Fonts/DakiniScripts/u10120.ttf | U10-1-20 | U10-1-20 |
+| Non-Unicode Fonts/DakiniScripts/u10130.ttf | U10-1-30 | U10-1-30 |
+| Non-Unicode Fonts/DakiniScripts/u10210.ttf | U10-2-10 | U10-2-10 |
+| Non-Unicode Fonts/DakiniScripts/u10220.ttf | U10-2-20 | U10-2-20 |
+| Non-Unicode Fonts/DakiniScripts/u10230.ttf | U10-2-30 | U10-2-30 |
+| Non-Unicode Fonts/DakiniScripts/u10310.ttf | U10-3-10 | U10-3-10 |
+| Non-Unicode Fonts/DakiniScripts/u10320.ttf | U10-3-20 | U10-3-20 |
+| Non-Unicode Fonts/DakiniScripts/u10330.ttf | U10-3-30 | U10-3-30 |
+| Non-Unicode Fonts/DakiniScripts/u11110.ttf | U11-1-10 | U11-1-10 |
+| Non-Unicode Fonts/DakiniScripts/u11120.ttf | U11-1-20 | U11-1-20 |
+| Non-Unicode Fonts/DakiniScripts/u11130.ttf | U11-1-30 | U11-1-30 |
+| Non-Unicode Fonts/DakiniScripts/u11210.ttf | U11-2-10 | U11-2-10 |
+| Non-Unicode Fonts/DakiniScripts/u11220.ttf | U11-2-20 | U11-2-20 |
+| Non-Unicode Fonts/DakiniScripts/u11230.ttf | U11-2-30 | U11-2-30 |
+| Non-Unicode Fonts/DakiniScripts/u11310.ttf | U11-3-10 | U11-3-10 |
+| Non-Unicode Fonts/DakiniScripts/u11320.ttf | U11-3-20 | U11-3-20 |
+| Non-Unicode Fonts/DakiniScripts/u11330.ttf | U11-3-30 | U11-3-30 |
+| Non-Unicode Fonts/DakiniScripts/u11340.ttf | U11-3-40 | U11-3-40 |
 | Non-Unicode Fonts/Druk/Druk_Font_Technical_Manual/Druk-aachung-Dependencies-test-3/DrukFonV14.ttf | Druk Tibetan | Druk Tibetan, DrukFontV14 |
 | Non-Unicode Fonts/Druk/DrukV13-1991/DrukFonV13.otf | Druk | DrukFontV13 |
 | Non-Unicode Fonts/Druk/DrukV13-1991/DrukFonV13.ttf | Druk | DrukFontV13 |
@@ -91,6 +91,13 @@
 | Non-Unicode Fonts/DzModA.TTF | DzongkhaModern A | DzongkhaModern A, DzongkhaModernA |
 | Non-Unicode Fonts/Landza/landron.ttf | Lanron | Landron |
 | Non-Unicode Fonts/Landza/landz0.ttf | Landz0 | Landz0 |
+| Non-Unicode Fonts/Landza/landz3.ttf | Landz3 | Landz3 |
+| Non-Unicode Fonts/Landza/landz4.ttf | Landz4 | Landz4 |
+| Non-Unicode Fonts/Landza/landz5.ttf | Landz5 | Landz5 |
+| Non-Unicode Fonts/Landza/landz6.ttf | Landz6 | Landz6 |
+| Non-Unicode Fonts/Landza/landz7.ttf | Landz7 | Landz7 |
+| Non-Unicode Fonts/Landza/landz8.ttf | Landz8 | Landz8 |
+| Non-Unicode Fonts/Landza/landz9.ttf | Landz9 | Landz9 |
 | Non-Unicode Fonts/Landza/landz10.ttf | Landz10 | Landz10 |
 | Non-Unicode Fonts/Landza/landz11.ttf | Landz11 | Landz11 |
 | Non-Unicode Fonts/Landza/landz12.ttf | Landz12 | Landz12 |
@@ -111,7 +118,6 @@
 | Non-Unicode Fonts/Landza/landz27.ttf | Landz27 | Landz27 |
 | Non-Unicode Fonts/Landza/landz28.ttf | Landz28 | Landz28 |
 | Non-Unicode Fonts/Landza/landz29.ttf | Landz29 | Landz29 |
-| Non-Unicode Fonts/Landza/landz3.ttf | Landz3 | Landz3 |
 | Non-Unicode Fonts/Landza/landz30.ttf | Landz30 | Landz30 |
 | Non-Unicode Fonts/Landza/landz31.ttf | Landz31 | Landz31 |
 | Non-Unicode Fonts/Landza/landz32.ttf | Landz32 | Landz32 |
@@ -122,7 +128,6 @@
 | Non-Unicode Fonts/Landza/landz37.ttf | Landz37 | Landz37 |
 | Non-Unicode Fonts/Landza/landz38.ttf | Landz38 | Landz38 |
 | Non-Unicode Fonts/Landza/landz39.ttf | Landz39 | Landz39 |
-| Non-Unicode Fonts/Landza/landz4.ttf | Landz4 | Landz4 |
 | Non-Unicode Fonts/Landza/landz40.ttf | Landz40 | Landz40 |
 | Non-Unicode Fonts/Landza/landz41.ttf | Landz41 | Landz41 |
 | Non-Unicode Fonts/Landza/landz42.ttf | Landz42 | Landz42 |
@@ -133,7 +138,6 @@
 | Non-Unicode Fonts/Landza/landz47.ttf | Landz47 | Landz47 |
 | Non-Unicode Fonts/Landza/landz48.ttf | Landz48 | Landz48 |
 | Non-Unicode Fonts/Landza/landz49.ttf | Landz49 | Landz49 |
-| Non-Unicode Fonts/Landza/landz5.ttf | Landz5 | Landz5 |
 | Non-Unicode Fonts/Landza/landz50.ttf | Landz50 | Landz50 |
 | Non-Unicode Fonts/Landza/landz51.ttf | Landz51 | Landz51 |
 | Non-Unicode Fonts/Landza/landz52.ttf | Landz52 | Landz52 |
@@ -144,7 +148,6 @@
 | Non-Unicode Fonts/Landza/landz57.ttf | Landz57 | Landz57 |
 | Non-Unicode Fonts/Landza/landz58.ttf | Landz58 | Landz58 |
 | Non-Unicode Fonts/Landza/landz59.ttf | Landz59 | Landz59 |
-| Non-Unicode Fonts/Landza/landz6.ttf | Landz6 | Landz6 |
 | Non-Unicode Fonts/Landza/landz60.ttf | Landz60 | Landz60 |
 | Non-Unicode Fonts/Landza/landz61.ttf | Landz61 | Landz61 |
 | Non-Unicode Fonts/Landza/landz62.ttf | Landz62 | Landz62 |
@@ -155,13 +158,11 @@
 | Non-Unicode Fonts/Landza/landz67.ttf | Landz67 | Landz67 |
 | Non-Unicode Fonts/Landza/landz68.ttf | Landz68 | Landz68 |
 | Non-Unicode Fonts/Landza/landz69.ttf | Landz69 | Landz69 |
-| Non-Unicode Fonts/Landza/landz7.ttf | Landz7 | Landz7 |
 | Non-Unicode Fonts/Landza/landz70.ttf | Landz70 | Landz70 |
 | Non-Unicode Fonts/Landza/landz71.ttf | Landz71 | Landz71 |
 | Non-Unicode Fonts/Landza/landz72.ttf | Landz72 | Landz72 |
 | Non-Unicode Fonts/Landza/landz73.ttf | Landz73 | Landz73 |
 | Non-Unicode Fonts/Landza/landz79.ttf | Landz79 | Landz79 |
-| Non-Unicode Fonts/Landza/landz8.ttf | Landz8 | Landz8 |
 | Non-Unicode Fonts/Landza/landz80.ttf | Landz80 | Landz80 |
 | Non-Unicode Fonts/Landza/landz81.ttf | Landz81 | Landz81 |
 | Non-Unicode Fonts/Landza/landz82.ttf | Landz82 | Landz82 |
@@ -172,7 +173,6 @@
 | Non-Unicode Fonts/Landza/landz87.ttf | Landz87 | Landz87 |
 | Non-Unicode Fonts/Landza/landz88.ttf | Landz88 | Landz88 |
 | Non-Unicode Fonts/Landza/landz89.ttf | Landz89 | Landz89 |
-| Non-Unicode Fonts/Landza/landz9.ttf | Landz9 | Landz9 |
 | Non-Unicode Fonts/Landza/landz90.ttf | Landz90 | Landz90 |
 | Non-Unicode Fonts/Landza/landz91.ttf | Landz91 | Landz91 |
 | Non-Unicode Fonts/Landza/landz92.ttf | Landz92 | Landz92 |
@@ -185,6 +185,13 @@
 | Non-Unicode Fonts/Landza/landz99.ttf | Landz99 | Landz99 |
 | Non-Unicode Fonts/Landza/landza0.ttf | Landza0 | Landza0 |
 | Non-Unicode Fonts/Landza/landza1.ttf | Landza1 | Landza1 |
+| Non-Unicode Fonts/Landza/landza3.ttf | Landza3 | Landza3 |
+| Non-Unicode Fonts/Landza/landza4.ttf | Landza4 | Landza4 |
+| Non-Unicode Fonts/Landza/landza5.ttf | Landza5 | Landza5 |
+| Non-Unicode Fonts/Landza/landza6.ttf | Landza6 | Landza6 |
+| Non-Unicode Fonts/Landza/landza7.ttf | Landza7 | Landza7 |
+| Non-Unicode Fonts/Landza/landza8.ttf | Landza8 | Landza8 |
+| Non-Unicode Fonts/Landza/landza9.ttf | Landza9 | Landza9 |
 | Non-Unicode Fonts/Landza/landza10.ttf | Landza10 | Landza10 |
 | Non-Unicode Fonts/Landza/landza11.ttf | Landza11 | Landza11 |
 | Non-Unicode Fonts/Landza/landza12.ttf | Landza12 | Landza12 |
@@ -205,7 +212,6 @@
 | Non-Unicode Fonts/Landza/landza27.ttf | Landza27 | Landza27 |
 | Non-Unicode Fonts/Landza/landza28.ttf | Landza28 | Landza28 |
 | Non-Unicode Fonts/Landza/landza29.ttf | Landza29 | Landza29 |
-| Non-Unicode Fonts/Landza/landza3.ttf | Landza3 | Landza3 |
 | Non-Unicode Fonts/Landza/landza30.ttf | Landza30 | Landza30 |
 | Non-Unicode Fonts/Landza/landza31.ttf | Landza31 | Landza31 |
 | Non-Unicode Fonts/Landza/landza32.ttf | Landza32 | Landza32 |
@@ -216,7 +222,6 @@
 | Non-Unicode Fonts/Landza/landza37.ttf | Landza37 | Landza37 |
 | Non-Unicode Fonts/Landza/landza38.ttf | Landza38 | Landza38 |
 | Non-Unicode Fonts/Landza/landza39.ttf | Landza39 | Landza39 |
-| Non-Unicode Fonts/Landza/landza4.ttf | Landza4 | Landza4 |
 | Non-Unicode Fonts/Landza/landza40.ttf | Landza40 | Landza40 |
 | Non-Unicode Fonts/Landza/landza41.ttf | Landza41 | Landza41 |
 | Non-Unicode Fonts/Landza/landza42.ttf | Landza42 | Landza42 |
@@ -227,7 +232,6 @@
 | Non-Unicode Fonts/Landza/landza47.ttf | Landza47 | Landza47 |
 | Non-Unicode Fonts/Landza/landza48.ttf | Landza48 | Landza48 |
 | Non-Unicode Fonts/Landza/landza49.ttf | Landza49 | Landza49 |
-| Non-Unicode Fonts/Landza/landza5.ttf | Landza5 | Landza5 |
 | Non-Unicode Fonts/Landza/landza50.ttf | Landza50 | Landza50 |
 | Non-Unicode Fonts/Landza/landza51.ttf | Landza51 | Landza51 |
 | Non-Unicode Fonts/Landza/landza52.ttf | Landza52 | Landza52 |
@@ -238,7 +242,6 @@
 | Non-Unicode Fonts/Landza/landza57.ttf | Landza57 | Landza57 |
 | Non-Unicode Fonts/Landza/landza58.ttf | Landza58 | Landza58 |
 | Non-Unicode Fonts/Landza/landza59.ttf | Landza59 | Landza59 |
-| Non-Unicode Fonts/Landza/landza6.ttf | Landza6 | Landza6 |
 | Non-Unicode Fonts/Landza/landza60.ttf | Landza60 | Landza60 |
 | Non-Unicode Fonts/Landza/landza61.ttf | Landza61 | Landza61 |
 | Non-Unicode Fonts/Landza/landza62.ttf | Landza62 | Landza62 |
@@ -249,12 +252,10 @@
 | Non-Unicode Fonts/Landza/landza67.ttf | Landza67 | Landza67 |
 | Non-Unicode Fonts/Landza/landza68.ttf | Landza68 | Landza68 |
 | Non-Unicode Fonts/Landza/landza69.ttf | Landza69 | Landza69 |
-| Non-Unicode Fonts/Landza/landza7.ttf | Landza7 | Landza7 |
 | Non-Unicode Fonts/Landza/landza70.ttf | Landza70 | Landza70 |
 | Non-Unicode Fonts/Landza/landza71.ttf | Landza71 | Landza71 |
 | Non-Unicode Fonts/Landza/landza72.ttf | Landza72 | Landza72 |
 | Non-Unicode Fonts/Landza/landza73.ttf | Landza73 | Landza73 |
-| Non-Unicode Fonts/Landza/landza8.ttf | Landza8 | Landza8 |
 | Non-Unicode Fonts/Landza/landza80.ttf | Landza80 | Landza80 |
 | Non-Unicode Fonts/Landza/landza81.ttf | Landza81 | Landza81 |
 | Non-Unicode Fonts/Landza/landza82.ttf | Landza82 | Landza82 |
@@ -265,7 +266,6 @@
 | Non-Unicode Fonts/Landza/landza87.ttf | Landza87 | Landza87 |
 | Non-Unicode Fonts/Landza/landza88.ttf | Landza88 | Landza88 |
 | Non-Unicode Fonts/Landza/landza89.ttf | Landza89 | Landza89 |
-| Non-Unicode Fonts/Landza/landza9.ttf | Landza9 | Landza9 |
 | Non-Unicode Fonts/Landza/landza90.ttf | Landza90 | Landza90 |
 | Non-Unicode Fonts/Landza/landza91.ttf | Landza91 | Landza91 |
 | Non-Unicode Fonts/Landza/landza92.ttf | Landza92 | Landza92 |
@@ -291,183 +291,183 @@
 | Non-Unicode Fonts/Monlam/Monlam peytig.TTF | Monlam PeyTig | Monlam PeyTig, MonlamPeyTig |
 | Non-Unicode Fonts/Monlam/Monlam Tigma-choug 2.TTF | Monlam Tigmachoug 2 | Monlam Tigmachoug 2, MonlamTigmachoug2 |
 | Non-Unicode Fonts/Monlam/Monlam yig-chong.TTF | Monlam yigchong | Monlam yigchong, Monlamyigchong |
-| Non-Unicode Fonts/Nitartha/Dedris/dedris-a.ttf | Dedris-a | Dedris-a |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-a1.ttf | Dedris-a1 | Dedris-a1 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-a2.ttf | Dedris-a2 | Dedris-a2 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-a3.ttf | Dedris-a3 | Dedris-a3 |
-| Non-Unicode Fonts/Nitartha/Dedris/dedris-b.ttf | Dedris-b | Dedris-b |
+| Non-Unicode Fonts/Nitartha/Dedris/dedris-a.ttf | Dedris-a | Dedris-a |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-b1.ttf | Dedris-b1 | Dedris-b1 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-b2.ttf | Dedris-b2 | Dedris-b2 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-b3.ttf | Dedris-b3 | Dedris-b3 |
-| Non-Unicode Fonts/Nitartha/Dedris/dedris-c.ttf | Dedris-c | Dedris-c |
+| Non-Unicode Fonts/Nitartha/Dedris/dedris-b.ttf | Dedris-b | Dedris-b |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-c1.ttf | Dedris-c1 | Dedris-c1 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-c2.ttf | Dedris-c2 | Dedris-c2 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-c3.ttf | Dedris-c3 | Dedris-c3 |
-| Non-Unicode Fonts/Nitartha/Dedris/dedris-d.ttf | Dedris-d | Dedris-d |
+| Non-Unicode Fonts/Nitartha/Dedris/dedris-c.ttf | Dedris-c | Dedris-c |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-d1.ttf | Dedris-d1 | Dedris-d1 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-d2.ttf | Dedris-d2 | Dedris-d2 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-d3.ttf | Dedris-d3 | Dedris-d3 |
-| Non-Unicode Fonts/Nitartha/Dedris/dedris-e.ttf | Dedris-e | Dedris-e |
+| Non-Unicode Fonts/Nitartha/Dedris/dedris-d.ttf | Dedris-d | Dedris-d |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-e1.ttf | Dedris-e1 | Dedris-e1 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-e2.ttf | Dedris-e2 | Dedris-e2 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-e3.ttf | Dedris-e3 | Dedris-e3 |
-| Non-Unicode Fonts/Nitartha/Dedris/dedris-f.ttf | Dedris-f | Dedris-f |
+| Non-Unicode Fonts/Nitartha/Dedris/dedris-e.ttf | Dedris-e | Dedris-e |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-f1.ttf | Dedris-f1 | Dedris-f1 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-f2.ttf | Dedris-f2 | Dedris-f2 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-f3.ttf | Dedris-f3 | Dedris-f3 |
-| Non-Unicode Fonts/Nitartha/Dedris/dedris-g.ttf | Dedris-g | Dedris-g |
+| Non-Unicode Fonts/Nitartha/Dedris/dedris-f.ttf | Dedris-f | Dedris-f |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-g1.ttf | Dedris-g1 | Dedris-g1 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-g2.ttf | Dedris-g2 | Dedris-g2 |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-g3.ttf | Dedris-g3 | Dedris-g3 |
+| Non-Unicode Fonts/Nitartha/Dedris/dedris-g.ttf | Dedris-g | Dedris-g |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-syma.ttf | Dedris-syma | Dedris-syma |
 | Non-Unicode Fonts/Nitartha/Dedris/dedris-vowa.ttf | Dedris-vowa | Dedris-vowa |
-| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-a.ttf | Drutsa-a | Drutsa-a |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-a1.ttf | Drutsa-a1 | Drutsa-a1 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-a2.ttf | Drutsa-a2 | Drutsa-a2 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-a3.ttf | Drutsa-a3 | Drutsa-a3 |
-| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-b.ttf | Drutsa-b | Drutsa-b |
+| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-a.ttf | Drutsa-a | Drutsa-a |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-b1.ttf | Drutsa-b1 | Drutsa-b1 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-b2.ttf | Drutsa-b2 | Drutsa-b2 |
-| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-c.ttf | Drutsa-c | Drutsa-c |
+| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-b.ttf | Drutsa-b | Drutsa-b |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-c1.ttf | Drutsa-c1 | Drutsa-c1 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-c2.ttf | Drutsac2 | Drutsa-c2 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-c3.ttf | Drutsa-c3 | Drutsa-c3 |
-| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-d.ttf | Drutsa-d | Drutsa-d |
+| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-c.ttf | Drutsa-c | Drutsa-c |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-d1.ttf | Drutsa-d1 | Drutsa-d1 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-d2.ttf | Drutsa-d2 | Drutsa-d2 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-d3.ttf | Drutsa-d3 | Drutsa-d3 |
-| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-e.ttf | Drutsa-e | Drutsa-e |
+| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-d.ttf | Drutsa-d | Drutsa-d |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-e1.ttf | Drutsa-e1 | Drutsa-e1 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-e2.ttf | Drutsa-e2 | Drutsa-e2 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-e3.ttf | Drutsa-e3 | Drutsa-e3 |
-| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-f.ttf | Drutsa-f | Drutsa-f |
+| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-e.ttf | Drutsa-e | Drutsa-e |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-f2.ttf | Drutsa-f2 | Drutsa-f2 |
-| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-g.ttf | Drutsa-g | Drutsa-g |
+| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-f.ttf | Drutsa-f | Drutsa-f |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-g1.ttf | Drutsa-g1 | Drutsa-g1 |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-g2.ttf | Drutsa-g2 | Drutsa-g2 |
+| Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-g.ttf | Drutsa-g | Drutsa-g |
 | Non-Unicode Fonts/Nitartha/Drutsa/Drutsa-vowa.ttf | Drutsa-vowa | Drutsa-vowa |
-| Non-Unicode Fonts/Nitartha/Ededris/ededris-a.ttf | Ededris-a | Ededris-a |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-a1.ttf | Ededris-a1 | Ededris-a1 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-a2.ttf | Ededris-a2 | Ededris-a2 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-a3.ttf | Ededris-a3 | Ededris-a3 |
-| Non-Unicode Fonts/Nitartha/Ededris/ededris-b.ttf | Ededris-b | Ededris-b |
+| Non-Unicode Fonts/Nitartha/Ededris/ededris-a.ttf | Ededris-a | Ededris-a |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-b1.ttf | Ededris-b1 | Ededris-b1 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-b2.ttf | Ededris-b2 | Ededris-b2 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-b3.ttf | Ededris-b3 | Ededris-b3 |
-| Non-Unicode Fonts/Nitartha/Ededris/ededris-c.ttf | Ededris-c | Ededris-c |
+| Non-Unicode Fonts/Nitartha/Ededris/ededris-b.ttf | Ededris-b | Ededris-b |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-c1.ttf | Ededris-c1 | Ededris-c1 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-c2.ttf | Ededris-c2 | Ededris-c2 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-c3.ttf | Ededris-c3 | Ededris-c3 |
-| Non-Unicode Fonts/Nitartha/Ededris/ededris-d.ttf | Ededris-d | Ededris-d |
+| Non-Unicode Fonts/Nitartha/Ededris/ededris-c.ttf | Ededris-c | Ededris-c |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-d1.ttf | Ededris-d1 | Ededris-d1 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-d2.ttf | Ededris-d2 | Ededris-d2 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-d3.ttf | Ededris-d3 | Ededris-d3 |
-| Non-Unicode Fonts/Nitartha/Ededris/ededris-e.ttf | Ededris-e | Ededris-e |
+| Non-Unicode Fonts/Nitartha/Ededris/ededris-d.ttf | Ededris-d | Ededris-d |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-e1.ttf | Ededris-e1 | Ededris-e1 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-e2.ttf | Ededris-e2 | Ededris-e2 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-e3.ttf | Ededris-e3 | Ededris-e3 |
-| Non-Unicode Fonts/Nitartha/Ededris/ededris-f.ttf | Ededris-f | Ededris-f |
+| Non-Unicode Fonts/Nitartha/Ededris/ededris-e.ttf | Ededris-e | Ededris-e |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-f1.ttf | Ededris-f1 | Ededris-f1 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-f2.ttf | Ededris-f2 | Ededris-f2 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-f3.ttf | Ededris-f3 | Ededris-f3 |
-| Non-Unicode Fonts/Nitartha/Ededris/ededris-g.ttf | Ededris-g | Ededris-g |
+| Non-Unicode Fonts/Nitartha/Ededris/ededris-f.ttf | Ededris-f | Ededris-f |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-g1.ttf | Ededris-g1 | Ededris-g1 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-g2.ttf | Ededris-g2 | Ededris-g2 |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-g3.ttf | Ededris-g3 | Ededris-g3 |
+| Non-Unicode Fonts/Nitartha/Ededris/ededris-g.ttf | Ededris-g | Ededris-g |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-syma.ttf | Ededris-syma | Ededris-syma |
 | Non-Unicode Fonts/Nitartha/Ededris/ededris-vowa.ttf | Ededris-vowa | Ededris-vowa |
 | Non-Unicode Fonts/Nitartha/Esam/Esama.ttf | Esama | Esama |
 | Non-Unicode Fonts/Nitartha/Esam/ESAMB.TTF | Esamb | Esamb |
 | Non-Unicode Fonts/Nitartha/Esam/ESAMC.TTF | Esamc | Esamc |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-a.ttf | Khamdris-a | Khamdris-a |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-a1.ttf | Khamdris-a1 | Khamdris-a1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-a2.ttf | Khamdris-a2 | Khamdris-a2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-a3.ttf | Khamdris-a3 | Khamdris-a3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-b.ttf | Khamdris-b | Khamdris-b |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-a.ttf | Khamdris-a | Khamdris-a |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-b1.ttf | Khamdris-b1 | Khamdris-b1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-b2.ttf | Khamdris-b2 | Khamdris-b2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-b3.ttf | Khamdris-b3 | Khamdris-b3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-c.ttf | Khamdris-c | Khamdris-c |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-b.ttf | Khamdris-b | Khamdris-b |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-c1.ttf | Khamdris-c1 | Khamdris-c1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-c2.ttf | Khamdris-c2 | Khamdris-c2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-c3.ttf | Khamdris-c3 | Khamdris-c3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-d.ttf | Khamdris-d | Khamdris-d |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-c.ttf | Khamdris-c | Khamdris-c |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-d1.ttf | Khamdris-d1 | Khamdris-d1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-d2.ttf | Khamdris-d2 | Khamdris-d2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-d3.ttf | Khamdris-d3 | Khamdris-d3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-e.ttf | Khamdris-e | Khamdris-e |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-d.ttf | Khamdris-d | Khamdris-d |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-e1.ttf | Khamdris-e1 | Khamdris-e1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-e2.ttf | Khamdris-e2 | Khamdris-e2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-e3.ttf | Khamdris-e3 | Khamdris-e3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-f.ttf | Khamdris-f | Khamdris-f |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-e.ttf | Khamdris-e | Khamdris-e |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-f1.ttf | Khamdris-f1 | Khamdris-f1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-f2.ttf | Khamdris-f2 | Khamdris-f2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-f3.ttf | Khamdris-f3 | Khamdris-f3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-g.ttf | Khamdris-g | Khamdris-g |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-f.ttf | Khamdris-f | Khamdris-f |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-g1.ttf | Khamdris-g1 | Khamdris-g1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-g2.ttf | Khamdris-g2 | Khamdris-g2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-g3.ttf | Khamdris-g3 | Khamdris-g3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-h.ttf | Khamdris-h | Khamdris-h |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-g.ttf | Khamdris-g | Khamdris-g |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-h1.ttf | Khamdris-h1 | Khamdris-h1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-h2.ttf | Khamdris-h2 | Khamdris-h2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-h3.ttf | Khamdris-h3 | Khamdris-h3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-i.ttf | Khamdris-i | Khamdris-i |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-h.ttf | Khamdris-h | Khamdris-h |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-i1.ttf | Khamdris-i1 | Khamdris-i1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-i2.ttf | Khamdris-i2 | Khamdris-i2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-i3.ttf | Khamdris-i3 | Khamdris-i3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-j.ttf | Khamdris-j | Khamdris-j |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-i.ttf | Khamdris-i | Khamdris-i |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-j1.ttf | Khamdris-j1 | Khamdris-j1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-j2.ttf | Khamdris-j2 | Khamdris-j2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-j3.ttf | Khamdris-j3 | Khamdris-j3 |
-| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-k.ttf | Khamdris-k | Khamdris-k |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-j.ttf | Khamdris-j | Khamdris-j |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-k1.ttf | Khamdris-k1 | Khamdris-k1 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-k2.ttf | Khamdris-k2 | Khamdris-k2 |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-k3.ttf | Khamdris-k3 | Khamdris-k3 |
+| Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-k.ttf | Khamdris-k | Khamdris-k |
 | Non-Unicode Fonts/Nitartha/Khamdris/Khamdris-vowa.ttf | Khamdris-vowa | Khamdris-vowa |
-| Non-Unicode Fonts/Nitartha/Narthang/Narthang-a.ttf | Narthang-a | Narthang-a |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-a1.ttf | Narthang-a1 | Narthang-a1 |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-a2.ttf | Narthang-a2 | Narthang-a2 |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-a3.ttf | Narthang-a3 | Narthang-a3 |
-| Non-Unicode Fonts/Nitartha/Narthang/Narthang-b.ttf | Narthang-b | Narthang-b |
+| Non-Unicode Fonts/Nitartha/Narthang/Narthang-a.ttf | Narthang-a | Narthang-a |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-b1.ttf | Narthang-b1 | Narthang-b1 |
-| Non-Unicode Fonts/Nitartha/Narthang/Narthang-c.ttf | Narthang-c | Narthang-c |
+| Non-Unicode Fonts/Nitartha/Narthang/Narthang-b.ttf | Narthang-b | Narthang-b |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-c2.ttf | Narthang-c2 | Narthang-c2 |
-| Non-Unicode Fonts/Nitartha/Narthang/Narthang-d.ttf | Narthang-d | Narthang-d |
+| Non-Unicode Fonts/Nitartha/Narthang/Narthang-c.ttf | Narthang-c | Narthang-c |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-d2.ttf | Narthang-d2 | Narthang-d2 |
+| Non-Unicode Fonts/Nitartha/Narthang/Narthang-d.ttf | Narthang-d | Narthang-d |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-g.ttf | Narthang-g | Narthang-g |
 | Non-Unicode Fonts/Nitartha/Narthang/Narthang-vowa.ttf | Narthang-vowa | Narthang-vowa |
 | Non-Unicode Fonts/Nitartha/Sam/SAMA.TTF | Sama | Sama |
 | Non-Unicode Fonts/Nitartha/Sam/SAMB.TTF | Samb | Samb |
 | Non-Unicode Fonts/Nitartha/Sam/SAMC.TTF | Samc | Samc |
 | Non-Unicode Fonts/Nitartha/Sam/SAMW.TTF | Samw | Samw |
-| Non-Unicode Fonts/Nitartha/Ume/Ume-a.ttf | Ume-a | Ume-a |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-a1.ttf | Ume-a1 | Ume-a1 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-a2.ttf | Ume-a2 | Ume-a2 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-a3.ttf | Ume-a3 | Ume-a3 |
-| Non-Unicode Fonts/Nitartha/Ume/Ume-b.ttf | Ume-b | Ume-b |
+| Non-Unicode Fonts/Nitartha/Ume/Ume-a.ttf | Ume-a | Ume-a |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-b1.ttf | Ume-b1 | Ume-b1 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-b2.ttf | Ume-b2 | Ume-b2 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-b3.ttf | Ume-b3 | Ume-b3 |
-| Non-Unicode Fonts/Nitartha/Ume/Ume-c.ttf | Ume-c | Ume-c |
+| Non-Unicode Fonts/Nitartha/Ume/Ume-b.ttf | Ume-b | Ume-b |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-c1.ttf | Ume-c1 | Ume-c1 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-c2.ttf | Ume-c2 | Ume-c2 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-c3.ttf | Ume-c3 | Ume-c3 |
-| Non-Unicode Fonts/Nitartha/Ume/Ume-d.ttf | Ume-d | Ume-d |
+| Non-Unicode Fonts/Nitartha/Ume/Ume-c.ttf | Ume-c | Ume-c |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-d1.ttf | Ume-d1 | Ume-d1 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-d2.ttf | Ume-d2 | Ume-d2 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-d3.ttf | Ume-d3 | Ume-d3 |
-| Non-Unicode Fonts/Nitartha/Ume/Ume-e.ttf | Ume-e | Ume-e |
+| Non-Unicode Fonts/Nitartha/Ume/Ume-d.ttf | Ume-d | Ume-d |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-e1.ttf | Ume-e1 | Ume-e1 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-e2.ttf | Ume-e2 | Ume-e2 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-e3.ttf | Ume-e3 | Ume-e3 |
-| Non-Unicode Fonts/Nitartha/Ume/Ume-f.ttf | Ume-f | Ume-f |
+| Non-Unicode Fonts/Nitartha/Ume/Ume-e.ttf | Ume-e | Ume-e |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-f1.ttf | Ume-f1 | Ume-f1 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-f2.ttf | Ume-f2 | Ume-f2 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-f3.ttf | Ume-f3 | Ume-f3 |
-| Non-Unicode Fonts/Nitartha/Ume/Ume-g.ttf | Ume-g | Ume-g |
+| Non-Unicode Fonts/Nitartha/Ume/Ume-f.ttf | Ume-f | Ume-f |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-g1.ttf | Ume-g1 | Ume-g1 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-g2.ttf | Ume-g2 | Ume-g2 |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-g3.ttf | Ume-g3 | Ume-g3 |
+| Non-Unicode Fonts/Nitartha/Ume/Ume-g.ttf | Ume-g | Ume-g |
 | Non-Unicode Fonts/Nitartha/Ume/Ume-vowa.ttf | Ume-vowa | Ume-vowa |
 | Non-Unicode Fonts/PKTC/DZCN.ttf | DzongkhaCalligraphic | DzongkhaCalligraphic |
 | Non-Unicode Fonts/PKTC/DZCS1.ttf | DzongkhaCalligraphicSkt1 | DzongkhaCalligraphicSkt1 |
@@ -495,7 +495,6 @@
 | Non-Unicode Fonts/PKTC/TIMS2.ttf | TibetanMachineSkt2 | TibetanMachineSkt2 |
 | Non-Unicode Fonts/PKTC/TIMS3.ttf | TibetanMachineSkt3 | TibetanMachineSkt3 |
 | Non-Unicode Fonts/PKTC/TIMS4.ttf | TibetanMachineSkt4 | TibetanMachineSkt4 |
-| Non-Unicode Fonts/PKTC/TIMWN.ttf | TibetanMachineWeb | TibetanMachineWeb |
 | Non-Unicode Fonts/PKTC/TIMWN1.ttf | TibetanMachineWeb1 | TibetanMachineWeb1 |
 | Non-Unicode Fonts/PKTC/TIMWN2.ttf | TibetanMachineWeb2 | TibetanMachineWeb2 |
 | Non-Unicode Fonts/PKTC/TIMWN3.ttf | TibetanMachineWeb3 | TibetanMachineWeb3 |
@@ -505,6 +504,7 @@
 | Non-Unicode Fonts/PKTC/TIMWN7.ttf | TibetanMachineWeb7 | TibetanMachineWeb7 |
 | Non-Unicode Fonts/PKTC/TIMWN8.ttf | TibetanMachineWeb8 | TibetanMachineWeb8 |
 | Non-Unicode Fonts/PKTC/TIMWN9.ttf | TibetanMachineWeb9 | TibetanMachineWeb9 |
+| Non-Unicode Fonts/PKTC/TIMWN.ttf | TibetanMachineWeb | TibetanMachineWeb |
 | Non-Unicode Fonts/sunshine.ttf | Sunshine | Sunshine |
 | Non-Unicode Fonts/SuzTib/SUZBUDRU.TTF | SuzBudRU | SuzBudRU |
 | Non-Unicode Fonts/SuzTib/SUZBUDW.TTF | SuzBudW | SuzBudW |
@@ -613,8 +613,8 @@
 | Unicode Font Families & Typefaces/Jamyang Font Family/JMY-MLWJT2.5.otf | JMY-MLWJT,嘉木杨-毛兰乌金体 | JMY-MLWJT, JMYMLWJT, 嘉木杨-毛兰乌金体 |
 | Unicode Font Families & Typefaces/Jamyang Font Family/JMY-MLZZT1.0.otf | JMY-MLZZT,嘉木杨-毛兰珠匝体 | JMY-MLZZT, JMYMLZZT, 嘉木杨-毛兰珠匝体 |
 | Unicode Font Families & Typefaces/Jamyang Font Family/JMYZK--LZT.ttf | JMYZK-LZT,嘉木杨字库--兰札体 | JMYZK-LZT ÎÄ?-Ö, JMYZK-LZT 嘉木杨字库--兰札体, JMYZK-LZT--- |
-| Unicode Font Families & Typefaces/Jamyang Font Family/JMYZK--WDT.ttf | JMYZK-WDT,嘉木杨字库--瓦德体 | JMYZK-WDT ÎÄ?-Ö, JMYZK-WDT 嘉木杨字库--瓦德体, JMYZK-WDT--- |
 | Unicode Font Families & Typefaces/Jamyang Font Family/JMYZK--WDT1.ttf | JMYZK-WDT-MOD,嘉木杨字库--瓦德体 | JMYZK-WDT-MOD, JMYZKWDTMOD |
+| Unicode Font Families & Typefaces/Jamyang Font Family/JMYZK--WDT.ttf | JMYZK-WDT,嘉木杨字库--瓦德体 | JMYZK-WDT ÎÄ?-Ö, JMYZK-WDT 嘉木杨字库--瓦德体, JMYZK-WDT--- |
 | Unicode Font Families & Typefaces/Jamyang Font Family/旦增字体.ttf | Yuchi Wujin Labuleng2,玉翅 乌金 拉卜楞2 | Yuchi Wujin Labuleng2 Yuchi Wujin Labuleng2, YuchiWujinLabuleng2, 玉翅 乌金 拉卜楞2 |
 | Unicode Font Families & Typefaces/Kangba Derchi/Kangba Derchi- Bechu.ttf | Kangba Derchi- Bechu,康巴德智-柏丘体 | Kangba Derchi- Bechu, KangbaDerchiBechu, 康巴德智-柏丘体 |
 | Unicode Font Families & Typefaces/Kangba Derchi/Kangba Derchi-Chuyig.ttf | Normal,obyčejné,Standard,Κανονικά,Kangba Derchi-Chuyig,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta,康巴德智-丘艺体 | Kangba Derchi-Chuyig, KangbaDerchiChuyig, 康巴德智-丘艺体 |
@@ -766,8 +766,8 @@
 | Unicode Individual fonts/Microsoft Himalaya/himalaya_2.ttf | Microsoft Himalaya | Microsoft Himalaya, MicrosoftHimalaya |
 | Unicode Individual fonts/Nyewo 6.ttf | Type | Monlam Uni PayTsik, Type Weapon, Type-Weapon |
 | Unicode Individual fonts/Shamling Woodblocks .ttf | Shamling Woodblocks | Shamling Woodblocks, ShamlingWoodblocks |
-| Unicode Individual fonts/SimSun18030.ttc | SimSun-18030,NSimSun-18030,新宋体-18030 | NSimSun-18030, 新宋体-18030 |
 | Unicode Individual fonts/SimSun18030.ttc | SimSun-18030,宋体-18030 | SimSun-18030, 宋体-18030 |
+| Unicode Individual fonts/SimSun18030.ttc | SimSun-18030,NSimSun-18030,新宋体-18030 | NSimSun-18030, 新宋体-18030 |
 | Unicode Individual fonts/Snow_Lotus.ttf | Snow Lotus | -, SnowLotus, 雪莲花-藏文字体 |
 | Unicode Individual fonts/Sun-ExtA.ttf | Sun-ExtA | Sun-ExtA |
 | Unicode Individual fonts/TibetanManglamUni.ttf | Tibetan Mangalam Uni | Tibetan Mangalam Uni, TibetanMangalamUni |
@@ -789,6 +789,7 @@
 | Unicode Individual fonts/雪莲花-Snow_Lotus.ttf | Snow Lotus (01) | -, SnowLotus(01), 雪莲花-藏文字体 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/ARIALUNI.TTF | Arial Unicode MS | Arial Unicode MS, ArialUnicodeMS |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/A-Himalaya.ttf | A-Himalaya | A-Himalaya, A-Himalaya-R |
+| Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/himalaya0.ttf | Himalaya0 | Himalaya0, Himalaya0-R |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/Himalaya-A.ttf | Himalaya-A | Himalaya-A, Himalaya-A-R |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/Himalaya-B.ttf | Himalaya-B | Himalaya-B, Himalaya-B-R |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/Himalaya-C.ttf | Himalaya-C | Himalaya-C, Himalaya-C-R |
@@ -803,7 +804,6 @@
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/Himalaya-L.ttf | Himalaya-L | Himalaya-L, Himalaya-L (R), Himalaya-L-R |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/Himalaya-M.ttf | Himalaya-M | Himalaya-M, Himalaya-M (R), Himalaya-M-R |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/Himalaya-SN.ttf | Himalaya-SN | Himalaya-SN (R), Himalaya-SN-R |
-| Unicode Problematic:Outdated:ReExported:Incomplete fonts/Himalaya/himalaya0.ttf | Himalaya0 | Himalaya0, Himalaya0-R |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/CTRC/ctrc-betsu.ttf | CTRC-Betsu,藏研柏簇体 | CTRC-Betsu, 藏研柏簇体 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/CTRC/ctrc-bt.ttf | CTRC-BT,藏研白体 | CTRC-BT, 藏研白体 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/CTRC/ctrc-drutsa.ttf | CTRC-Drutsa,藏研珠擦体 | CTRC-Drutsa, 藏研珠擦体 |
@@ -814,8 +814,8 @@
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Yesang Karmo - Old name of Bhozuk/Yesang Karmo-Bhodor(02).otf | Yesang Karmo-Bhodor(02) | Yesang Karmo-Bhodor(02), YesangKarmo-Bhodor02 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Yesang Karmo - Old name of Bhozuk/Yesang Karmo-Bhodor(03).ttf | Yesang Karmo-Bhodor(03) | Yesang Karmo-Bhodor(03), YesangKarmo-Bhodor03 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/perfect_unicode.ttf | perfect Unicode,Monlam Uni OuChan1 | Monlam Uni OuChan1, perfect Unicode |
-| Unicode Problematic:Outdated:ReExported:Incomplete fonts/SimSun18030.ttc | SimSun-18030,NSimSun-18030,新宋体-18030 | NSimSun-18030, 新宋体-18030 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/SimSun18030.ttc | SimSun-18030,宋体-18030 | SimSun-18030, 宋体-18030 |
+| Unicode Problematic:Outdated:ReExported:Incomplete fonts/SimSun18030.ttc | SimSun-18030,NSimSun-18030,新宋体-18030 | NSimSun-18030, 新宋体-18030 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Sun-ExtA.ttf | Sun-ExtA | Sun-ExtA |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/tib-usunicode.ttf | Tib-US Unicode | Tib-US Unicode, Tib-USUnicode |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Tibetan-Number.otf | Tibetan Number | Tibetan Number, TibetanNumberRegular |
@@ -824,52 +824,100 @@
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/tibusrfa2.ttf | Tib-US Unicode | Tib-US Unicode, Tib-USUnicode |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/uni-bzdmt.ttf | Tibetan BZDMT Uni | Tibetan BZDMT Uni, Tibetan_BZDMT_Uni |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/utibetan.ttf | Tibetan Unicode | Tibetan Unicode, TibetanUnicode |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-Black.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Black | KhaWa Sans Beta-Display Black, KhaWaSansBeta-Display-Black |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-Bold.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Bold | KhaWa Sans Beta-Display Bold, KhaWaSansBeta-Display-Bold |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-BoldCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Bd Cond | KhaWa Sans Beta-Display Bold Condensed, KhaWaSansBeta-Display-BoldCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-BoldSemiCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Bd SmCond | KhaWa Sans Beta-Display Bold SemiCondensed, KhaWaSansBeta-Display-BoldSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-ExtraBold.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display ExBold | KhaWa Sans Beta-Display ExtraBold, KhaWaSansBeta-Display-ExtraBold |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-Light.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Light | KhaWa Sans Beta-Display Light, KhaWaSansBeta-Display-Light |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-LightCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Light Cond | KhaWa Sans Beta-Display Light Condensed, KhaWaSansBeta-Display-LightCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-LightSemiCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Light SmCond | KhaWa Sans Beta-Display Light SemiCondensed, KhaWaSansBeta-Display-LightSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-Medium.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Medium | KhaWa Sans Beta-Display Medium, KhaWaSansBeta-Display-Medium |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-MediumCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Medium Cond | KhaWa Sans Beta-Display Medium Condensed, KhaWaSansBeta-Display-MediumCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-MediumSemiCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Medium SmCond | KhaWa Sans Beta-Display Medium SemiCondensed, KhaWaSansBeta-Display-MediumSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-Regular.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体 | KhaWa Sans Beta-Display Regular, KhaWaSansBeta-Display-Regular |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-RegularCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Cond | KhaWa Sans Beta-Display Regular Condensed, KhaWaSansBeta-Display-RegularCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-RegularSemiCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display SmCond | KhaWa Sans Beta-Display Regular SemiCondensed, KhaWaSansBeta-Display-RegularSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-SemiBold.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display SmBold | KhaWa Sans Beta-Display SemiBold, KhaWaSansBeta-Display-SemiBold |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-SemiBoldCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display SmBd Cond | KhaWa Sans Beta-Display SemiBold Condensed, KhaWaSansBeta-Display-SemiBoldCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-SemiBoldSemiCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display SmBd SmCond | KhaWa Sans Beta-Display SemiBold SemiCondensed, KhaWaSansBeta-Display-SemiBoldSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-Thin.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Thin | KhaWa Sans Beta-Display Thin, KhaWaSansBeta-Display-Thin |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-ThinCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Thin Cond | KhaWa Sans Beta-Display Thin Condensed, KhaWaSansBeta-Display-ThinCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-ThinSemiCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display Thin SmCond | KhaWa Sans Beta-Display Thin SemiCondensed, KhaWaSansBeta-Display-ThinSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-UltraLight.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display UlLight | KhaWa Sans Beta-Display UltraLight, KhaWaSansBeta-Display-UltraLight |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-UltraLightCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display UlLight Cond | KhaWa Sans Beta-Display UltraLight Condensed, KhaWaSansBeta-Display-UltraLightCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Display-UltraLightSemiCondensed.ttf | KhaWa Sans Beta-Display,KhaWa乌梅无线衬实验-标题体,KhaWa Sans Beta-Display UlLight SmCond | KhaWa Sans Beta-Display UltraLight SemiCondensed, KhaWaSansBeta-Display-UltraLightSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-Black.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Black | KhaWa Sans Beta-Text Black, KhaWaSansBeta-Text-Black |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-Bold.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Bold | KhaWa Sans Beta-Text Bold, KhaWaSansBeta-Text-Bold |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-BoldCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Bold Cond | KhaWa Sans Beta-Text Bold Condensed, KhaWaSansBeta-Text-BoldCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-BoldSemiCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Bd SmCond | KhaWa Sans Beta-Text Bold SemiCondensed, KhaWaSansBeta-Text-BoldSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-ExtraBold.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text ExtraBold | KhaWa Sans Beta-Text ExtraBold, KhaWaSansBeta-Text-ExtraBold |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-Light.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Light | KhaWa Sans Beta-Text Light, KhaWaSansBeta-Text-Light |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-LightCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Light Cond | KhaWa Sans Beta-Text Light Condensed, KhaWaSansBeta-Text-LightCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-LightSemiCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Light SmCond | KhaWa Sans Beta-Text Light SemiCondensed, KhaWaSansBeta-Text-LightSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-Medium.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Medium | KhaWa Sans Beta-Text Medium, KhaWaSansBeta-Text-Medium |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-MediumCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Medium Cond | KhaWa Sans Beta-Text Medium Condensed, KhaWaSansBeta-Text-MediumCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-MediumSemiCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Medium SmCond | KhaWa Sans Beta-Text Medium SemiCondensed, KhaWaSansBeta-Text-MediumSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-Regular.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体 | KhaWa Sans Beta-Text Regular, KhaWaSansBeta-Text-Regular |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-RegularCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Condensed | KhaWa Sans Beta-Text Regular Condensed, KhaWaSansBeta-Text-RegularCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-RegularSemiCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text SemiCond | KhaWa Sans Beta-Text Regular SemiCondensed, KhaWaSansBeta-Text-RegularSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-SemiBold.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text SemiBold | KhaWa Sans Beta-Text SemiBold, KhaWaSansBeta-Text-SemiBold |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-SemiBoldCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text SmBd Cond | KhaWa Sans Beta-Text SemiBold Condensed, KhaWaSansBeta-Text-SemiBoldCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-SemiBoldSemiCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text SmBd SmCond | KhaWa Sans Beta-Text SemiBold SemiCondensed, KhaWaSansBeta-Text-SemiBoldSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-Thin.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Thin | KhaWa Sans Beta-Text Thin, KhaWaSansBeta-Text-Thin |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-ThinCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Thin Cond | KhaWa Sans Beta-Text Thin Condensed, KhaWaSansBeta-Text-ThinCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-ThinSemiCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text Thin SmCond | KhaWa Sans Beta-Text Thin SemiCondensed, KhaWaSansBeta-Text-ThinSemiCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-UltraLight.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text UltraLight | KhaWa Sans Beta-Text UltraLight, KhaWaSansBeta-Text-UltraLight |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-UltraLightCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text UlLight Cond | KhaWa Sans Beta-Text UltraLight Condensed, KhaWaSansBeta-Text-UltraLightCondensed |
-| Variable Fonts/Khawa Sans Petsug/KhaWaSansBeta-Text-UltraLightSemiCondensed.ttf | KhaWa Sans Beta-Text,KhaWa乌梅无线衬实验-正文体,KhaWa Sans Beta-Text UlLight SmCond | KhaWa Sans Beta-Text UltraLight SemiCondensed, KhaWaSansBeta-Text-UltraLightSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-Black.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Black, KhaWaBetsugsSans-Display-Black |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-Bold.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Bold,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Bold,卡瓦柏簇无衬线-标题体 Bold | KhaWa Betsugs Sans-Display Bold, KhaWaBetsugsSans-Display-Bold |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-BoldCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Bd Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Bd Cond,卡瓦柏簇无衬线-标题体 Bd Cond | KhaWa Betsugs Sans-Display Bold Condensed, KhaWaBetsugsSans-Display-BoldCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-BoldSemiCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Bd SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Bd SmCond,卡瓦柏簇无衬线-标题体 Bd SmCond | KhaWa Betsugs Sans-Display Bold SemiCondensed, KhaWaBetsugsSans-Display-BoldSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-ExtraBold.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display ExBd,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག ExBd,卡瓦柏簇无衬线-标题体 ExBd | KhaWa Betsugs Sans-Display ExtraBold, KhaWaBetsugsSans-Display-ExtraBold |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-Light.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Light,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Light,卡瓦柏簇无衬线-标题体 Light | KhaWa Betsugs Sans-Display Light, KhaWaBetsugsSans-Display-Light |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-LightCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Light Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Light Cond,卡瓦柏簇无衬线-标题体 Light Cond | KhaWa Betsugs Sans-Display Light Condensed, KhaWaBetsugsSans-Display-LightCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-LightSemiCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Light SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Light SmCond,卡瓦柏簇无衬线-标题体 Light SmCond | KhaWa Betsugs Sans-Display Light SemiCondensed, KhaWaBetsugsSans-Display-LightSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-Medium.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Medium,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Medium,卡瓦柏簇无衬线-标题体 Medium | KhaWa Betsugs Sans-Display Medium, KhaWaBetsugsSans-Display-Medium |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-MediumCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Medium Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Medium Cond,卡瓦柏簇无衬线-标题体 Medium Cond | KhaWa Betsugs Sans-Display Medium Condensed, KhaWaBetsugsSans-Display-MediumCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-MediumSemiCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Medium SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Medium SmCond,卡瓦柏簇无衬线-标题体 Medium SmCond | KhaWa Betsugs Sans-Display Medium SemiCondensed, KhaWaBetsugsSans-Display-MediumSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-Normal.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Normal,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Normal,卡瓦柏簇无衬线-标题体 Normal | KhaWa Betsugs Sans-Display Normal, KhaWaBetsugsSans-Display-Normal |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-NormalCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Normal Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Normal Cond,卡瓦柏簇无衬线-标题体 Normal Cond | KhaWa Betsugs Sans-Display Normal Condensed, KhaWaBetsugsSans-Display-NormalCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-NormalSemiCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Normal SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Normal SmCond,卡瓦柏簇无衬线-标题体 Normal SmCond | KhaWa Betsugs Sans-Display Normal SemiCondensed, KhaWaBetsugsSans-Display-NormalSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-SemiBold.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display SmBd,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག SmBd,卡瓦柏簇无衬线-标题体 SmBd | KhaWa Betsugs Sans-Display SemiBold, KhaWaBetsugsSans-Display-SemiBold |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-SemiBoldCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display SmBd Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག SmBd Cond,卡瓦柏簇无衬线-标题体 SmBd Cond | KhaWa Betsugs Sans-Display SemiBold Condensed, KhaWaBetsugsSans-Display-SemiBoldCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-SemiBoldSemiCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display SmBd SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག SmBd SmCond,卡瓦柏簇无衬线-标题体 SmBd SmCond | KhaWa Betsugs Sans-Display SemiBold SemiCondensed, KhaWaBetsugsSans-Display-SemiBoldSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-Thin.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Thin,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Thin,卡瓦柏簇无衬线-标题体 Thin | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSans-Display-Thin |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-ThinCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Thin Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Thin Cond,卡瓦柏簇无衬线-标题体 Thin Cond | KhaWa Betsugs Sans-Display Thin Condensed, KhaWaBetsugsSans-Display-ThinCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-ThinSemiCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Thin SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Thin SmCond,卡瓦柏簇无衬线-标题体 Thin SmCond | KhaWa Betsugs Sans-Display Thin SemiCondensed, KhaWaBetsugsSans-Display-ThinSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-UltraLight.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display UlLight,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག UlLight,卡瓦柏簇无衬线-标题体 UlLight | KhaWa Betsugs Sans-Display UltraLight, KhaWaBetsugsSans-Display-UltraLight |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-UltraLightCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display UlLight Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག UlLight Cond,卡瓦柏簇无衬线-标题体 UlLight Cond | KhaWa Betsugs Sans-Display UltraLight Condensed, KhaWaBetsugsSans-Display-UltraLightCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-UltraLightSemiCondensed.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display UlLight SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག UlLight SmCond,卡瓦柏簇无衬线-标题体 UlLight SmCond | KhaWa Betsugs Sans-Display UltraLight SemiCondensed, KhaWaBetsugsSans-Display-UltraLightSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSans-DisplayThin-Thin |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_800wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_700wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_600wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_500wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_400wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_300wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_200wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_100wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_100wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_160wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_260wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_360wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_460wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_560wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_660wght_3.2wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_100wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_160wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_260wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_360wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_460wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_560wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin, KhaWaBetsugsSansDisplayThin_660wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Display-VF.ttf | KhaWa Betsugs Sans-Display,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག,卡瓦柏簇无衬线-标题体,KhaWa Betsugs Sans-Display Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། འཆར་ཡིག Black,卡瓦柏簇无衬线-标题体 Black | KhaWa Betsugs Sans-Display Thin |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-Black.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSans-Text-Black |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-Bold.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Bold,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Bold,卡瓦柏簇无衬线-正文体 Bold | KhaWa Betsugs Sans-Text Bold, KhaWaBetsugsSans-Text-Bold |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-BoldCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Bd Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Bd Cond,卡瓦柏簇无衬线-正文体 Bd Cond | KhaWa Betsugs Sans-Text Bold Condensed, KhaWaBetsugsSans-Text-BoldCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-BoldSemiCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Bd SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Bd SmCond,卡瓦柏簇无衬线-正文体 Bd SmCond | KhaWa Betsugs Sans-Text Bold SemiCondensed, KhaWaBetsugsSans-Text-BoldSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-ExtraBold.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text ExBold,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག ExBold,卡瓦柏簇无衬线-正文体 ExBold | KhaWa Betsugs Sans-Text ExtraBold, KhaWaBetsugsSans-Text-ExtraBold |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-Light.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Light,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Light,卡瓦柏簇无衬线-正文体 Light | KhaWa Betsugs Sans-Text Light, KhaWaBetsugsSans-Text-Light |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-LightCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Light Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Light Cond,卡瓦柏簇无衬线-正文体 Light Cond | KhaWa Betsugs Sans-Text Light Condensed, KhaWaBetsugsSans-Text-LightCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-LightSemiCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Light SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Light SmCond,卡瓦柏簇无衬线-正文体 Light SmCond | KhaWa Betsugs Sans-Text Light SemiCondensed, KhaWaBetsugsSans-Text-LightSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-Medium.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Medium,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Medium,卡瓦柏簇无衬线-正文体 Medium | KhaWa Betsugs Sans-Text Medium, KhaWaBetsugsSans-Text-Medium |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-MediumCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Medium Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Medium Cond,卡瓦柏簇无衬线-正文体 Medium Cond | KhaWa Betsugs Sans-Text Medium Condensed, KhaWaBetsugsSans-Text-MediumCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-MediumSemiCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Medium SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Medium SmCond,卡瓦柏簇无衬线-正文体 Medium SmCond | KhaWa Betsugs Sans-Text Medium SemiCondensed, KhaWaBetsugsSans-Text-MediumSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-Normal.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Normal,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Normal,卡瓦柏簇无衬线-正文体 Normal | KhaWa Betsugs Sans-Text Normal, KhaWaBetsugsSans-Text-Normal |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-NormalCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Normal Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Normal Cond,卡瓦柏簇无衬线-正文体 Normal Cond | KhaWa Betsugs Sans-Text Normal Condensed, KhaWaBetsugsSans-Text-NormalCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-NormalSemiCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Normal SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Normal SmCond,卡瓦柏簇无衬线-正文体 Normal SmCond | KhaWa Betsugs Sans-Text Normal SemiCondensed, KhaWaBetsugsSans-Text-NormalSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-SemiBold.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text SmBold,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག SmBold,卡瓦柏簇无衬线-正文体 SmBold | KhaWa Betsugs Sans-Text SemiBold, KhaWaBetsugsSans-Text-SemiBold |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-SemiBoldCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text SmBd Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག SmBd Cond,卡瓦柏簇无衬线-正文体 SmBd Cond | KhaWa Betsugs Sans-Text SemiBold Condensed, KhaWaBetsugsSans-Text-SemiBoldCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-SemiBoldSemiCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text SmBd SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག SmBd SmCond,卡瓦柏簇无衬线-正文体 SmBd SmCond | KhaWa Betsugs Sans-Text SemiBold SemiCondensed, KhaWaBetsugsSans-Text-SemiBoldSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-Thin.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Thin,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Thin,卡瓦柏簇无衬线-正文体 Thin | KhaWa Betsugs Sans-Text Thin, KhaWaBetsugsSans-Text-Thin |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-ThinCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Thin Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Thin Cond,卡瓦柏簇无衬线-正文体 Thin Cond | KhaWa Betsugs Sans-Text Thin Condensed, KhaWaBetsugsSans-Text-ThinCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-ThinSemiCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Thin SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Thin SmCond,卡瓦柏簇无衬线-正文体 Thin SmCond | KhaWa Betsugs Sans-Text Thin SemiCondensed, KhaWaBetsugsSans-Text-ThinSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-UltraLight.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text UlLight,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག UlLight,卡瓦柏簇无衬线-正文体 UlLight | KhaWa Betsugs Sans-Text UltraLight, KhaWaBetsugsSans-Text-UltraLight |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-UltraLightCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text UlLight Cond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག UlLight Cond,卡瓦柏簇无衬线-正文体 UlLight Cond | KhaWa Betsugs Sans-Text UltraLight Condensed, KhaWaBetsugsSans-Text-UltraLightCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-UltraLightSemiCondensed.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text UlLight SmCond,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག UlLight SmCond,卡瓦柏簇无衬线-正文体 UlLight SmCond | KhaWa Betsugs Sans-Text UltraLight SemiCondensed, KhaWaBetsugsSans-Text-UltraLightSemiCondensed |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSans-TextBlack-Black |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_800wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_700wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_600wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_500wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_400wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_300wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_200wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_100wght |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_100wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_160wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_260wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_360wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_460wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_560wght_3wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_660wght_3.2wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_100wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_160wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_260wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_360wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_460wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_560wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black, KhaWaBetsugsSansTextBlack_660wght_4wdth |
+| Variable Fonts/Khawa Sans Petsug/KhaWaBetsugsSans-Text-VF.ttf | KhaWa Betsugs Sans-Text,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག,卡瓦柏簇无衬线-正文体,KhaWa Betsugs Sans-Text Black,ཁ་བའི་སྤྲོས་མེད་དཔེ་ཚུགས། དཀྱུས་ཡིག Black,卡瓦柏簇无衬线-正文体 Black | KhaWa Betsugs Sans-Text Black |
 | Variable Fonts/MiSans Tibetan/MiSansTibetan-Bold.ttf | MiSans Tibetan | MiSans Tibetan Bold, MiSansTibetan-Bold |
 | Variable Fonts/MiSans Tibetan/MiSansTibetan-Demibold.ttf | MiSans Tibetan,MiSans Tibetan Demibold | MiSans Tibetan Demibold, MiSansTibetan-Demibold |
 | Variable Fonts/MiSans Tibetan/MiSansTibetan-ExtraLight.ttf | MiSans Tibetan,MiSans Tibetan ExtraLight | MiSans Tibetan ExtraLight, MiSansTibetan-ExtraLight |
@@ -880,7 +928,6 @@
 | Variable Fonts/MiSans Tibetan/MiSansTibetan-Regular.ttf | MiSans Tibetan | MiSans Tibetan, MiSansTibetan |
 | Variable Fonts/MiSans Tibetan/MiSansTibetan-Semibold.ttf | MiSans Tibetan,MiSans Tibetan Semibold | MiSans Tibetan Semibold, MiSansTibetan-Semibold |
 | Variable Fonts/MiSans Tibetan/MiSansTibetan-Thin.ttf | MiSans Tibetan,MiSans Tibetan Thin | MiSans Tibetan Thin, MiSansTibetan-Thin |
-| Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF |
 | Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF, MiSansTibetanVF |
 | Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF, MiSansTibetanVF_150wght |
 | Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF, MiSansTibetanVF_200wght |
@@ -891,10 +938,10 @@
 | Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF, MiSansTibetanVF_520wght |
 | Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF, MiSansTibetanVF_630wght |
 | Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF, MiSansTibetanVF_700wght |
+| Variable Fonts/MiSans Tibetan/MiSansTibetanVF.ttf | MiSans Tibetan VF,MiSans MiSans Tibetan VF | MiSans MiSans Tibetan VF, MiSans Tibetan VF |
 | Variable Fonts/Noto Tibetan Typeface/NotoSansTibetan-Bold.ttf | Noto Sans Tibetan | Noto Sans Tibetan Bold, NotoSansTibetan-Bold |
 | Variable Fonts/Noto Tibetan Typeface/NotoSansTibetan-Regular-hinted.ttf | Noto Sans Tibetan | Noto Sans Tibetan, NotoSansTibetan |
 | Variable Fonts/Noto Tibetan Typeface/NotoSansTibetan-Regular.ttf | Noto Sans Tibetan | Noto Sans Tibetan, NotoSansTibetan |
-| Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular |
 | Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular, NotoSerifTibetan-Regular |
 | Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular, NotoSerifTibetan_100wght |
 | Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular, NotoSerifTibetan_200wght |
@@ -904,6 +951,7 @@
 | Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular, NotoSerifTibetan_700wght |
 | Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular, NotoSerifTibetan_800wght |
 | Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular, NotoSerifTibetan_900wght |
+| Variable Fonts/Noto Tibetan Typeface/NotoSerifTibetan-VariableFont_wght.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular |
 | Variable Fonts/Noto Tibetan Typeface/static/NotoSerifTibetan-Black.ttf | Noto Serif Tibetan,Noto Serif Tibetan Black | Noto Serif Tibetan Black, NotoSerifTibetan-Black |
 | Variable Fonts/Noto Tibetan Typeface/static/NotoSerifTibetan-Bold.ttf | Noto Serif Tibetan | Noto Serif Tibetan Bold, NotoSerifTibetan-Bold |
 | Variable Fonts/Noto Tibetan Typeface/static/NotoSerifTibetan-ExtraBold.ttf | Noto Serif Tibetan,Noto Serif Tibetan ExtraBold | Noto Serif Tibetan ExtraBold, NotoSerifTibetan-ExtraBold |
@@ -913,3 +961,4 @@
 | Variable Fonts/Noto Tibetan Typeface/static/NotoSerifTibetan-Regular.ttf | Noto Serif Tibetan | Noto Serif Tibetan Regular, NotoSerifTibetan-Regular |
 | Variable Fonts/Noto Tibetan Typeface/static/NotoSerifTibetan-SemiBold.ttf | Noto Serif Tibetan,Noto Serif Tibetan SemiBold | Noto Serif Tibetan SemiBold, NotoSerifTibetan-SemiBold |
 | Variable Fonts/Noto Tibetan Typeface/static/NotoSerifTibetan-Thin.ttf | Noto Serif Tibetan,Noto Serif Tibetan Thin | Noto Serif Tibetan Thin, NotoSerifTibetan-Thin |
+

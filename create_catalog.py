@@ -3,6 +3,7 @@ import subprocess
 import os
 import sys
 from pathlib import Path
+from natsort import natsorted
 
 def get_font_metadata(font_file):
     """Extract metadata from a font file using fc-scan."""
@@ -70,7 +71,7 @@ def main():
             })
     
     # Sort by file path for consistent output
-    fonts_data.sort(key=lambda x: x['path'])
+    fonts_data = natsorted(fonts_data, key=lambda x: x['path'].lower())
     
     # Generate and print the markdown table
     print(format_markdown_table(fonts_data))
