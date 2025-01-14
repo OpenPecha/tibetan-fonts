@@ -29,3 +29,12 @@ Note that neither v13 nor v14 fonts have shaping tables. The original Macintosh 
 
 ---oOo---
 
+### From correspondence with Peter Lofting:
+
+> Pierre Robillard and Steve Hartwell created Punakha and Thimphu bitmap fonts in 1988. I created the Druk font in 1989-91.
+> 
+> The Druk Macintosh was commissioned by the Government of Bhutan, which is why it was never circulated. The system was never updated from the original Mac OS 6.1 version.
+> 
+> Steve Hartwell and I never assigned our authorship rights, but at the same time we had no interest in setting up as software distributors. The main value of the project was in proving the effectiveness of the script encoding model, which went on to become the Unicode Tibetan Script block.
+> 
+> \[For the design\] I was given Bhutanese calligraphy samples by the Bhutanese Department of Information and they reviewed and refined the typeface at every stage. Will eventually scan and release some project documents. 
