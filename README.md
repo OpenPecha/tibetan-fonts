@@ -13,7 +13,6 @@ This collection of font was made possible through individual and institutional c
 - the MonlamAI project
 - the OpenPecha project
 - the Tsadra Foundation
-- Nitartha International
 - TCRC
 - the Padmakara translation committee
 - Georg Fischer
@@ -21,6 +20,8 @@ This collection of font was made possible through individual and institutional c
 - Roger Espel Llima
 - Chris Fynn
 - Peter Lofting
+- Gerry Wiener
+- Pierre Robillard
 
 ## Resources
 
@@ -55,3 +56,10 @@ This collection of font was made possible through individual and institutional c
 - https://salrc.uchicago.edu/resources/fonts/available/tibetan/
 - https://www.alanwood.net/unicode/fontsbyrange.html#u0f00
 - http://www.wazu.jp/gallery/Fonts_Tibetan.html
+
+##### Sources
+
+
+##### Fonts to import
+
+https://ctan.org/tex-archive/language/tibetan/
