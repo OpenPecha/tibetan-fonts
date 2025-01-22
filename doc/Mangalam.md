@@ -1,4 +1,4 @@
-The Mangalam font has been produced for the edition of the collected works of Dilgo Khyentse Rinpoche published in 1994 (BDRC MW21809). It has been produced based on calligraphies and adjustments by Tülku Pema Wangyal Rinpoche (BDRC P735), and digitization by Matthieu Ricard and Tony Duff.
+The Mangalam font has been produced for the edition of the 1994 edition of the collected works of Dilgo Khyentse Rinpoche ([BDRCMW21809](https://purl.bdrc.io/resource/MW21809)), the name of the font is his pen name. It has been produced based on calligraphies and adjustments by Tülku Pema Wangyal Rinpoche (b. 1947), and digitization by Matthieu Ricard and Tony Duff.
 
 Version 1.6 from 1996 as well as two different Unicode versions of the font is available in this repository.
 

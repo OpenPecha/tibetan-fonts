@@ -36,6 +36,8 @@ This collection of font was made possible through individual and institutional c
 - Noto Serif Tibetan variable font, Jomolhari and Uchen: https://fonts.google.com/?subset=tibetan
 - MiSans Tibetan variable font: https://hyperos.mi.com/font/details/tibetan
 - Bhozuk Tibetan font family's official website Thempengma and other Tibetan fonts: www.Tibetanfonts.com
+- archive version of Jamyang Commercial fonts: https://web.archive.org/web/20160329121542/https://www.jamyang.de/fonts/tibfonts.htm
+- LaTeX fonts: https://ctan.org/tex-archive/language/tibetan/
 
 ##### Third-Party Fonts Websites: 
 
@@ -56,8 +58,10 @@ This collection of font was made possible through individual and institutional c
 - https://salrc.uchicago.edu/resources/fonts/available/tibetan/
 - https://www.alanwood.net/unicode/fontsbyrange.html#u0f00
 - http://www.wazu.jp/gallery/Fonts_Tibetan.html
+- https://orient.org/unicode/#fonts
 
 ##### Sources
+
 
 
 ##### Fonts to import
