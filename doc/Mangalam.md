@@ -1,5 +1,7 @@
-The Mangalam font has been produced for the edition of the 1994 edition of the collected works of Dilgo Khyentse Rinpoche ([BDRCMW21809](https://purl.bdrc.io/resource/MW21809)), the name of the font is his pen name. It has been produced based on calligraphies and adjustments by Tülku Pema Wangyal Rinpoche (b. 1947), and digitization by Matthieu Ricard and Tony Duff.
+The Mangalam font was produced in the early 90s in Shechen Monastery in Nepal, for the edition of the 1994 edition of the collected works of Dilgo Khyentse Rinpoche ([BDRCMW21809](https://purl.bdrc.io/resource/MW21809)), who used "Mangalam" as his pen name.
+
+The project was led by Ven. Matthieu Ricard; the calligrapher was Lama Puzi, who took inspiration from the Derge style of calligraphy; and the technical part was done by Tony Duff.
 
 Version 1.6 from 1996 as well as two different Unicode versions of the font is available in this repository.
 
-The memory of some of the people involved is that the font stopped being used because of copyright issues and that Tony Duff produced the font Tibetan Chogyal based on Mangalam mixed with a Bhutanese typeface and claimed copyright on it. The two fonts are quite close, one of the most distinctive feature is the tsa phru and wasur.
+The font itself was never published, but was slighly modified by Tony Duff based on suggestions by Tülku Chögyal. The modified font was published under the name Tibetan Chogyal. The most visible difference between the two fonts is the tsa phru, but also some general polishing.
