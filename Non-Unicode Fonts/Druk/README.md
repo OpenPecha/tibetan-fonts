@@ -38,3 +38,9 @@ Note that neither v13 nor v14 fonts have shaping tables. The original Macintosh 
 > Steve Hartwell and I never assigned our authorship rights, but at the same time we had no interest in setting up as software distributors. The main value of the project was in proving the effectiveness of the script encoding model, which went on to become the Unicode Tibetan Script block.
 > 
 > \[For the design\] I was given Bhutanese calligraphy samples by the Bhutanese Department of Information and they reviewed and refined the typeface at every stage. Will eventually scan and release some project documents. 
+
+### From DEVELOPMENT OF CURSIVE BHUTANESE WRITING by K HENPO PHUNTSOK TASHI
+
+https://fid4sa-repository.ub.uni-heidelberg.de/2611/1/12_SpdrPglt.pdf
+
+> In 1989, Kuensel adopted Uchen based on Lopon Pema Tshewang's handwriting and developed it into computer font. 
