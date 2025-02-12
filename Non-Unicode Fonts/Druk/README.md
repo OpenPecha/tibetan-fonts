@@ -39,7 +39,15 @@ Note that neither v13 nor v14 fonts have shaping tables. The original Macintosh 
 > 
 > \[For the design\] I was given Bhutanese calligraphy samples by the Bhutanese Department of Information and they reviewed and refined the typeface at every stage. Will eventually scan and release some project documents. 
 
-### From DEVELOPMENT OF CURSIVE BHUTANESE WRITING by K HENPO PHUNTSOK TASHI
+> The Royal Civil Service Commission was teaching typing on the Macintosh at that stage. I think the layout was derived from one of the mechanical typewriters they trained on before that.
+>
+> Through conversations, my understanding was that the Druk Macintosh keyboard layout was influenced by the layout of a keyboard that the Civil Service were using.  Pre-existing keyboard layouts are relevant for muscle memory, so trying to keep the same arrangement for existing typists was a consideration.
+
+### From conversation with Prof. Imaeda
+
+The Bhutanese government would only allow Bhutanese-specific names (not general Tibetan names) for the fonts we were working on, hence "Druk". When we developed the Otani System for Macintosh 7, we renamed the font "Kailasa". The idea was that fonts were usually named after places.
+
+### From DEVELOPMENT OF CURSIVE BHUTANESE WRITING by KHENPO PHUNTSOK TASHI
 
 https://fid4sa-repository.ub.uni-heidelberg.de/2611/1/12_SpdrPglt.pdf
 
