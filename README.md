@@ -22,7 +22,7 @@ This collection of font was made possible through individual and institutional c
 - Peter Lofting
 - Gerry Wiener
 - Pierre Robillard
-- Tavi Dev
+- Tanvi Dev
 
 ## Resources
 
