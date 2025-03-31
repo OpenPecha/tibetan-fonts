@@ -1,3 +1,7 @@
-Seseylungma and Harrer fonts by Tavi Dev
+# Seseylungma and Harrer fonts
 
-see https://tanvidev.com/tibetantypefaces/
+By Tavi Dev, see https://tanvidev.com/tibetantypefaces/
+
+Put in open access on this repository with due authorization
+
+We want to thank Tanvi Dev for her generosity!
