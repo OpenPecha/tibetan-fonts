@@ -6,6 +6,8 @@
 | Kangba-Derchi Bechu ཁམས་པ་སྡེ་བྲིས་དཔེ་འཁྱུག    | Ume, Tsumachu, Kham Dedri/Khamdri        | Kham Dedri Pechu   |
 | Kangba-Derchi Chuyig ཁམས་པ་སྡེ་བྲིས་འཁྱུག་ཡིག   | Ume, Cursive, Chuyig, Kham Dedri/Khamdri | Kham Dedri Chuyig  |
 
+* The typefoundry took our suggestions and updated their fonts names.
+  
 ## About 
 
 **Calligrapher:** Khenpo. Yeshe Phuntsok མཁན་པོ་ཡེ་ཤེས་ཕུན་ཚོགས།
