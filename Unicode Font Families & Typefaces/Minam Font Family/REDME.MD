@@ -1,5 +1,5 @@
 # About
-Minam is a lama and a prominent calligrapher in Kham, "Minam" is short for "Mipam Namgyal". 
+Minam Rinpoche is a lama and a prominent calligrapher from Kham, "Minam" is short for "Mipam Namgyal". 
 
 Both Minam Kagyu Tadri and Minam Nangdri Norbuma are funded and sketched by Mipam Namgyal Rinpoche and based on his calligraphy of pedagogical traditions of "brab bris" and "nang bris" that he inherited. 
 
