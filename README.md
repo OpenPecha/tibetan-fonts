@@ -23,6 +23,7 @@ This collection of font was made possible through individual and institutional c
 - Gerry Wiener
 - Pierre Robillard
 - Tanvi Dev
+- Dharma Drum Institute of Liberal Arts (DILA)
 
 ## Resources
 
