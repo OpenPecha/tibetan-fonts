@@ -1,0 +1,1242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%           File: ctibligs.mf
+%         Author: Oliver Corff
+%   Initial Date: October 5th, 1999
+%  Revision Date: December 17th, 2001
+%        Version: \TibLaTeXVersionRelease of ctibtex
+%      Copyright: Ulaanbaatar, Beijing, Berlin
+%
+%    Description: The ctib ligature file provides most of the
+%                 ligatures necessary for writing Tibetan in
+%                 TeX and LaTeX documents, making use of a
+%                 modified version of Sirlin's Tibetan fonts.
+%
+% Technical Note: This file is best viewn and edited with a tab stop
+%                 setting of 12, and a shift width of 12. A vi mode
+%                 line to this effect is at the bottom of the file.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_TOPINI.YIGMGOMDUNMA:
+	TIB_TOPINI.YIGMGOMDUNMA  =:	TIB_INI.YIGMGOMDUNMA; % ((
+ligtable TIB_ACHUNG:	TIB_E	kern	-10.4u#,	% '+e
+		TIB_I	kern	-10.60u#,	% '+i
+		TIB_O	kern	-12.25u#,	% '+o
+		TIB_U	|=:	TIB_UU,	% Manta!
+		TIB_UU	kern	-10.50u#,	% '+u
+		BNDRY	|=:	TIB_TSHEG;	% '
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable ||:	TIB_E	 =:|	TIB_A,	% Initial vowel e
+		TIB_I	 =:|	TIB_A,	% i
+		TIB_O	 =:|	TIB_A,	% o
+		TIB_U	 =:|	TIB_A;	% u
+ligtable TIB_TSHEG:	TIB_E	|=:|	TIB_A,	% e
+		TIB_I	|=:|	TIB_A,	% i
+		TIB_O	|=:|	TIB_A,	% o
+		TIB_U	|=:|	TIB_A;	% u
+ligtable TIB_TSHEGSHAD:	TIB_E	|=:|	TIB_A,	% e
+		TIB_I	|=:|	TIB_A,	% i
+		TIB_O	|=:|	TIB_A,	% o
+		TIB_U	|=:|	TIB_A;	% u
+ligtable TIB_SHAD:	TIB_E	|=:|	TIB_A,	% e
+		TIB_I	|=:|	TIB_A,	% i
+		TIB_O	|=:|	TIB_A,	% o
+		TIB_U	|=:|	TIB_A;	% u
+ligtable TIB_A:	TIB_E	kern	-10.1u#,	% e
+		TIB_I	kern	-10.7u#,	% i
+		TIB_O	kern	-13.5u#,	% o
+		TIB_U	|=:	TIB_UU,	% Manta!
+		TIB_UU	kern	-10.6u#,	% Initial vowel u
+		BNDRY	|=:	TIB_TSHEG;	% ...a
+ligtable TIB_O:	BNDRY	|=:	TIB_TSHEG,	%
+		TIB_TSHEG	kern	-2.5u#,	% ...o
+		TIB_DA	kern	-2.5u#,	%
+		TIB_GA	kern	-2.5u#,	% followed by
+		TIB_NGA	kern	-2.5u#,	% finals, the
+		TIB_NA	kern	-2.5u#,	% gaps should
+		TIB_BA	kern	-2.5u#,	% not be all too
+		TIB_MA	kern	-2.5u#,	% wide.
+		TIB_WA	kern	-2.5u#,	%
+		TIB_RA	kern	-2.5u#,	%
+		TIB_LA	kern	-2.5u#,	%
+		TIB_SA	kern	-2.5u#;	%
+ligtable TIB_E:	BNDRY	|=:	TIB_TSHEG,	% ...e 
+		TIB_TSHEG	kern	1u#,	%
+		TIB_DA	kern	1u#,	%
+		TIB_GA	kern	1u#,	% followed by
+		TIB_NGA	kern	1u#,	% finals, the
+		TIB_NA	kern	1u#,	% gaps should
+		TIB_BA	kern	1u#,	% not be all too
+		TIB_MA	kern	1u#,	% wide.
+		TIB_WA	kern	1u#,	%
+		TIB_RA	kern	1u#,	%
+		TIB_LA	kern	1u#,	%
+		TIB_SA	kern	1u#;	%
+ligtable TIB_I:	BNDRY	|=:	TIB_TSHEG,	% ...i 
+		TIB_TSHEG	kern	0.75u#,	%
+		TIB_DA	kern	0.75u#,	%
+		TIB_GA	kern	0.75u#,	% followed by
+		TIB_NGA	kern	0.75u#,	% finals, the
+		TIB_NA	kern	0.75u#,	% gaps should
+		TIB_BA	kern	0.75u#,	% not be all too
+		TIB_MA	kern	0.75u#,	% wide.
+		TIB_WA	kern	0.75u#,	%
+		TIB_RA	kern	0.75u#,	%
+		TIB_LA	kern	0.75u#,	%
+		TIB_SA	kern	0.75u#;	%
+ligtable TIB_U:	BNDRY	|=:	TIB_TSHEG,	% ...u 
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_UU:	BNDRY	|=:	TIB_TSHEG,	% ...u, tiefer
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_UUU:	BNDRY	|=:	TIB_TSHEG,	% ...u, tiefer
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_UUUU:	BNDRY	|=:	TIB_TSHEG,	% ...u, tiefer
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_UUUUU:	BNDRY	|=:	TIB_TSHEG,	% ...u, tiefer
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_UUUUUU:	BNDRY	|=:	TIB_TSHEG,	% ...u, tiefer
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_UUUUUUU:	BNDRY	|=:	TIB_TSHEG,	% ...u, tiefer
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_UUUUUUUU:	BNDRY	|=:	TIB_TSHEG,	% ...u, tiefer
+		TIB_NGA	kern	0.75u#,	%
+		TIB_NA	kern	0.75u#;	%
+ligtable TIB_XA:	BNDRY	|=:	TIB_TSHEG;	% ...{C}a 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_BA:	TIB_A	|=:	TIB_XA,	% b+a
+		TIB_E	kern	-7.8u#,	% b+e
+		TIB_I	kern	-9.4u#,	% b+i
+		TIB_O	kern	-11.5u#,	% b+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-9.7u#,	% b+u 
+		TIB_HA	 =:	TIB_BHA,	%   b+ha
+		TIB_LA	 =:	TIB_BLA,	%   b+la
+		TIB_RA	 =:	TIB_BRA,	%   b+ra
+		TIB_YA	 =:	TIB_BYA,	%   b+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...b
+ligtable TIB_BHA:	TIB_A	|=:	TIB_XA,	%   bh+a
+		TIB_E	kern	-8.3u#,	%   bh+e
+		TIB_I	kern	-9.0u#,	%   bh+i
+		TIB_O	kern	-11.3u#,	%   bh+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.3u#,	%   bh+u
+		TIB_YA	 =:	TIB_BHYA,	%   bh+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...bh
+ligtable TIB_BHYA: 	TIB_A	|=:	TIB_XA,	%   by+a
+		TIB_E	kern	-8.9u#,	%   by+e
+		TIB_I	kern	-9.5u#,	%   by+i
+		TIB_O	kern	-11.8u#,	%   by+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.4u#,	%   by+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...bya
+ligtable TIB_BLA: 	TIB_A	|=:	TIB_XA,	%   bl+a
+		TIB_E	kern	-8.1u#,	%   bl+e
+		TIB_I	kern	-10.1u#,	%   bl+o
+		TIB_O	kern	-11.9u#,	%   bl+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%   bl+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...bl
+ligtable TIB_BRA: 	TIB_A	|=:	TIB_XA,	%   br+a
+		TIB_E	kern	-8.6u#,	%   br+e
+		TIB_I	kern	-9.3u#,	%   br+i
+		TIB_O	kern	-11.5u#,	%   br+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.2u#,	%   br+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...br
+ligtable TIB_BYA: 	TIB_A	|=:	TIB_XA,	%   by+a
+		TIB_E	kern	-8.9u#,	%   by+e
+		TIB_I	kern	-9.5u#,	%   by+i
+		TIB_O	kern	-11.8u#,	%   by+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.4u#,	%   by+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...bya
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_CA:	TIB_A	|=:	TIB_XA,	% c+a
+		TIB_E	kern	-8.5u#,	% c+e
+		TIB_I	kern	-9.1u#,	% c+i
+		TIB_O	kern	-11.5u#,	% c+o
+		TIB_U	 =:	TIB_CU,	% c+u
+		TIB_HA	 =:	TIB_CHA,	%   c+ha
+		TIB_WA	 =:	TIB_CWA,	%   c+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...c
+ligtable TIB_CU:	BNDRY	|=:	TIB_TSHEG;	%   ...cu
+ligtable TIB_CHA:	TIB_A	|=:	TIB_XA,	%   ch+a
+		TIB_E	kern	-9.4u#,	%   ch+e
+		TIB_I	kern	-10.0u#,	%   ch+i
+		TIB_O	kern	-12.3u#,	%   ch+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-10.0u#,	%   ch+u OK
+		TIB_WA	 =:	TIB_CHWA,	%   ch+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...ch
+ligtable TIB_CHWA:	TIB_A	|=:	TIB_XA,	%   chw+a
+		TIB_E	kern	-8.5u#,	%   chw+e
+		TIB_I	kern	-9.2u#,	%   chw+i
+		TIB_O	kern	-11.5u#,	%   chw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.1u#,	%   chw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...cw
+ligtable TIB_CWA:	TIB_A	|=:	TIB_XA,	%   cw+a
+		TIB_E	kern	-8.5u#,	%   cw+e
+		TIB_I	kern	-9.2u#,	%   cw+i
+		TIB_O	kern	-11.5u#,	%   cw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.1u#,	%   cw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...cw
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_DA:	TIB_A	|=:>	TIB_XA,	% d+a
+		TIB_E	kern	-7.8u#,	% d+e
+		TIB_I	kern	-9.4u#,	% d+i
+		TIB_O	kern	-11.5u#,	% d+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.3u#,	% d+u
+		TIB_HA	 =:	TIB_DHA,	%   d+ha
+		TIB_RA	 =:	TIB_DRA,	%   d+ra
+		TIB_WA	 =:	TIB_DWA,	%   d+wa
+		TIB_XA	 =:	TIB_DXA,	%   d+xa
+		TIB_ZA	 =:	TIB_DZA,	%   d+za
+		BNDRY	|=:	TIB_TSHEG;	%   ...d
+ligtable TIB_DHA:	TIB_A	|=:	TIB_XA,	%   dh+a
+		TIB_E	kern	-8.3u#,	%   dh+e
+		TIB_I	kern	-9.0u#,	%   dh+i
+		TIB_O	kern	-11.3u#,	%   dh+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.0u#,	%   dh+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...dh
+ligtable TIB_DRA:	TIB_A	|=:	TIB_XA,	%   dr+a
+		TIB_E	kern	-8.9u#,	%   dr+e
+		TIB_I	kern	-9.5u#,	%   dr+i
+		TIB_O	kern	-11.8u#,	%   dr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.4u#,	%   dr+u
+		TIB_WA	 =:	TIB_DRWA,	%   dr+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...dr
+ligtable TIB_DRWA:	TIB_A	|=:	TIB_XA,	%   drw+a
+		TIB_E	kern	-10.0u#,	%   drw+e
+		TIB_I	kern	-11.6u#,	%   drw+i
+		TIB_O	kern	-11.9u#,	%   drw+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-11.0u#,	%   drw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...drw
+ligtable TIB_DWA:	TIB_A	|=:	TIB_XA,	%   dw+a
+		TIB_E	kern	-8.0u#,	%   dw+e
+		TIB_I	kern	-8.6u#,	%   dw+i
+		TIB_O	kern	-10.9u#,	%   dw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-8.5u#,	%   dw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...dw
+ligtable TIB_DXA:	TIB_A	|=:>	TIB_XA,	%   dx+a
+		TIB_E	kern	-7.8u#,	%   dx+e
+		TIB_I	kern	-9.6u#,	%   dx+i
+		TIB_O	kern	-11.7u#,	%   dx+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-8.5u#,	%   dx+u
+		TIB_HA	 =:	TIB_DXHA,	%     dx+ha
+		BNDRY	|=:	TIB_TSHEG;	%   ...dx
+ligtable TIB_DXHA:	TIB_A	|=:	TIB_XA,	%     dxh+a
+		TIB_E	kern	-9.1u#,	%     dxh+e
+		TIB_I	kern	-10.1u#,	%     dxh+i
+		TIB_O	kern	-11.9u#,	%     dxh+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.0u#,	%     dxh+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...dxh
+ligtable TIB_DZA:	TIB_A	|=:	TIB_XA,	%   dz+a
+		TIB_E	kern	-8.5u#,	%   dz+e
+		TIB_I	kern	-9.1u#,	%   dz+i
+		TIB_O	kern	-11.5u#,	%   dz+o
+		TIB_U	|=:	TIB_UU,	%   Manta,
+		TIB_UU	kern	-9.0u#,	%   dz+u OK
+		TIB_HA	 =:	TIB_DZHA,	%     dz+ha
+		TIB_RA	 =:	TIB_DZRA,	%     dz+ha
+		BNDRY	|=:	TIB_TSHEG;	%   ...dz
+ligtable TIB_DZHA:	TIB_A	|=:	TIB_XA,	%     dzh+a
+		TIB_E	kern	-8.9u#,	%     dzh+e
+		TIB_I	kern	-9.5u#,	%     dzh+i
+		TIB_O	kern	-11.8u#,	%     dzh+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.4u#,	%     dzh+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...dzh
+ligtable TIB_DZRA:	TIB_A	|=:	TIB_XA,	%     dzr+a
+		TIB_E	kern	-8.9u#,	%     dzr+e
+		TIB_I	kern	-9.5u#,	%     dzr+i
+		TIB_O	kern	-11.8u#,	%     dzr+o
+		TIB_U	|=:	TIB_UUUUU,  %   Manta!
+		TIB_UUUUU	kern	-9.4u#,	%     dzr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...dzr
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_GA:	TIB_A	|=:	TIB_XA,	% g+a
+		TIB_E	kern	-9.6u#,	% g+e
+		TIB_I	kern	-10.2u#,	% g+i
+		TIB_O	kern	-12.5u#,	% g+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.6u#,	% g+u
+		TIB_HA	 =:	TIB_GHA,	%   g+ha
+		TIB_LA	 =:	TIB_GLA,	%   g+la
+		TIB_RA	 =:	TIB_GRA,	%   g+ra
+		TIB_WA	 =:	TIB_GWA,	%   g+wa
+		TIB_YA	 =:	TIB_GYA,	%   g+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_GHA:	TIB_A	|=:	TIB_XA,	%   gh+a
+		TIB_E	kern	-9.2u#,	%   gh+e
+		TIB_I	kern	-9.9u#,	%   gh+i
+		TIB_O	kern	-12.1u#,	%   gh+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.8u#,	%   gh+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...gh
+ligtable TIB_GLA:	TIB_A	|=:	TIB_XA,	%   gl+a
+		TIB_E	kern	-9.4u#,	%   gl+e
+		TIB_I	kern	-10.0u#,	%   gl+i
+		TIB_O	kern	-12.3u#,	%   gl+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%   gl+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...gl
+ligtable TIB_GRA:	TIB_A	|=:	TIB_XA,	%   gr+a
+		TIB_E	kern	-9.6u#,	%   gr+e
+		TIB_I	kern	-10.2u#,	%   gr+i
+		TIB_O	kern	-12.5u#,	%   gr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.1u#,	%   gr+u
+		TIB_WA	 =:	TIB_GRWA,	%     gr+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...gr
+ligtable TIB_GRWA:	TIB_A	|=:	TIB_XA,	%     grw+a
+		TIB_E	kern	-9.6u#,	%     grw+e
+		TIB_I	kern	-10.2u#,	%     grw+i
+		TIB_O	kern	-12.5u#,	%     grw+o
+		TIB_U	|=:	TIB_UUUUUUUU,%   Manta!
+		TIB_UUUUUUUU	kern	-10.1u#,	%     grw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...grw
+ligtable TIB_GWA:	TIB_A	|=:	TIB_XA,	%   gw+a
+		TIB_E	kern	-9.6u#,	%   gw+e
+		TIB_I	kern	-10.2u#,	%   gw+i
+		TIB_O	kern	-12.5u#,	%   gw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.1u#,	%   gw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...gw
+ligtable TIB_GYA:	TIB_A	|=:	TIB_XA,	%   gy+a
+		TIB_E	kern	-9.4u#,	%   gl+e
+		TIB_I	kern	-10.0u#,	%   gy+i
+		TIB_O	kern	-12.3u#,	%   gy+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%   gy+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...gy
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_HA:	TIB_A	|=:	TIB_XA,	% h+a
+		TIB_E	kern	-8.6u#,	% h+e
+		TIB_I	kern	-9.25u#,	% h+i
+		TIB_O	kern	-11.5u#,	% h+o
+		TIB_U	|=:	TIB_UUUUU,	% Manta, OK!
+		TIB_UUUUU	kern	-8.7u#,	% h+u
+		TIB_RA	 =:	TIB_HRA,	%   h+ra
+		TIB_WA	 =:	TIB_HWA,	%   h+wa
+		TIB_YA	 =:	TIB_HYA,	%   h+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...h
+ligtable TIB_HRA:	TIB_A	|=:	TIB_XA,	%   hr+a
+		TIB_E	kern	-8.6u#,	%   hr+e
+		TIB_I	kern	-9.25u#,	%   hr+i
+		TIB_O	kern	-11.5u#,	%   hr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.2u#,	%   hr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_HWA:	TIB_A	|=:	TIB_XA,	%   hw+a
+		TIB_E	kern	-8.6u#,	%   hw+e
+		TIB_I	kern	-9.25u#,	%   hw+i
+		TIB_O	kern	-11.5u#,	%   hw+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.2u#,	%   hw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_HYA:	TIB_A	|=:	TIB_XA,	%   hw+a
+		TIB_E	kern	-8.6u#,	%   hw+e
+		TIB_I	kern	-9.25u#,	%   hw+i
+		TIB_O	kern	-11.5u#,	%   hw+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.2u#,	%   hw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_JA:	TIB_A	|=:	TIB_XA,	% j+a
+		TIB_E	kern	-8.0u#,	% j+e
+		TIB_I	kern	-8.25u#,	% j+i
+		TIB_O	kern	-10.5u#,	% j+o
+		TIB_U	|=:	TIB_UU,	% Manta, OK!
+		TIB_UU	kern	-8.2u#,	% j+u
+		TIB_HA	 =:	TIB_JHA,	% jh+a
+		BNDRY	|=:	TIB_TSHEG;	%   ...j
+ligtable TIB_JHA:	TIB_A	|=:	TIB_XA,	% j+a
+		TIB_E	kern	-8.0u#,	% j+e
+		TIB_I	kern	-8.25u#,	% j+i
+		TIB_O	kern	-10.5u#,	% j+o
+		TIB_U	|=:	TIB_UU,	% Manta, OK!
+		TIB_UU	kern	-8.2u#,	% j+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...j
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_KA:	TIB_A	|=:	TIB_XA,	% k+a
+		TIB_E	kern	-8.9u#,	% k+e
+		TIB_I	kern	-9.5u#,	% k+i
+		TIB_O	kern	-11.5u#,	% k+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.9u#,	% k+u
+		TIB_LA	 =:	TIB_KLA,	%   k+la
+		TIB_RA	 =:	TIB_KRA,	%   k+ra
+		TIB_SA	 =:	TIB_LIGKS,	%   k+sa->kshxa
+		TIB_WA	 =:	TIB_KWA,	%   k+wa
+		TIB_YA	 =:	TIB_KYA,	%   k+ya
+		TIB_HA	 =:	TIB_KHA,	%   k+ha
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KHA:	TIB_A	|=:	TIB_XA,	%   kh+a
+		TIB_E	kern	-9.6u#,	%   kh+e
+		TIB_I	kern	-10.2u#,	%   kh+i
+		TIB_O	kern	-12.5u#,	%   kh+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-8.5u#,	%   kh+u
+		TIB_RA	 =:	TIB_KHRA,	%     kh+ra
+		TIB_WA	 =:	TIB_KHWA,	%     kh+wa
+		TIB_YA	 =:	TIB_KHYA,	%     kh+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KHRA:	TIB_A	|=:	TIB_XA,	%     khr+a
+		TIB_E	kern	-9.1u#,	%     khr+e
+		TIB_I	kern	-9.8u#,	%     khr+i
+		TIB_O	kern	-12u#,	%     khr+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.7u#,	%     khr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KHWA:	TIB_A	|=:	TIB_XA,	%     khw+a
+		TIB_E	kern	-9.4u#,	%     khw+e
+		TIB_I	kern	-10.0u#,	%     khw+i
+		TIB_O	kern	-12.1u#,	%     khw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.0u#,	%     khw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KHYA:	TIB_A	|=:	TIB_XA,	%     khy+a
+		TIB_E	kern	-9.2u#,	%     khy+e
+		TIB_I	kern	-9.9u#,	%     khw+i
+		TIB_O	kern	-12.0u#,	%     khy+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.8u#,	%     khy+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KLA:	TIB_A	|=:	TIB_XA,	%   kl+a
+		TIB_E	kern	-9.1u#,	%   kl+e
+		TIB_I	kern	-9.8u#,	%   kl+i
+		TIB_O	kern	-12u#,	%   kl+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   kl+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KRA:	TIB_A	|=:	TIB_XA,	%   kr+a
+		TIB_E	kern	-8.6u#,	%   kr+e
+		TIB_I	kern	-9.3u#,	%   kr+i
+		TIB_O	kern	-11.5u#,	%   ko+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.2u#,	%   ku+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LIGKS:	TIB_HA	 =:	TIB_LIGKSH;	%     ks+ha->kshxa
+ligtable TIB_LIGKSH:	TIB_XA	 =:	TIB_KSHXA;	%     ksh+xa
+ligtable TIB_KSHXA:	TIB_A	|=:	TIB_XA,	%     kshx+a
+		TIB_E	kern	-9.5u#,	%     kshx+e
+		TIB_I	kern	-10.2u#,	%     kshx+i
+		TIB_O	kern	-12.5u#,	%     kshx+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-10.1u#,	%     kshx+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KWA:	TIB_A	|=:	TIB_XA,	%   kw+a
+		TIB_E	kern	-9.4u#,	%   kw+e
+		TIB_I	kern	-10.0u#,	%   kw+i
+		TIB_O	kern	-12u#,	%   kw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.1u#,	%   kw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_KYA:	TIB_A	|=:	TIB_XA,	%   ky+a
+		TIB_E	kern	-9.1u#,	%   ky+e
+		TIB_I	kern	-9.8u#,	%   ky+i
+		TIB_O	kern	-12u#,	%   ky+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.7u#,	%   ky+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_LA:	TIB_A	|=:	TIB_XA,	% l+a
+		TIB_E	kern	-9.2u#,	% l+e
+		TIB_I	kern	-9.9u#,	% l+i
+		TIB_O	kern	-12u#,	% l+o
+		TIB_U	kern	-9.8u#,	% l+u OK
+		TIB_BA	 =:	TIB_LBA,	%   l+ba
+		TIB_CA	 =:	TIB_LCA,	%   l+ca
+		TIB_DA	 =:	TIB_LDA,	%   l+da
+		TIB_GA	 =:	TIB_LGA,	%   l+ga
+		TIB_HA	 =:	TIB_LHA,	%   l+ha
+		TIB_JA	 =:	TIB_LJA,	%   l+ja
+		TIB_KA	 =:	TIB_LKA,	%   l+ka
+		TIB_PA	 =:	TIB_LPA,	%   l+pa
+		TIB_TA	 =:	TIB_LTA,	%   l+ta
+		TIB_WA	 =:	TIB_LWA,	%   l+wa
+		TIB_NA	 =:	TIB_LIGLN,	%     ln+g->lng+a
+		BNDRY	|=:	TIB_TSHEG;	%   ...l
+ligtable TIB_LIGLN:	TIB_GA	 =:	TIB_LNGA;	%     ln+ga
+ligtable TIB_LBA:	TIB_A	|=:	TIB_XA,	%   lb+a
+		TIB_E	kern	-9.6u#,	%   lb+e
+		TIB_I	kern	-10.2u#,	%   lb+i
+		TIB_O	kern	-12.5u#,	%   lb+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.5u#,	%   lb+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LCA:	TIB_A	|=:	TIB_XA,	%   lc+a
+		TIB_E	kern	-9.1u#,	%   lc+e
+		TIB_I	kern	-9.75u#,	%   lc+i
+		TIB_O	kern	-12u#,	%   lc+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.7u#,	%   lc+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LDA:	TIB_A	|=:	TIB_XA,	%   ld+a
+		TIB_E	kern	-9.1u#,	%   ld+e
+		TIB_I	kern	-9.75u#,	%   ld+i
+		TIB_O	kern	-12u#,	%   ld+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   ld+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LGA:	TIB_A	|=:	TIB_XA,	%   lg+a
+		TIB_E	kern	-8.9u#,	%   lg+e
+		TIB_I	kern	-9.5u#,	%   lg+i
+		TIB_O	kern	-12u#,	%   lg+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.4u#,	%   lg+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LHA:	TIB_A	|=:	TIB_XA,	%   lh+a
+		TIB_E	kern	-9.2u#,	%   lh+e
+		TIB_I	kern	-9.8u#,	%   lh+i
+		TIB_O	kern	-12u#,	%   lh+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.7u#,	%   lh+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LJA:	TIB_A	|=:	TIB_XA,	%   lj+a
+		TIB_E	kern	-9.2u#,	%   lj+e
+		TIB_I	kern	-9.8u#,	%   lj+i
+		TIB_O	kern	-12u#,	%   lj+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.2u#,	%   lj+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LKA:	TIB_A	|=:	TIB_XA,	%   lk+a
+		TIB_E	kern	-9.1u#,	%   lk+e
+		TIB_I	kern	-9.6u#,	%   lk+i
+		TIB_O	kern	-12u#,	%   lk+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.5u#,	%   lk+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LPA:	TIB_A	|=:	TIB_XA,	%   lp+a
+		TIB_E	kern	-9.5u#,	%   lp+e
+		TIB_I	kern	-10.1u#,	%   lp+i
+		TIB_O	kern	-12.4u#,	%   lp+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%   lp+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LTA:	TIB_A	|=:	TIB_XA,	%   lt+a
+		TIB_E	kern	-9.1u#,	%   lt+e
+		TIB_I	kern	-9.8u#,	%   lt+i
+		TIB_O	kern	-12u#,	%   lt+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   lt+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LWA:	TIB_A	|=:	TIB_XA,	%   lw+a
+		TIB_E	kern	-9.5u#,	%   lw+e
+		TIB_I	kern	-10.1u#,	%   lw+i
+		TIB_O	kern	-12.4u#,	%   lw+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.0u#,	%   lw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_LNGA:	TIB_A	|=:	TIB_XA,	%     lng+a
+		TIB_E	kern	-9.1u#,	%     lng+e
+		TIB_I	kern	-9.8u#,	%     lng+i
+		TIB_O	kern	-12u#,	%     lng+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.2u#,	%     lng+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_MA:	TIB_A	|=:	TIB_XA,	% m+a
+		TIB_E	kern	-9.2u#,	% m+e
+		TIB_I	kern	-9.9u#,	% m+i
+		TIB_O	kern	-12u#,	% m+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-9.8u#,	% m+u
+		TIB_RA	 =:	TIB_MRA,	%   m+ra
+		TIB_YA	 =:	TIB_MYA,	%   m+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...m
+ligtable TIB_MRA:	TIB_A	|=:	TIB_XA,	%   mr+a
+		TIB_E	kern	-9.2u#,	%   mr+e
+		TIB_I	kern	-9.8u#,	%   mr+i
+		TIB_O	kern	-12.1u#,	%   mr+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.2u#,	%   mr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_MYA:	TIB_A	|=:	TIB_XA,	%   my+a
+		TIB_E	kern	-9.1u#,	%   my+e
+		TIB_I	kern	-9.7u#,	%   my+i
+		TIB_O	kern	-12u#,	%   my+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   my+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_NA:	TIB_A	|=:>	TIB_XA,	% n+a
+		TIB_E	kern	-8.1u#,	% n+e
+		TIB_I	kern	-8.7u#,	% n+i
+		TIB_O	kern	-11u#,	% n+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.1u#,	% n+u
+		TIB_GA	 =:	TIB_NGA,	%   n+ga
+		TIB_RA	 =:	TIB_NRA,	%   n+ra
+		TIB_XA	 =:	TIB_NXA,	%   n+xa
+		TIB_YA	 =:	TIB_NYA,	%   n+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_NGA:	TIB_A	|=:	TIB_XA,	%   ng+a
+		TIB_E	kern	-8.2u#,	%   ng+e
+		TIB_I	kern	-8.8u#,	%   ng+i
+		TIB_O	kern	-11.1u#,	%   ng+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-8.7u#,	%   ng+u OK
+		BNDRY	|=:	TIB_TSHEG;	%   ...ng
+ligtable TIB_NRA:	TIB_A	|=:	TIB_XA,	%   nr+a
+		TIB_E	kern	-8.2u#,	%   nr+e
+		TIB_I	kern	-8.8u#,	%   nr+i
+		TIB_O	kern	-11.1u#,	%   nr+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.7u#,	%   nr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_NXA:	TIB_A	|=:	TIB_XA,	%   nx+a
+		TIB_E	kern	-8.1u#,	%   nx+e
+		TIB_I	kern	-8.7u#,	%   nx+i
+		TIB_O	kern	-11.0u#,	%   nx+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.6u#,	%   nx+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_NYA:	TIB_A	|=:	TIB_XA,	%   ny+a
+		TIB_E	kern	-8.1u#,	%   ny+e
+		TIB_I	kern	-8.7u#,	%   ny+i
+		TIB_O	kern	-11u#,	%   ny+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-8.6u#,	%   ny+u
+		TIB_WA	 =:	TIB_NYWA,	%     ny+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_NYWA:	TIB_A	|=:	TIB_XA,	%     nyw+a
+		TIB_E	kern	-8.1u#,	%     nyw+e
+		TIB_I	kern	-8.7u#,	%     nyw+i
+		TIB_O	kern	-11.0u#,	%     nyw+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-8.6u#,	%     nyw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_PA:	TIB_A	|=:	TIB_XA,	% p+a
+		TIB_E	kern	-9.1u#,	% p+e
+		TIB_I	kern	-9.6u#,	% p+o
+		TIB_O	kern	-12u#,	% p+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU 	kern	-9.52u#,	% p+u OK
+		TIB_RA	 =:	TIB_PRA,	%   p+ra
+		TIB_YA	 =:	TIB_PYA,	%   p+ya
+		TIB_HA	 =:	TIB_PHA,	%   p+ha
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_PHA:	TIB_A	|=:	TIB_XA,	%   ph+a
+		TIB_E	kern	-9.1u#,	%   ph+e
+		TIB_I	kern	-9.6u#,	%   ph+i
+		TIB_O	kern	-12u#,	%   ph+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-9.5u#,	%   ph+u
+		TIB_RA	 =:	TIB_PHRA,	%     ph+ra
+		TIB_YA	 =:	TIB_PHYA,	%     ph+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_PHRA:	TIB_A	|=:	TIB_XA,	%     phr+a
+		TIB_E	kern	-9.1u#,	%     phr+e
+		TIB_I	kern	-9.6u#,	%     phr+i
+		TIB_O	kern	-11.9u#,	%     phr+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.0u#,	%     phr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_PHYA:	TIB_A	|=:	TIB_XA,	%     phy+a
+		TIB_E	kern	-9.4u#,	%     phy+e
+		TIB_I	kern	-10.0u#,	%     phy+i
+		TIB_O	kern	-12.3u#,	%     phy+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%     phy+u
+		TIB_WA	 =:	TIB_PHYWA,	%       phy+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_PRA:	TIB_A	|=:	TIB_XA,	%   pr+a
+		TIB_E	kern	-7.8u#,	%   pr+e
+		TIB_I	kern	-9.4u#,	%   pr+i
+		TIB_O	kern	-11.7u#,	%   pr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.3u#,	%   pr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_PYA:	TIB_A	|=:	TIB_XA,	%   py+a
+		TIB_E	kern	-8.9u#,	%   py+e
+		TIB_I	kern	-9.5u#,	%   py+i
+		TIB_O	kern	-11.8u#,	%   py+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.4u#,	%   py+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_PHYWA:	TIB_A	|=:	TIB_XA,	%       phyw+a
+		TIB_E	kern	-9.4u#,	%       phyw+e
+		TIB_I	kern	-10.0u#,	%       phyw+i
+		TIB_O	kern	-12.3u#,	%       phyw+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.5u#,	%       phyw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_RA:	TIB_A	|=:	TIB_XA,	% r+a
+		TIB_E	kern	-9.1u#,	% r+e
+		TIB_I	kern	-9.7u#,	% r+i
+		TIB_O	kern	-12u#,	% r+o
+		TIB_U	kern	-9.9u#,	% r+u
+		TIB_BA	 =:	TIB_RBA,	%   r+ba
+		TIB_DA	 =:	TIB_RDA,	%   r+da
+		TIB_GA	 =:	TIB_RGA,	%   r+ga
+		TIB_JA	 =:	TIB_RJA,	%   r+ja
+		TIB_KA	 =:	TIB_RKA,	%   r+ka
+		TIB_LA	 =:	TIB_RLA,	%   r+la
+		TIB_MA	 =:	TIB_RMA,	%   r+ma
+		TIB_NA	 =:	TIB_RNA,	%   r+na
+		TIB_TA	 =:	TIB_RTA,	%   r+ta
+		TIB_WA	 =:	TIB_RWA,	%   r+wa
+		TIB_YA	 =:	TIB_RYA,	%   r+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...r
+ligtable TIB_RBA:	TIB_A	|=:	TIB_XA,	%   rb+a
+		TIB_E	kern	-8.6u#,	%   rb+e
+		TIB_I	kern	-9.25u#,	%   rb+i
+		TIB_O	kern	-11.5u#,	%   rb+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.2u#,	%   rb+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RDA:	TIB_A	|=:	TIB_XA,	%   rd+a
+		TIB_E	kern	-8.5u#,	%   rd+e
+		TIB_I	kern	-9.15u#,	%   rd+i
+		TIB_O	kern	-11.5u#,	%   rd+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.5u#,	%   rd+u
+		TIB_ZA	 =:	TIB_RDZA,	%     rd+za
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RDZA:	TIB_A	|=:	TIB_XA,	%     rdz+a
+		TIB_E	kern	-8.3u#,	%     rdz+e
+		TIB_I	kern	-8.9u#,	%     rdz+i
+		TIB_O	kern	-11u#,	%     rdz+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-8.8u#,	%     rdz+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RGA:	TIB_A	|=:	TIB_XA,	%   rg+a
+		TIB_E	kern	-9.4u#,	%   rg+e
+		TIB_I	kern	-10.0u#,	%   rg+i
+		TIB_O	kern	-12.3u#,	%   rg+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.5u#,	%   rg+u
+		TIB_WA	 =:	TIB_RGWA,	%     rg+wa
+		TIB_YA	 =:	TIB_RGYA,	%     rg+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RGWA:	TIB_A	|=:	TIB_XA,	%     rgw+a
+		TIB_E	kern	-9.4u#,	%     rgw+e
+		TIB_I	kern	-10.0u#,	%     rgw+i
+		TIB_O	kern	-12.3u#,	%     rgw+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-10.0u#,	%     rgw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RGYA:	TIB_A	|=:	TIB_XA,	%     rgy+a
+		TIB_E	kern	-9.1u#,	%     rgy+e
+		TIB_I	kern	-9.75u#,	%     rgy+i
+		TIB_O	kern	-12.0u#,	%     rgy+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.7u#,	%     rgy+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RJA:	TIB_A	|=:	TIB_XA,	%   rj+a
+		TIB_E	kern	-7.8u#,	%   rj+e
+		TIB_I	kern	-8.4u#,	%   rj+i
+		TIB_O	kern	-10.5u#,	%   rj+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.3u#,	%   rj+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RKA:	TIB_A	|=:	TIB_XA,	%   rk+a
+		TIB_E	kern	-9.1u#,	%   rk+e
+		TIB_I	kern	-9.75u#,	%   rk+i
+		TIB_O	kern	-12u#,	%   rk+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   rk+u
+		TIB_YA	 =:	TIB_RKYA,	%     rk+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RKYA:	TIB_A	|=:	TIB_XA,	%     rky+a
+		TIB_E	kern	-9.2u#,	%     rky+e
+		TIB_I	kern	-9.8u#,	%     rky+i
+		TIB_O	kern	-12.1u#,	%     rky+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.7u#,	%     rky+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RLA:	TIB_A	|=:	TIB_XA,	%   rl+a
+		TIB_E	kern	-9.4u#,	%   gl+e
+		TIB_I	kern	-10.0u#,	%   rl+i
+		TIB_O	kern	-12.3u#,	%   rl+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%   rl+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RMA:	TIB_A	|=:	TIB_XA,	%   rm+a
+		TIB_E	kern	-9.2u#,	%   rm+e
+		TIB_I	kern	-9.8u#,	%   rm+i
+		TIB_O	kern	-12u#,	%   rm+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.7u#,	%   rm+u
+		TIB_YA	 =:	TIB_RMYA,	%     rm+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RMYA:	TIB_A	|=:	TIB_XA,	%     rmy+a
+		TIB_E	kern	-9.2u#,	%     rmy+e
+		TIB_I	kern	-9.8u#,	%     rmy+i
+		TIB_O	kern	-12.2u#,	%     rmy+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.7u#,	%     rmy+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RNA:	TIB_A	|=:	TIB_XA,	%   rn+a
+		TIB_E	kern	-8.0u#,	%   rn+e
+		TIB_I	kern	-8.5u#,	%   rn+i
+		TIB_O	kern	-11u#,	%   rn+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.4u#,	%   rn+u
+		TIB_GA	 =:	TIB_RNGA,	%     rn+ga
+		TIB_YA	 =:	TIB_RNYA,	%     rn+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RNGA:	TIB_A	|=:	TIB_XA,	%     rng+a
+		TIB_E	kern	-8.2u#,	%     rng+e
+		TIB_I	kern	-8.8u#,	%     rng+i
+		TIB_O	kern	-11u#,	%     rng+o
+		TIB_U	|=:	TIB_UUU,	%   Manta!
+		TIB_UUU	kern	-9.2u#,	%     rng+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RNYA:	TIB_A	|=:	TIB_XA,	%     rny+a
+		TIB_E	kern	-8.6u#,	%     rny+e
+		TIB_I	kern	-9.3u#,	%     rny+i
+		TIB_O	kern	-11.5u#,	%     rny+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.2u#,	%     rny+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RTA:	TIB_A	|=:	TIB_XA,	%   rt+a
+		TIB_E	kern	-7.5u#,	%   rt+e
+		TIB_I	kern	-8.1u#,	%   rt+i
+		TIB_O	kern	-10.25u#,	%   rt+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-8.00u#,	%   rt+u
+		TIB_SA	 =:	TIB_RTSA,	%     rt+sa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RTSA:	TIB_A	|=:	TIB_XA,	%     rts+a
+		TIB_E	kern	-9.1u#,	%     rts+e
+		TIB_I	kern	-9.6u#,	%     rts+i
+		TIB_O	kern	-12u#,	%     rts+o
+		TIB_U	|=:	TIB_UUU,	%   Manta!
+		TIB_UUU	kern	-9.5u#,	%     rts+u
+		TIB_WA	 =:	TIB_RTSWA,	%       rts+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RTSWA:	TIB_A	|=:	TIB_XA,	%       rtsw+a
+		TIB_E	kern	-9.1u#,	%       rtsw+e
+		TIB_I	kern	-9.6u#,	%       rtsw+i
+		TIB_O	kern	-12u#,	%       rtsw+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.5u#,	%       rtsw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RWA:	TIB_A	|=:	TIB_XA,	%   rw+a
+		TIB_E	kern	-9.2u#,	%   rw+e
+		TIB_I	kern	-9.8u#,	%   rw+i
+		TIB_O	kern	-12.1u#,	%   rw+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.7u#,	%   rw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_RYA:	TIB_A	|=:	TIB_XA,	%   rw+a
+		TIB_E	kern	-9.2u#,	%   rw+e
+		TIB_I	kern	-9.8u#,	%   rw+i
+		TIB_O	kern	-12.1u#,	%   rw+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.7u#,	%   rw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_SA:	TIB_A	|=:	TIB_XA,	% s+a
+		TIB_E	kern	-9.6u#,	% s+e
+		TIB_I	kern	-10.2u#,	% s+i
+		TIB_O	kern	-12.5u#,	% s+o
+		TIB_U	kern	-10.1u#,	% s+u OK
+		TIB_BA	 =:	TIB_SBA,	%   s+ba
+		TIB_DA	 =:	TIB_SDA,	%   s+da
+		TIB_GA	 =:	TIB_SGA,	%   s+ga
+		TIB_HA	 =:	TIB_SHA,	%   s+ha
+		TIB_KA	 =:	TIB_SKA,	%   s+ka
+		TIB_LA	 =:	TIB_SLA,	%   s+la
+		TIB_MA	 =:	TIB_SMA,	%   s+ma
+		TIB_NA	 =:	TIB_SNA,	%   s+na
+		TIB_PA	 =:	TIB_SPA,	%   s+pa
+		TIB_RA	 =:	TIB_SRA,	%   s+ra
+		TIB_TA	 =:	TIB_STA,	%   s+ta
+		TIB_WA	 =:	TIB_SWA,	%   s+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...s
+ligtable TIB_SBA:	TIB_A	|=:	TIB_XA,	%   sb+a
+		TIB_E	kern	-9.1u#,	%   sb+e
+		TIB_I	kern	-9.8u#,	%   sb+i
+		TIB_O	kern	-12u#,	%   sb+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   sb+u
+		TIB_RA	 =:	TIB_SBRA,	%     sb+ra
+		TIB_YA	 =:	TIB_SBYA,	%     sb+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SBRA:	TIB_A	|=:	TIB_XA,	%     sbr+a
+		TIB_E	kern	-9.1u#,	%     sbr+e
+		TIB_I	kern	-9.8u#,	%     sbr+i
+		TIB_O	kern	-12.0u#,	%     sbr+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-10.2u#,	%     sbr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SBYA:	TIB_A	|=:	TIB_XA,	%     sby+a
+		TIB_E	kern	-9.2u#,	%     sby+e
+		TIB_I	kern	-9.8u#,	%     sby+i
+		TIB_O	kern	-12.1u#,	%     sby+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.7u#,	%     sby+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SDA:	TIB_A	|=:	TIB_XA,	%   sd+a
+		TIB_E	kern	-9.4u#,	%   gl+e
+		TIB_I	kern	-10.0u#,	%   sd+i
+		TIB_O	kern	-12.3u#,	%   sd+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%   sd+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SGA:	TIB_A	|=:	TIB_XA,	%   sg+a
+		TIB_E	kern	-9.2u#,	%   sg+e
+		TIB_I	kern	-9.8u#,	%   sg+i
+		TIB_O	kern	-12u#,	%   sg+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   sg+u
+		TIB_RA	 =:	TIB_SGRA,	%     sg+ra
+		TIB_YA	 =:	TIB_SGYA,	%     sg+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SGRA:	TIB_A	|=:	TIB_XA,	%     sgr+a
+		TIB_E	kern	-9.1u#,	%     sgr+e
+		TIB_I	kern	-9.8u#,	%     sgr+i
+		TIB_O	kern	-12.0u#,	%     sgr+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.7u#,	%     sgr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SGYA:	TIB_A	|=:	TIB_XA,	%     sgy+a
+		TIB_E	kern	-9.2u#,	%     sgy+e
+		TIB_I	kern	-9.8u#,	%     sgy+i
+		TIB_O	kern	-12.2u#,	%     sgy+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.7u#,	%     sgy+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SHA:	TIB_A	|=:>	TIB_XA,	%   sh+a
+		TIB_E	kern	-9.9u#,	%   sh+e
+		TIB_I	kern	-10.5u#,	%   sh+i
+		TIB_O	kern	-12.75u#,	%   sh+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.00u#,	%   sh+u
+		TIB_RA	 =:	TIB_SHRA,	%     sh+ra
+		TIB_WA	 =:	TIB_SHWA,	%     sh+wa
+		TIB_XA	 =:	TIB_SHXA,	%     sh+xa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SHRA:	TIB_A	|=:	TIB_XA,	%     shr+a
+		TIB_E	kern	-10.0u#,	%     shr+e
+		TIB_I	kern	-10.6u#,	%     shr+i
+		TIB_O	kern	-12.80u#,	%     shr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.50u#,	%     shr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SHWA:	TIB_A	|=:	TIB_XA,	%     shw+a
+		TIB_E	kern	-9.9u#,	%     shw+e
+		TIB_I	kern	-10.5u#,	%     shw+i
+		TIB_O	kern	-12.75u#,	%     shw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.40u#,	%     shw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SHXA:	TIB_A	|=:	TIB_XA,	%     shx+a
+		TIB_E	kern	-9.9u#,	%     shx+e
+		TIB_I	kern	-10.5u#,	%     shx+i
+		TIB_O	kern	-12.25u#,	%     shx+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.40u#,	%     shx+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SKA:	TIB_A	|=:	TIB_XA,	%   sk+a
+		TIB_E	kern	-9.1u#,	%   sk+e
+		TIB_I	kern	-9.6u#,	%   sk+i
+		TIB_O	kern	-12.0u#,	%   sk+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.5u#,	%   sk+u
+		TIB_RA	 =:	TIB_SKRA,	%     sk+ra
+		TIB_YA	 =:	TIB_SKYA,	%     sk+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SKRA:	TIB_A	|=:	TIB_XA,	%     skr+a
+		TIB_E	kern	-9.2u#,	%     skr+e
+		TIB_I	kern	-9.9u#,	%     skr+i
+		TIB_O	kern	-12.2u#,	%     skr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.8u#,	%     skr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SKYA:	TIB_A	|=:	TIB_XA,	%     sky+a
+		TIB_E	kern	-8.9u#,	%     sky+e
+		TIB_I	kern	-9.5u#,	%     sky+i
+		TIB_O	kern	-11.8u#,	%     sky+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.4u#,	%     sky+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SLA:	TIB_A	|=:	TIB_XA,	%   sl+a
+		TIB_E	kern	-9.4u#,	%   gl+e
+		TIB_I	kern	-10.0u#,	%   sl+i
+		TIB_O	kern	-12.3u#,	%   sl+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%   sl+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SMA:	TIB_A	|=:	TIB_XA,	%   sm+a
+		TIB_E	kern	-9.2u#,	%   sm+e
+		TIB_I	kern	-9.9u#,	%   sm+i
+		TIB_O	kern	-12u#,	%   sm+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.8u#,	%   sm+u
+		TIB_RA	 =:	TIB_SMRA,	%     sm+ra
+		TIB_YA	 =:	TIB_SMYA,	%     sm+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SMRA:	TIB_A	|=:	TIB_XA,	%     smr+a
+		TIB_E	kern	-9.6u#,	%     smr+e
+		TIB_I	kern	-10.2u#,	%     smr+i
+		TIB_O	kern	-12.5u#,	%     smr+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-10.1u#,	%     smr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SMYA:	TIB_A	|=:	TIB_XA,	%     smy+a
+		TIB_E	kern	-9.4u#,	%     smy+e
+		TIB_I	kern	-10.0u#,	%     smy+i
+		TIB_O	kern	-12.3u#,	%     smy+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-10.0u#,	%     smy+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SNA:	TIB_A	|=:	TIB_XA,	%   sn+a
+		TIB_E	kern	-9.1u#,	%   sn+e
+		TIB_I	kern	-9.6u#,	%   sn+i
+		TIB_O	kern	-12u#,	%   sn+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.5u#,	%   sn+u
+		TIB_GA	 =:	TIB_SNGA,	%     sn+ga
+		TIB_RA	 =:	TIB_SNRA,	%     sn+ra
+		TIB_YA	 =:	TIB_SNYA,	%     sn+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SNGA:	TIB_A	|=:	TIB_XA,	%     sng+a
+		TIB_E	kern	-9.2u#,	%     sng+e
+		TIB_I	kern	-9.9u#,	%     sng+i
+		TIB_O	kern	-12u#,	%     sng+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.8u#,	%     sng+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_SNRA:	TIB_A	|=:	TIB_XA,	%     snr+a
+		TIB_E	kern	-9.2u#,	%     snr+e
+		TIB_I	kern	-9.9u#,	%     snr+i
+		TIB_O	kern	-12u#,	%     snr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.8u#,	%     snr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...snr
+ligtable TIB_SNYA:	TIB_A	|=:	TIB_XA,	%     sny+a
+		TIB_E	kern	-9.5u#,	%     sny+e
+		TIB_I	kern	-10.1u#,	%     sny+i
+		TIB_O	kern	-12.4u#,	%     sny+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-9.4u#,	%     sny+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...sny
+ligtable TIB_SPA:	TIB_A	|=:	TIB_XA,	%   sp+a
+		TIB_E	kern	-9.1u#,	%   sp+e
+		TIB_I	kern	-9.8u#,	%   sp+i
+		TIB_O	kern	-12u#,	%   sp+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   sp+u
+		TIB_RA	 =:	TIB_SPRA,	%     sp+ra
+		TIB_YA	 =:	TIB_SPYA,	%     sp+ya
+		BNDRY	|=:	TIB_TSHEG;	%   ...sp
+ligtable TIB_SPRA:	TIB_A	|=:	TIB_XA,	%     spr+a
+		TIB_E	kern	-9.1u#,	%     spr+e
+		TIB_I	kern	-9.8u#,	%     spr+i
+		TIB_O	kern	-12.0u#,	%     spr+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.7u#,	%     spr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...spr
+ligtable TIB_SPYA:	TIB_A	|=:	TIB_XA,	%     spy+a
+		TIB_E	kern	-9.4u#,	%     spy+e
+		TIB_I	kern	-10.0u#,	%     spy+i
+		TIB_O	kern	-12.3u#,	%     spy+o
+		TIB_U	|=:	TIB_UUUUUUU,%   Manta!
+		TIB_UUUUUUU	kern	-9.3u#,	%     spy+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...spy
+ligtable TIB_SRA:	TIB_A	|=:	TIB_XA,	%   sr+a
+		TIB_E	kern	-9.2u#,	%   sr+e
+		TIB_I	kern	-9.9u#,	%   sr+i
+		TIB_O	kern	-12.10u#,	%   sr+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.80u#,	%   sr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...sr
+ligtable TIB_STA:	TIB_A	|=:	TIB_XA,	%   st+a
+		TIB_E	kern	-9.1u#,	%   st+e
+		TIB_I	kern	-9.6u#,	%   st+i
+		TIB_O	kern	-12u#,	%   st+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.5u#,	%   st+u
+		TIB_SA	 =:	TIB_STSA,	%     st+sa
+		BNDRY	|=:	TIB_TSHEG;	%   ...st
+ligtable TIB_STSA:	TIB_A	|=:	TIB_XA,	%     sts+a
+		TIB_E	kern	-10.5u#,	%     sts+e
+		TIB_I	kern	-11.1u#,	%     sts+i
+		TIB_O	kern	-13.5u#,	%     sts+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-11.0u#,	%     sts+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...sts
+ligtable TIB_SWA:	TIB_A	|=:	TIB_XA,	%   sw+a
+		TIB_E	kern	-9.6u#,	%   sw+e
+		TIB_I	kern	-10.2u#,	%   sw+i
+		TIB_O	kern	-12.5u#,	%   sw+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-10.6u#,	%   sw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...sw
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_TA:	TIB_A	|=:>	TIB_XA,	% t+a
+		TIB_E	kern	-7.5u#,	% t+e
+		TIB_I	kern	-8.2u#,	% t+i
+		TIB_O	kern	-10.5u#,	% t+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-8.1u#,	% t+u
+		TIB_HA	 =:	TIB_THA,	%   t+ha
+		TIB_RA	 =:	TIB_TRA,	%   t+ra
+		TIB_SA	 =:	TIB_TSA,	%   t+sa
+		TIB_WA	 =:	TIB_TWA,	%   t+wa
+		TIB_XA	 =:	TIB_TXA,	%   t+xa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_THA:	TIB_A	|=:> 	TIB_XA,	%   th+a
+		TIB_E	kern	-8.1u#,	%   th+e
+		TIB_I	kern	-8.6u#,	%   th+i
+		TIB_O	kern	-10.5u#,	%   th+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-8.5u#,	%   th+u
+		TIB_RA	 =:	TIB_THRA,	%     th+ra
+		TIB_XA	 =:	TIB_THXA,	%     th+xa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_THRA:	TIB_A	|=:	TIB_XA,	%     thr+a
+		TIB_E	kern	-8.3u#,	%     thr+e
+		TIB_I	kern	-8.8u#,	%     thr+i
+		TIB_O	kern	-11.2u#,	%     thr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-8.7u#,	%     thr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_THXA:	TIB_A	|=:	TIB_XA,	%     thx+a
+		TIB_E	kern	-8.1u#,	%     thx+e
+		TIB_I	kern	-8.6u#,	%     thx+i
+		TIB_O	kern	-11.0u#,	%     thx+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.5u#,	%     thx+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_TRA:	TIB_A	|=:	TIB_XA,	%   tr+a
+		TIB_E	kern	-8.2u#,	%   tr+e
+		TIB_I	kern	-8.8u#,	%   tr+i
+		TIB_O	kern	-11.0u#,	%   tr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-8.8u#,	%   tr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_TSA:	TIB_A	|=:	TIB_XA,	%   ts+a
+		TIB_E	kern	-9.1u#,	%   ts+e
+		TIB_I	kern	-9.6u#,	%   ts+i
+		TIB_O	kern	-12u#,	%   ts+o
+		TIB_U	kern	-9.5u#,	%   ts+u
+		TIB_U	 =:	TIB_TSU,	%   ts+u OK
+		TIB_HA	 =:	TIB_TSHA,	%     ts+ha
+		TIB_WA	 =:	TIB_TSWA,	%     ts+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_TSWA:	TIB_A	|=:	TIB_XA,	%     tsw+a
+		TIB_E	kern	-9.1u#,	%     tsw+e
+		TIB_I	kern	-9.6u#,	%     tsw+i
+		TIB_O	kern	-11.9u#,	%     tsw+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-9.5u#,	%     tsw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_TSHA:	TIB_A	|=:	TIB_XA,	%     tsh+a
+		TIB_E	kern	-9.4u#,	%     tsh+e
+		TIB_I	kern	-10.0u#,	%     tsh+i
+		TIB_O	kern	-12u#,	%     tsh+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-9.9u#,	%     tsh+u
+		TIB_WA	 =:	TIB_TSHWA,	%       tsh+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_TSHWA:	TIB_A	|=:	TIB_XA,	%       tshw+a
+		TIB_E	kern	-9.4u#,	%       tshw+e
+		TIB_I	kern	-10.0u#,	%       tshw+i
+		TIB_O	kern	-12.3u#,	%       tshw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.0u#,	%       tshw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_TWA:	TIB_A	|=:	TIB_XA,	%   tw+a
+		TIB_E	kern	-7.5u#,	%   tw+e
+		TIB_I	kern	-8.2u#,	%   tw+i
+		TIB_O	kern	-10.5u#,	%   tw+o
+		TIB_U	|=:	TIB_UUUUUU,	%   Manta!
+		TIB_UUUUUU	kern	-8.1u#,	%   tw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_TXA:	TIB_A	|=:	TIB_XA,	%   tx+a
+		TIB_E	kern	-7.5u#,	%   tx+e
+		TIB_I	kern	-8.2u#,	%   tx+i
+		TIB_O	kern	-10.5u#,	%   tx+o
+		TIB_U	|=:	TIB_UUUU,	%   Manta!
+		TIB_UUUU	kern	-8.1u#,	%   tx+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_WA:	TIB_A	|=:	TIB_XA,	% w+a
+		TIB_E	kern	-9.7u#,	% w+e
+		TIB_I	kern	-10.3u#,	% w+i
+		TIB_O	kern	-12.5u#,	% w+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-10.2u#,	% w+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...w
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_YA:	TIB_A	|=:	TIB_XA,	% y+a
+		TIB_E	kern	-9.1u#,	% y+e
+		TIB_I	kern	-9.7u#,	% y+i
+		TIB_O	kern	-12u#,	% y+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-9.5u#,	% y+u OK
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ligtable TIB_ZA:	TIB_A	|=:	TIB_XA,	% z+a
+		TIB_E	kern	-8.2u#,	% z+e
+		TIB_I	kern	-8.8u#,	% z+i
+		TIB_O	kern	-11u#,	% z+o
+		TIB_U	|=:	TIB_UU,	%   Manta!
+		TIB_UU	kern	-8.7u#,	% z+u OK
+		TIB_LA	 =:	TIB_ZLA,	%   z+la
+		TIB_HA	 =:	TIB_ZHA,	%   z+ha
+		TIB_RA	 =:	TIB_ZRA,	%   z+ra
+		TIB_WA	 =:	TIB_ZWA,	%   z+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_ZHA:	TIB_A	|=:	TIB_XA,	%   zh+a
+		TIB_E	kern	-8.6u#,	%   zh+e
+		TIB_I	kern	-9.8u#,	%   zh+i
+		TIB_O	kern	-11.5u#,	%   zh+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.7u#,	%   zh+u
+		TIB_WA	 =:	TIB_ZHWA,	%     zh+wa
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_ZHWA:	TIB_A	|=:	TIB_XA,	%     zhw+a
+		TIB_E	kern	-8.9u#,	%     zhw+e
+		TIB_I	kern	-10.0u#,	%     zhw+i
+		TIB_O	kern	-11.75u#,	%     zhw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.85u#,	%     zhw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_ZLA:	TIB_A	|=:	TIB_XA,	%   zl+a
+		TIB_E	kern	-8.9u#,	%   zl+e
+		TIB_I	kern	-10.0u#,	%   zl+i
+		TIB_O	kern	-11.80u#,	%   zl+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.90u#,	%   zl+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...g
+ligtable TIB_ZRA:	TIB_A	|=:	TIB_XA,	%   zr+a
+		TIB_E	kern	-8.9u#,	%   zr+e
+		TIB_I	kern	-10.0u#,	%   zr+i
+		TIB_O	kern	-11.80u#,	%   zr+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-9.90u#,	%   zr+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...zr
+ligtable TIB_ZWA:	TIB_A	|=:	TIB_XA,	%   zw+a
+		TIB_E	kern	-8.2u#,	%   zw+e
+		TIB_I	kern	-8.8u#,	%   zw+i
+		TIB_O	kern	-11.00u#,	%   zw+o
+		TIB_U	|=:	TIB_UUUUU,	%   Manta!
+		TIB_UUUUU	kern	-8.70u#,	%   zw+u
+		BNDRY	|=:	TIB_TSHEG;	%   ...zw
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% End of Tibetan ligature data, end of ctibligs.mf
+%
+% vim:ts=12:sw=12:wm=0

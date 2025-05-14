@@ -1,0 +1,304 @@
+%           File: ctibcode.mf
+%         Author: Oliver Corff
+%   Initial Date: October 5th, 1999
+%  Revision Date: December 17th, 2001
+%        Version: \TibLaTeXVersionRelease of ctibtex
+%      Copyright: Ulaanbaatar, Beijing, Berlin
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% This file contains the actual code positions of all character
+% and glyph entities used for Tibetan.
+%
+% Whenever cTibTeX gets a new encoding scheme (like Unicode)
+% then this table, and only this table, needs editing.
+% Throughout all font and ligature files, Tibetan is dealt with
+% on a purely mnemonic basis!
+%
+% O. Corff, Berlin, Ulaanbaatar, Beijing, October 1999
+%
+% Revised: Ulaanbaatar, December 17th, 2001
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SYMBOLIC NAME	:=CODE; % COMMENT (ADDED AT DATE)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% UNUSED:  1,  2 , 3,  4, 28, 29, 30, 43+, 45-, 59;, 61=, 63?, 95_, 123
+% []{}?
+% fqvx
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some very special items first
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+BNDRY		:= 255; % Boundary; needed for tsheg-insertion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_LIGLN	:= 102; % One of several dummy codes, placed on "f"
+TIB_LIGKS	:= 113; % One of several dummy codes, placed on "q"
+TIB_LIGKSH	:= 118; % One of several dummy codes, placed on "v"
+TIB_XA		:= 120; % Dummy x; for ligatures of shxa type
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Numbers, also in smaller variants for n in {5,6,7,8,9}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_ZERO		:=  48; %	48	0x30
+TIB_ONE			:=  49; %
+TIB_TWO			:=  50; %
+TIB_THREE		:=  51; %
+TIB_FOUR		:=  52; %
+TIB_FIVE		:=  53; %
+TIB_SIX			:=  54; %
+TIB_SEVEN		:=  55; %
+TIB_EIGHT		:=  56; %
+TIB_NINE		:=  57;	% 	57	0x39
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_VARFIVE		:=   5; %		2001-06-09
+TIB_VARSIX 		:=   6; %		2001-06-09
+TIB_VARSEVEN		:=   7; %		2001-06-09
+TIB_VAREIGHT		:=   8; %		2001-06-09
+TIB_VARNINE		:=   9;	%		2001-06-09
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_OM			:=   0; % Om ma nxi ...
+TIB_EMPTY		:=  32; % Dotted Circle for vowel displays
+TIB_SHAD		:=  46; %	"."
+TIB_TSHEG		:=  44; %	","
+TIB_SWASTI		:=  64;	%	"@"
+TIB_VISARGA		:=  58;	%	":"
+TIB_TSHEGSHAD		:=  33;	%	"!"
+TIB_ALTTSHEGSHAD	:=  31;	%	^31	2001-06-09
+TIB_NYISTSHEGSHAD	:=  34;	%	"""	2001-06-09
+TIB_CHEMGOSHAD		:=  35;	%	"#"	2001-06-09
+TIB_SBRULSHAD		:=  36;	%	"$"	2001-06-09
+TIB_RGYAGRAMSHAD	:=  37;	%	"%"	2001-06-09
+TIB_VARCHEMGOSHAD	:=  38;	%	"#"	2001-06-09
+TIB_RJESSUNGARO		:=  24; %	""	2001-06-09
+TIB_SNALDAN		:=  25; %	""	2001-06-09
+TIB_RNAMBCAD		:=  26; %	""	2001-06-09
+TIB_GTERTSHEG		:=  27; %	""	2001-06-09
+TIB_RINCHENSPUNGSSHAD	:=  47; %	"/"	2001-06-09 
+TIB_TOPINI.YIGMGOMDUNMA	:=  40; %	"("	2001-12-17
+TIB_FINAL.YIGMGOMDUNMA	:=  41; %	")"	2001-12-17
+TIB_INI.YIGMGOMDUNMA	:=  42; %	"(("	2001-12-17
+TIB_ANGKHYANGGYON	:=  60; %	"<"	2001-06-09
+TIB_ANGKHYANGGYAS	:=  62; %	">"	2001-06-09
+TIB_HALANTA		:=  10; %		2001-12-17
+TIB_LCIRTAGS		:=  11; %		2001-12-17
+TIB_NYIZLANAADA		:=  12; %		2001-12-17
+TIB_HALF		:=  13; %		2001-12-17
+TIB_GTERYIGMGOTR	:=  14; %		2001-12-17
+TIB_PALUTA		:=  15; %		2001-12-17
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_ACHUNG	:=  39; %	"'"
+TIB_SMALLACHUNG	:=  96;	%	"`"
+TIB_A		:=  97; %	"a"
+TIB_I		:= 105; %	"i"
+TIB_O		:= 111; %	"o"
+TIB_E		:= 101; %	"e"
+TIB_U		:= 117; %	"u" in various heights/depths
+TIB_UU		:=  16; %	"u"
+TIB_UUU		:=  17; %	"u"
+TIB_UUUU	:=  18; %	"u"
+TIB_UUUUU	:=  19; %	"u"
+TIB_UUUUUU	:=  20; %	"u"
+TIB_UUUUUUU	:=  21; %	"u"
+TIB_UUUUUUUU	:=  22; %	"u"
+TIB_VARU	:=  23; %	"u"		2001-12-17
+TIB_VARAU	:=  85; %	"u"		2001-12-17
+TIB_VUU		:=  86; %	"u"		2001-12-17
+TIB_EE		:=  69; %	"ee"		2001-06-09
+TIB_OO		:=  79; %	"oo"		2001-06-09
+TIB_XI		:=  73; % Vowel i reverse	2001-06-09
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_VOM		:= 124; % Vowel o with "m"	2001-06-09
+TIB_VIM		:= 125; % Vowel i with "m"	2001-06-09
+TIB_VEM		:= 126; % Vowel e with "m"	2001-06-09
+TIB_XIM		:= 127; % Vowel i r., with "m"	2001-06-09
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_ZE		:=  92; % Vowel "e" with -z- hook
+TIB_ZI		:=  93; % Vowel "i" with -z- hook
+TIB_ZO		:=  94; % Vowel "o" with -z- hook
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_BA		:=  98; %	"b"
+TIB_CA		:=  99; %	"c"
+TIB_DA		:= 100; %	"d"
+TIB_GA		:= 103; %	"g"
+TIB_HA		:= 104; %	"h"
+TIB_JA		:= 106; %	"j"
+TIB_KA		:= 107; %	"k"
+TIB_LA		:= 108; %	"l"
+TIB_MA		:= 109; %	"m"
+TIB_NA		:= 110; %	"n"
+TIB_PA		:= 112; %	"p"
+TIB_RA		:= 114; %	"r"
+TIB_SA		:= 115; %	"s"
+TIB_TA		:= 116; %	"t"
+TIB_WA		:= 119; %	"w"
+TIB_YA		:= 121; %	"y"
+TIB_ZA		:= 122; %	"z"
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% The space in the list of ligatures is exhausted. It is not
+% possible to squeeze any more letters and combinations into
+% n>127<255.
+%
+TIB_BHA		:= 128;
+TIB_BHYA	:= 129;	%	2001-06-09
+TIB_BLA		:= 130;
+TIB_BRA		:= 131;
+TIB_BYA		:= 132;
+TIB_CHA		:= 133;
+TIB_CHWA	:= 134;	%	2001-06-09
+TIB_CU		:= 135;
+TIB_CWA		:= 136;
+TIB_DHA		:= 137;
+TIB_DRA		:= 138;
+TIB_DRWA	:= 139;	%	2001-06-09
+TIB_DWA		:= 140;
+TIB_DXA		:= 141;
+TIB_DXHA	:= 142;
+TIB_DZA		:= 143;
+TIB_DZHA	:= 144;
+TIB_DZRA	:= 145;	%	2001-06-09
+TIB_GHA		:= 146;
+TIB_GLA		:= 147;
+TIB_GRA		:= 148;
+TIB_GRWA	:= 149;
+TIB_GWA		:= 150;
+TIB_GYA		:= 151;
+TIB_HRA		:= 152;
+TIB_HWA		:= 153;
+TIB_HYA		:= 154;	%	2001-06-09
+TIB_JHA		:= 155;	%	2001-06-09
+TIB_KHA		:= 156;
+TIB_KHRA	:= 157;
+TIB_KHWA	:= 158;
+TIB_KHYA	:= 159;
+TIB_KLA		:= 160;
+TIB_KRA		:= 161;
+TIB_KSHXA	:= 162;
+TIB_KWA		:= 163;
+TIB_KYA		:= 164;
+TIB_LBA		:= 165;
+TIB_LCA		:= 166;
+TIB_LDA		:= 167;
+TIB_LGA		:= 168;
+TIB_LHA		:= 169;
+TIB_LJA		:= 170;
+TIB_LKA		:= 171;
+TIB_LNGA	:= 172;
+TIB_LPA		:= 173;
+TIB_LTA		:= 174;
+TIB_LWA		:= 175;
+TIB_MRA		:= 176;
+TIB_MYA		:= 177;
+TIB_NGA		:= 178;
+TIB_NRA		:= 179;
+TIB_NXA		:= 180;
+TIB_NXYA	:= 181; %	2001-12-17
+TIB_NYA		:= 182;
+TIB_NYWA	:= 183;
+TIB_PHA		:= 184;
+TIB_PHRA	:= 185;
+TIB_PHYA	:= 186;
+TIB_PHYWA	:= 187;
+TIB_PRA		:= 188;
+TIB_PYA		:= 189;
+TIB_RBA		:= 190;
+TIB_RDA		:= 191;
+TIB_RDZA	:= 192;
+TIB_RGA		:= 193;
+TIB_RGWA	:= 194;
+TIB_RGYA	:= 195;
+TIB_RJA		:= 196;
+TIB_RKA		:= 197;
+TIB_RKYA	:= 198;
+TIB_RLA		:= 199;
+TIB_RMA		:= 200;
+TIB_RMYA	:= 201;
+TIB_RNA		:= 202;
+TIB_RNGA	:= 203;
+TIB_RNYA	:= 204;
+TIB_RTA		:= 205;
+TIB_RTSA	:= 206;
+TIB_RTSWA	:= 207;
+TIB_RWA		:= 208;
+TIB_RYA		:= 209;	%	2001-06-09
+TIB_SBA		:= 210;
+TIB_SBRA	:= 211;
+TIB_SBYA	:= 212;
+TIB_SDA		:= 213;
+TIB_SGA		:= 214;
+TIB_SGRA	:= 215;
+TIB_SGYA	:= 216;
+TIB_SHA		:= 217;
+TIB_SHRA	:= 218;
+TIB_SHWA	:= 219;
+TIB_SHXA	:= 220;
+TIB_SKA		:= 221;
+TIB_SKRA	:= 222;
+TIB_SKYA	:= 223;
+TIB_SLA		:= 224;
+TIB_SMA		:= 225;
+TIB_SMRA	:= 226;
+TIB_SMYA	:= 227;
+TIB_SNA		:= 228;
+TIB_SNGA	:= 229;
+TIB_SNRA	:= 230;	%	2001-06-09
+TIB_SNYA	:= 231;
+TIB_SPA		:= 232;
+TIB_SPRA	:= 233;
+TIB_SPYA	:= 234;
+TIB_SRA		:= 235;
+TIB_STA		:= 236;
+TIB_STSA	:= 237;
+TIB_SWA		:= 238;
+TIB_THA		:= 239;
+TIB_THRA	:= 240;
+TIB_THXA	:= 241;
+TIB_TRA		:= 242;
+TIB_TSA		:= 243;
+TIB_TSHA	:= 244;
+TIB_TSHWA	:= 245;
+TIB_TSU		:= 246;
+TIB_TSWA	:= 247;
+TIB_TWA		:= 248;
+TIB_TXA		:= 249;
+TIB_ZHA		:= 250;
+TIB_ZHWA	:= 251;
+TIB_ZLA		:= 252;
+TIB_ZRA		:= 253;	%	2001-06-09
+TIB_ZWA		:= 254;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+TIB_SUBACHUNG	:=  65; %	Small achung	2001-06-09
+TIB_SUBBA	:=  66; %	Small ba	2001-06-09
+TIB_SUBCA	:=  67; %	Small ca	2001-06-09
+TIB_SUBDA	:=  68; %	Small da	2001-06-09
+TIB_SUBGA	:=  71; %	Small ga	2001-06-09
+TIB_SUBHA	:=  72; %	Small ha	2001-06-09
+TIB_SUBJA	:=  74; %	Small ja	2001-06-09
+TIB_SUBKA	:=  75; %	Small ka	2001-06-09
+TIB_SUBLA	:=  76; %	Small la	2001-06-09
+TIB_SUBMA	:=  77; %	Small ma	2001-06-09
+TIB_SUBNA	:=  78; %	Small na	2001-06-09
+TIB_SUBPA	:=  80; %	Small pa	2001-06-09
+TIB_SUBRA	:=  82; %	Small pa	2001-12-17
+TIB_SUBTA	:=  84; %	Small ta	2001-06-09
+TIB_SUBWA	:=  87; %	Small wa	2001-12-17
+TIB_HEADWA	:=  88; %	Head wa		2001-12-17
+TIB_SUBYA	:=  89; %	Small ya	2001-12-17
+TIB_SUBSMALLD	:=  70; %	Even smaller d 	2001-06-09
+TIB_SUBNGA	:=  81; %	Small nga	2001-06-09
+TIB_SUBNYA	:=  83; %	Small nya	2001-06-09
+TIB_SUBTSA	:=  90; %	Small tsa	2001-06-09
+TIB_NNYA	:=  91; %	na+ya		2001-12-17
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% No idea why I included these codes in the original source...
+%
+% Oliver Corff, Beijing, June 9th, 2001
+%
+%%	TIB_DZE		:=  83;
+%%	TIB_DZI		:=  84;
+%%	TIB_DZO		:=  85;
+%%	TIB_TSE		:=  86;
+%%	TIB_TSHE	:=  87;
+%%	TIB_TSHI	:=  88;
+%%	TIB_TSHO	:=  89;
+%%	TIB_TSI		:=  90;
+%%	TIB_TSO		:=  91;

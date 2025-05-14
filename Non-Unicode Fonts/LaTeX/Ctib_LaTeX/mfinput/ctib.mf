@@ -1,0 +1,36 @@
+% This file defines the Metafont font ctib.mf.
+true_design_size# := 10.000pt#;
+
+%pausing:=1;
+screen_rows:= 640;
+screen_cols:= 640;
+picture apic, npic, opic;	% Norbert Preining's shortcut
+input bzrsetup;
+
+font_coding_scheme := "ASCII";
+font_identifier := "ctib";
+
+%%  font_normal_shrink:=;
+font_x_height 10u#;
+font_normal_space 0.75u#;
+font_extra_space 24u#;
+font_normal_stretch 20u#;
+font_quad 12u#;
+
+fontdimen 6: 10.000pt# * u#;
+fontdimen 23: 7.800pt# * u#;
+fontdimen 24: 4.200pt# * u#;
+fontdimen 25: 10.000pt# * u#;
+fontdimen 26: 0.241pt# * u#;
+
+boundarychar:=255;	% Helps generate automatic tsheg
+
+input ctibcode;		% Transparent Coding Table
+input ctibligs;		% Complete ligatures facilitating input
+input ctibnum;		% Digits
+input ctibpunc;		% Punctuation
+input ctiblett;		% Letters
+input ctibsplt;		% Subjoined and a few special letters
+input ctibvow;		% Vowels, etc.
+
+end.
