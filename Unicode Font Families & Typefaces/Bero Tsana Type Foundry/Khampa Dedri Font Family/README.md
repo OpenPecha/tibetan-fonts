@@ -1,10 +1,10 @@
 # Kangba Derchi (Kham Dedri)
-| Font/file name | Style/Category | Suggested English name |
-| ------------- | ------------ | ------
-| Kangba-Derchi Drutsa ཁམས་པ་སྡེ་བྲིས་འབྲུ་ཚ། | Ume, Druma, drutsa, Kham Dedri/Khamdri | Kham Dedri Drutsa |
-| Kangba-Derchi Zhugang ཁམས་པ་སྡེ་བྲིས་འབྲུ་སྒམ།[^1] | Ume, Tsuma, Petsu, Kham Dedri/Khamdri    | Kham Dedri Drugong |
-| Kangba-Derchi Bechu ཁམས་པ་སྡེ་བྲིས་དཔེ་འཁྱུག    | Ume, Tsumachu, Kham Dedri/Khamdri        | Kham Dedri Pechu   |
-| Kangba-Derchi Chuyig ཁམས་པ་སྡེ་བྲིས་འཁྱུག་ཡིག   | Ume, Cursive, Chuyig, Kham Dedri/Khamdri | Kham Dedri Chuyig  |
+| Font/file name | Style/Category | 
+| ------------- | ------------ | 
+| Kangba-Derchi Drutsa ཁམས་པ་སྡེ་བྲིས་འབྲུ་ཚ། | Ume, Druma, drutsa, Kham Dedri/Khamdri |
+| Kangba-Derchi Zhugang ཁམས་པ་སྡེ་བྲིས་འབྲུ་སྒམ།[^1] | Ume, Tsuma, Petsu, Kham Dedri/Khamdri    |
+| Kangba-Derchi Bechu ཁམས་པ་སྡེ་བྲིས་དཔེ་འཁྱུག    | Ume, Tsumachu, Kham Dedri/Khamdri        |
+| Kangba-Derchi Chuyig ཁམས་པ་སྡེ་བྲིས་འཁྱུག་ཡིག   | Ume, Cursive, Chuyig, Kham Dedri/Khamdri | 
 
 * The typefoundry took our suggestions and updated their fonts names.
   
