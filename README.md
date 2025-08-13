@@ -14,6 +14,9 @@ This collection of font was made possible through individual and institutional c
 - the OpenPecha project
 - the Tsadra Foundation
 - TCRC
+- Vairo Type Foundery
+- Tamdrin Gombo རྟ་མགྲིན་མགོན་པོ།
+- Bhod Dhorchang བྷོད་རྡོར་འཆང་།
 - the Padmakara translation committee
 - Georg Fischer
 - Leigh Brasington
@@ -23,6 +26,7 @@ This collection of font was made possible through individual and institutional c
 - Gerry Wiener
 - Pierre Robillard
 - Tanvi Dev
+- Luktsang ལུང་ཚང་།
 - Dharma Drum Institute of Liberal Arts (DILA)
 
 ## Resources
@@ -43,6 +47,7 @@ This collection of font was made possible through individual and institutional c
 
 ##### Third-Party Fonts Websites: 
 
+- Thempangma Tibetan Fonts Website: http://tibetanfonts.com/site-List-13.html
 - Tibetan Typography website: http://www.tibetanfont.com
 - Sonamdawa's collection: https://sonamdawa.com/gdrive/
 - Zangtsul IT Font website 1: https://www.zangtsul.cn/page/4583378
