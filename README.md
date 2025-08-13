@@ -14,9 +14,10 @@ This collection of font was made possible through individual and institutional c
 - the OpenPecha project
 - the Tsadra Foundation
 - TCRC
-- Vairo Type Foundery
+- Gangchen Yangtso གངས་ཅན་དབྱངས་འཚོ།
 - Tamdrin Gombo རྟ་མགྲིན་མགོན་པོ།
 - Bhod Dhorchang བྷོད་རྡོར་འཆང་།
+- Kalsang Tsebtan སྐལ་བཟང་ཚེ་བརྟན།
 - the Padmakara translation committee
 - Georg Fischer
 - Leigh Brasington
