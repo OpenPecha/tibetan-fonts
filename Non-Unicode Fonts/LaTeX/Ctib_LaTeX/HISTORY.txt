@@ -1,0 +1,25 @@
+Changes in cTibTeX
+
+Version 06
+
+July 2002:	Unicode preparations underway
+
+
+Version 05
+
+December 2001:	Greatly enhanced glyph collection, thanks to Sam Sirlin
+
+
+Version 02
+
+March 2001:	Orthographical errors removed; ligatures reviewed
+
+		Never publicly released
+
+
+Version 01
+
+October 1999:	Tibetan Font based on Sam Sirlin's work implemented
+
+		Complete retransliteration mechanism integrated into
+		TeX and Metafont, hence no external preprocessor needed
