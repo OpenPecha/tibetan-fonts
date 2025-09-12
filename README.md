@@ -6,6 +6,8 @@ Public repository of open access Tibetan fonts.
 
 See [CATALOG.md](CATALOG.md) for a full catalog.
 
+### See preview page [here](https://openpecha.github.io/tibetan-fonts/)
+
 ### Acknowledgement
 
 This collection of font was made possible through individual and institutional contributions. We want to thank:
