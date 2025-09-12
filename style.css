@@ -1,0 +1,172 @@
+:root {
+    --tib-fz: 32px;
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    padding: 30px 16px;
+    font-family: sans-serif;
+    background: #e3e7d3;
+    color: #25291c;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 400;
+    margin: 27px 0 54px;
+}
+
+.gh {
+    margin: 16px 0 54px;
+}
+
+a {
+    color: #6b8435;
+}
+
+.font {
+    margin-bottom: 24px;
+    padding: 16px;
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+    /*box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;*/
+    border-radius: 4px;
+    border: 1px dashed #989c94;
+}
+.font:last-child {
+    margin-bottom: 0;
+}
+
+.font h3 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px dashed #989c94;
+}
+.font p {
+    font-size: var(--tib-fz);
+    margin: 0;
+    padding: 16px 16px 0;
+}
+
+.acc {
+    padding: 0 16px;
+    /*border: 1px dashed grey;*/
+    margin: 16px 0;
+    /*border: 1px solid #6b8435;*/
+    /*border-radius: 2px;*/
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;*/
+    /*box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;*/
+}
+.acc.__open {
+    padding-bottom: 24px;
+}
+
+.acc-title {
+    margin: 0 -16px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+    background: #d9ddc9;
+    cursor: pointer;
+}
+.acc-title a {
+    margin-left: auto;
+}
+.acc-title:before {
+    content: '> ';
+    display: inline-block;
+    margin-right: 8px;
+}
+.acc.__open .acc-title:before {
+    transform: rotate(90deg);
+}
+.acc.__open .acc-title {
+    color: #d1603d;
+}
+.acc-content {
+    display: none;
+    position: relative;
+    margin-left: 30px;
+    margin-top: 16px;
+}
+.acc-content:before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -26px;
+    background: #989c94;
+}
+.acc.__open .acc-content {
+    display: block;
+}
+
+
+.controls {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    background: #d9ddc9;
+    padding: 16px;
+    margin: 54px 0;
+}
+.controls > label[for=text] {
+    flex: 1;
+}
+
+.controls textarea {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 8px;
+    min-height: 100px;
+    max-height: 500px;
+    font-size: 21px;
+}
+
+.controls label {
+    margin-right: 54px;
+}
+.controls label:last-child {
+    margin-right: 0;
+}
+.controls label span {
+    display: block;
+}
+
+
+@media screen and (max-width: 900px) {
+    body, .acc, .font {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+    
+    .controls {
+        flex-direction: column;
+    }
+    .controls > * {
+        margin-bottom: 16px;
+    }
+    .controls > *:last-child {
+        margin-bottom: 0;
+    }
+    .controls > label[for=text] {
+        width: 100%;
+    }
+    .acc-content {
+        margin-left: 0;
+    }
+    .acc-content:before {
+        display: none;
+    }
+    
+    .font p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
