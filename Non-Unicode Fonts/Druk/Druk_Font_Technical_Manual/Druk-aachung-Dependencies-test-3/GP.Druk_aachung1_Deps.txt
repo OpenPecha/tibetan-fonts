@@ -1,0 +1,224 @@
+# US Letter working page layout
+# Sets up a frame and title area
+
+
+# ------- USLtr Page 
+width 8.5in # 215.9mm
+height 11in # 279.4mm
+
+# ------- 
+# font DrukFonV13.ttf
+font DrukFonV14.ttf
+glyphMode outline
+
+# ======== START CONTENT ========
+
+# ------- Draw frame to standardize content scaling
+# drawRectangle (content | pen | margins) left top right bottom [radius] [fill | stroke] 
+#drawRectangle content -600 700 250 -500 stroke
+# replaced by scale axes in this plot
+
+# ------- Draw glyphs
+strokeWidth 5
+drawGlyph content 0 0 /_aachung1
+strokeWidth 1
+drawGlyph content -@advanceWidth 0 /A
+drawGlyph content -@advanceWidth 0 /Sa
+drawGlyph content -@advanceWidth 0 /La
+drawGlyph content -@advanceWidth 0 /Ra
+drawGlyph content -@advanceWidth 0 /Ya
+drawGlyph content -@advanceWidth 0 /Aa
+drawGlyph content -@advanceWidth 0 /Za
+drawGlyph content -@advanceWidth 0 /Wa
+drawGlyph content -@advanceWidth 0 /Dza
+drawGlyph content -@advanceWidth 0 /Ma
+drawGlyph content -@advanceWidth 0 /Ba
+drawGlyph content -@advanceWidth 0 /Pha
+drawGlyph content -@advanceWidth 0 /Pa
+drawGlyph content -@advanceWidth 0 /Tha
+drawGlyph content -@advanceWidth 0 /Ja
+drawGlyph content -@advanceWidth 0 /Nga
+drawGlyph content -@advanceWidth 0 /Kha
+
+drawGlyph content 0 0 /Shapkyu15
+
+#drawGlyph content 0 0 /Shapkyu1
+#drawGlyph content 0 0 /Shapkyu3
+#drawGlyph content 0 0 /Shapkyu8
+#drawGlyph content 0 0 /Shapkyu9
+#drawGlyph content 0 0 /Shapkyu10
+#drawGlyph content 0 0 /Shapkyu11
+#drawGlyph content 0 0 /Shapkyu12
+#drawGlyph content 0 0 /Shapkyu13
+#drawGlyph content 0 0 /Shapkyu14
+
+
+
+# ------- Draw origin circle
+# drawCircle (content | pen) x y (value | percentage) [fill | stroke]
+strokeWidth 0.5
+strokeDash 2,2
+drawCircle content 0 0 50 stroke
+
+# ------- Draw Axes
+drawHorizontalLine  0 # = drawBaseLine
+drawVerticalLine 0  
+
+# ------- Draw scale tick marks @ 100 units
+# drawLine (content | pen) startX startY endX endY
+# ------- y-axis
+#drawLine content -20 900 20 900
+#drawLine content -20 800 20 800
+#drawLine content -20 700 20 700
+drawLine content -20 600 20 600
+drawLine content -20 500 20 500
+drawLine content -20 400 20 400
+drawLine content -20 300 20 300
+drawLine content -20 200 20 200
+drawLine content -20 100 20 100
+
+drawLine content -20 -100 20 -100
+drawLine content -20 -200 20 -200
+drawLine content -20 -300 20 -300
+drawLine content -20 -400 20 -400
+drawLine content -20 -450 20 -450
+
+#drawLine content -20 -500 20 -500
+#drawLine content -20 -600 20 -600
+#drawLine content -20 -600 20 -700
+
+# ------- x-axis
+drawLine content  100 -20 100 20 
+drawLine content  200 -20 200 20 
+drawLine content  300 -20 300 20 
+#drawLine content  400 -20 400 20 
+
+drawLine content  -100 -20 -100 20 
+drawLine content  -200 -20 -200 20 
+drawLine content  -300 -20 -300 20 
+drawLine content  -400 -20 -400 20 
+drawLine content  -500 -20 -500 20 
+drawLine content  -600 -20 -600 20 
+#drawLine content  -600 -20 -600 20 
+
+# ------- Draw scale labels
+
+
+
+
+strokeDash 2,2
+strokeColor red
+
+labelFontSize 16
+labelFontSize 12
+#labelFont TimesNewRomanPSMT
+labelFont TimesNewRomanPS-ItalicMT
+
+
+# drawAscenderLine  # out of frame
+##drawHorizontalLine  600 # Ascender
+##drawLabel content -600 600 "Ascender 600"
+
+
+drawHorizontalLine  313 # Headline
+drawLabel content -600 313 "Headline 313"
+
+drawHorizontalLine  272 # Headline width 
+drawLabel content -600 272 "Headline width 272"
+
+drawHorizontalLine  113 # Subjoined Headline
+drawLabel content -600 113 "Subjoined Headline 113"
+
+drawHorizontalLine   47 # Standard Depth
+drawLabel content -600 47 "Standard Depth 47"
+
+drawHorizontalLine -156 # Downstroke Depth
+drawLabel content -600 -156 "Downstroke Depth -250"
+
+drawHorizontalLine -250 # Subjoined Downstroke Depth
+drawLabel content -600 -250 "Subjoined Downstroke Depth -400"
+
+##drawHorizontalLine -500 # Descender
+##drawLabel content -600 -500 "Descender -500"
+
+#drawDescenderLine  
+#drawHorizontalLine $hhea-descender
+
+
+
+#drawLabel content -600 1 "Origin"
+#drawLabel content -1 1 -90 left "Origin"
+
+
+
+
+
+
+strokeDash 4,4
+strokeWidth 1.0
+drawVerticalLine -35  # main combining offset
+drawLabel content -36 -450 -90 left "Main Combining Offset - 35"
+
+# ======== END CONTENT ========
+
+
+strokeDash 0,0
+
+# ------- set margin for Lexmark CX923 printer
+printMargins 0.7cm 0.7cm 0.7cm 1.4cm
+
+# ------- draw gray block for print margin (debugging only)
+fillColor black
+fillOpacity 0.08
+##drawRectangle margins 0.1 -0.1 -0.1 0.1 fill 
+
+
+# ------- set content margin  
+# left side needs 0.5cm for timestamp outside frame
+# top needs 3.0cm title block
+# margins 0.5cm 3.0cm 0 0  # values are always +ve
+# inset content margin 1 mm so it has an air gap 
+margins 0.6cm 3.1cm 0.1cm 0.1cm 
+
+# extend content margins up into title block for Druk Tibetan to make more space
+##margins 0.6cm 0.1cm 0.1cm 0.1cm 
+
+
+# ------- draw margins frame
+strokeColor red
+strokeOpacity 1
+strokeWidth 2
+##drawRectangle margins 0.6cm -0.1cm -0.1cm 0.1cm stroke
+
+# ------- draw title frame
+strokeColor black
+strokeWidth 1
+drawRectangle margins 0.5cm -0.1 -0.1 0.1 stroke
+
+# ------- draw content rectangle
+##drawBackground # the 2nd layer at 10% opacity shows over print space
+
+
+# ------- draw Title strings
+# drawLabel (content | pen | margins) x y [angle] [left | right | center] string...
+
+labelFont Helvetica-Bold
+labelFontSize 18
+fillOpacity 1
+drawLabel margins 1cm -0.6cm "Dependencies for _aachung1"
+
+fillOpacity 0.3
+drawLabel margins -1cm -0.6cm right $name4-FullName ",  " $name5-Version
+
+fillOpacity 1
+labelFont Helvetica
+labelFontSize 10
+drawLabel margins 1cm -1.5cm "17 Pre-Dependents: A, Aa, Ba, Dza, ja, Kha, La, Ma, Nga, Pa, Pha, Ra, Sa, Tha, Wa, Ya, Za, "
+drawLabel margins 1cm -1.9cm "1 Post-Dependent: Shapkyu15"
+#drawLabel margins 1cm -2.3cm "  "
+
+# ------- timestamp in gutter
+labelFontSize 10
+labelFont TimesNewRomanPS-ItalicMT
+drawLabel margins  3.6mm 0.1mm -90 left $CurrentDate " — " $CurrentTime  " — " $InputFileName
+
