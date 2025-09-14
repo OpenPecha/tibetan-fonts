@@ -91,11 +91,17 @@
 | Non-Unicode Fonts/Druk/DrukV14-2020/OpenType-TT/DrukFonV14.ttf | Druk Tibetan | Druk Tibetan, DrukFontV14 |
 | Non-Unicode Fonts/DzModA.TTF | DzongkhaModern A | DzongkhaModern A, DzongkhaModernA |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Non-Unicode Fonts/GPLTibetan/gaka1.ttf | GPL'ed Tibetan #1 | GPL'ed Tibetan #1, GPLTibetan1 |
 | Non-Unicode Fonts/GPLTibetan/gaka2.ttf | GPLTibetan,GPL'e | GPL'e, GPL'ed Tibetan #2, GPLTib2 |
 | Non-Unicode Fonts/IMC/TibImcNewA2.ttf | Tib Imc New A2 | Tib Imc New A2, Tib-Imc-New-A2 |
 | Non-Unicode Fonts/IMC/TibImcNewA.ttf | Tib Imc New A | Tib Imc New A, Tib-Imc-New-A |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Non-Unicode Fonts/Landza/landron.ttf | Lanron | Landron |
 | Non-Unicode Fonts/Landza/landz0.ttf | Landz0 | Landz0 |
@@ -289,11 +295,17 @@
 | Non-Unicode Fonts/LTibetan/LT.TTF | LTibetan | LTibetan |
 | Non-Unicode Fonts/LTibetan/ltibe___.ttf | LTibetanExtension | LTibetanExtension |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Non-Unicode Fonts/LTibetan/Modified_encoding/LMod.ttf | L_Mod | L_Mod, L_Mod  Regular |
 | Non-Unicode Fonts/LTibetan/Modified_encoding/LT______.TTF | L | L, L Regular |
 | Non-Unicode Fonts/LTibetan/Modified_encoding/LTIBETAN.TTF | LTibetan | LTibetan |
 | Non-Unicode Fonts/LTibetan/Modified_encoding/MA______.TTF | Mantra | Mantra, Mantra Regular |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Non-Unicode Fonts/MACHINE.TTF | TibetanMachine | TibetanMachine Normal, TibetanMachine-Normal |
 | Non-Unicode Fonts/MACHINED.TTF | TibetanMachineD | TibetanMachineD |
@@ -573,6 +585,7 @@
 | Non-Unicode Fonts/Youtso/TBYTNTT.ttf | TB-Youtso Regular,TCRC Bod-Yig | TB-Youtso Regular, TB-YoutsoRegular, TCRC Bod-Yig |
 | Non-Unicode Fonts/ZWXBT.TTF | SSJ,方正藏文新白体 | SSJ, 方正藏文新白体 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | test/tcrclinux_vs6/Himalaya-D.ttf | Himalaya-D | Himalaya-D, Himalaya-D-R |
 | test/tcrclinux_vs6/Himalaya-E.ttf | Himalaya-E | Himalaya-E, Himalaya-E-R |
 | test/tcrclinux_vs6/Himalaya-J.ttf | Himalaya-J | Himalaya-J, Himalaya-J (R), Himalaya-J-R, Monlam Uni Ochan2 |
@@ -592,17 +605,25 @@
 | tmp/Utshen/Utshen.ttf | Utshen | Utshen |
 =======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Amdo Claasic/amdo_classic_1.ttf | Amdo Classic 1,Amdo Classic 1 ཨ་མདོ་ཕུལ་བྱུང ༡ | Amdo Classic 1, AmdoClassic1, Amdo Classic 1 ཨ་མདོ་ཕུལ་བྱུང ༡ |
 | Unicode Font Families & Typefaces/Amdo Claasic/amdo_classic_3.ttf | Amdo Classic 3,Amdo Classic 3 ཨ་མདོ་ཕུལ་བྱུང ༣ | Amdo Classic 3, AmdoClassic3, Amdo Classic 3 ཨ་མདོ་ཕུལ་བྱུང ༣ |
 | Unicode Font Families & Typefaces/Amdo Claasic/AmdoClassic2.ttf | Amdo Classic 2,Amdo Classic 2 ཨ་མདོ་ཕུལ་བྱུང ༢ | Amdo Classic 2, AmdoClassic2, Amdo Classic 2 ཨ་མདོ་ཕུལ་བྱུང ༢ |
 | Unicode Font Families & Typefaces/Amdo Claasic/AmdoClassic4.ttf | Amdo Classic 4,Amdo Classic 4 ཨ་མདོ་ཕུལ་བྱུང ༤ | Amdo Classic 4, AmdoClassic4, Amdo Classic 4 ཨ་མདོ་ཕུལ་བྱུང ༤ |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/AnAn/AnAnTibetanBeta1.ttf | AnAnTibetanBeta1 | AnAnTibetanBeta1 |
 | Unicode Font Families & Typefaces/AnAn/AnAnTibetanBeta2.ttf | AnAnTibetanBeta2 | AnAnTibetanBeta2 |
 | Unicode Font Families & Typefaces/AnAn/AnAnUCan0.ttf | AnAnUCan0 | AnAnUCan0 |
 | Unicode Font Families & Typefaces/AnAn/AnAnUCan1.ttf | AnAnUCan1 | AnAnUCan1 |
 | Unicode Font Families & Typefaces/AnAn/AnAnUCan2.ttf | AnAnUCan2 | AnAnUCan2 |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Atisha/Atisha.ttf | Atisha | Atisha |
 | Unicode Font Families & Typefaces/BabelStone/BabelStonePhagspaBook_v2.ttf | BabelStone Phags-pa Book | BabelStone Phags-pa Book, BabelStonePhags-paBook |
@@ -610,6 +631,7 @@
 | Unicode Font Families & Typefaces/BabelStone/BabelStonePhagspaTibetanB_v2.ttf | BabelStone Phags-pa Tibetan B | BabelStone Phags-pa Tibetan B, BabelStonePhags-paTibetanB |
 | Unicode Font Families & Typefaces/BabelStone/BabelStoneTibetan.ttf | BabelStone Tibetan | BabelStone Tibetan, BabelStoneTibetan |
 | Unicode Font Families & Typefaces/BabelStone/BabelStoneTibetanSlim.ttf | BabelStone Tibetan Slim | BabelStone Tibetan Slim, BabelStoneTibetanSlim |
+<<<<<<< HEAD
 <<<<<<< HEAD
 | Unicode Font Families & Typefaces/Bhozuk Font Family/Bhozuk Chungmigma.otf | Bhozuk Chungmigma | Bhozuk Chungmigma, BhozukChungmigma |
 | Unicode Font Families & Typefaces/Bhozuk Font Family/Bhozuk Danak Shokpa.otf | Bhozuk Danak Shokpa | Bhozuk Danak Shokpa, BhozukDanakShokpa |
@@ -626,6 +648,8 @@
 | Unicode Font Families & Typefaces/Bhozuk Font Family/Peltsek Dzapchen.ttf | Peltsek Dzapchen | Peltsek Dzapchen, PeltsekDzapchen |
 | Unicode Font Families & Typefaces/Bhozuk Font Family/Yesang Karmo-Bhodor.ttf | Yesang Karmo-Bhodor(01) | Yesang Karmo-Bhodor(01), YesangKarmo-Bhodor01 |
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Bero Tsana Type Foundery/Khampa Dedri Font Family/Khampa Dedri-Bechu Regular.ttf | Khampa Dedri-Bechu,康巴德智-柏丘体 | Khampa Dedri-Bechu, KhampaDedriBechu, 康巴德智-柏丘体 |
 | Unicode Font Families & Typefaces/Bero Tsana Type Foundery/Khampa Dedri Font Family/Khampa Dedri-Chuyig Regular.ttf | Khampa Dedri-Chuyig,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta,康巴德智-丘艺体 | Arrunta, Khampa Dedri-Chuyig, KhampaDedriChuyig, Navadno, Normaali, Normal, Normale, Normalny, Normál, Normálne, Standaard, Standard, obyčejné, Κανονικά, Обычный, 康巴德智-丘艺体 |
 | Unicode Font Families & Typefaces/Bero Tsana Type Foundery/Khampa Dedri Font Family/Khampa Dedri-Drugang Regular.ttf | Khampa Dedri-Drugang,康巴德智-珠岗体 | Khampa Dedri-Drugang, KhampaDedriDrugang, 康巴德智-珠岗体 |
@@ -648,6 +672,9 @@
 | Unicode Font Families & Typefaces/Bhod Dhorchang Type Foundery/Bhozuk_Dunhuang/Bhozuk Dunhuang（D）.ttf | Error | Error |
 | Unicode Font Families & Typefaces/Bhod Dhorchang Type Foundery/Peltsek Dzapchen.ttf | Peltsek Dzapchen | Peltsek Dzapchen, PeltsekDzapchen |
 | Unicode Font Families & Typefaces/Bhod Dhorchang Type Foundery/Yesang Karmo-Bhodor.ttf | Yesang Karmo-Bhodor(01) | Yesang Karmo-Bhodor(01), YesangKarmo-Bhodor01 |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Calligraphy_of_Thönmi Font Family/Calligraphy_of_Thonmi-SlevuBris_VkhyugsYig.ttf | Calligraphy of Thonmi-,吞弥恰俊—柳酋体 | Calligraphy of Thonmi-SlevuBris VkhyugsYig, CalligraphyOfThonmi-SlevuBrisVkhyugsYig, 吞弥恰俊—柳酋体 |
 | Unicode Font Families & Typefaces/Calligraphy_of_Thönmi Font Family/Thönmi_Tradition_Uchen_Nye_Style.ttf | TnonMivi PhyagRgyun-SnyeBris Db,吞弥恰俊—尼赤乌坚体,? | ?, TnonMivi PhyagRgyun-SnyeBris DbuCan, TnonMiviPhyagRgyunSnyeBrisDbuCan, 吞弥恰俊—尼赤乌坚体 |
@@ -666,6 +693,10 @@
 | Unicode Font Families & Typefaces/Dzongkha fonts/tashi.ttf | XTashi | XTashi |
 | Unicode Font Families & Typefaces/Dzongkha fonts/tsuig_03.ttf | Tsuig_03 | Tsuig_03 |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+| Unicode Font Families & Typefaces/Dzongkha fonts/Tsuig_04.ttf | Tsuig_04 | Tsuig_04 |
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 =======
 | Unicode Font Families & Typefaces/Dzongkha fonts/Tsuig_04.ttf | Tsuig_04 | Tsuig_04 |
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
@@ -698,16 +729,22 @@
 | Unicode Font Families & Typefaces/Jamyang Font Family/JMYZK--WDT1.ttf | JMYZK-WDT-MOD,嘉木杨字库--瓦德体 | JMYZK-WDT-MOD, JMYZKWDTMOD |
 | Unicode Font Families & Typefaces/Jamyang Font Family/JMYZK--WDT.ttf | JMYZK-WDT,嘉木杨字库--瓦德体 | JMYZK-WDT ÎÄ?-Ö, JMYZK-WDT 嘉木杨字库--瓦德体, JMYZK-WDT--- |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Unicode Font Families & Typefaces/Jamyang Font Family/旦增字体.ttf | Yuchi Wujin Labuleng2,玉翅 乌金 拉卜楞2 | Yuchi Wujin Labuleng2 Yuchi Wujin Labuleng2, YuchiWujinLabuleng2, 玉翅 乌金 拉卜楞2 |
 | Unicode Font Families & Typefaces/Kangba Derchi/Kangba Derchi- Bechu.ttf | Kangba Derchi- Bechu,康巴德智-柏丘体 | Kangba Derchi- Bechu, KangbaDerchiBechu, 康巴德智-柏丘体 |
 | Unicode Font Families & Typefaces/Kangba Derchi/Kangba Derchi-Chuyig.ttf | Kangba Derchi-Chuyig,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta,康巴德智-丘艺体 | Kangba Derchi-Chuyig, KangbaDerchiChuyig, 康巴德智-丘艺体 |
 | Unicode Font Families & Typefaces/Kangba Derchi/Kangba Derchi-Drutsa.ttf | Kangba Derchi-Drutsa,康巴德智－珠擦体 | Kangba Derchi-Drutsa, KangbaDerchiDrutsa, 康巴德智－珠擦体 |
 | Unicode Font Families & Typefaces/Kangba Derchi/Kangba Derchi-Zhugang.ttf | Kangba Derchi-Zhugang,康巴德智-珠岗体 | Kangba Derchi-Zhugang, KangbaDerchiZhugang, 康巴德智-珠岗体 |
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Jamyang Font Family/嘉木杨-聂智体2.otf | JMYZK-NZT2,嘉木杨字库-聂智体2 | JMYZK-NZT2, JMYZKNZT2, 嘉木杨字库-聂智体2 |
 | Unicode Font Families & Typefaces/Jamyang Font Family/旦增字体.ttf | Yuchi Wujin Labuleng2,玉翅 乌金 拉卜楞2 | Yuchi Wujin Labuleng2 Yuchi Wujin Labuleng2, YuchiWujinLabuleng2, 玉翅 乌金 拉卜楞2 |
 | Unicode Font Families & Typefaces/Minam Font Family/Minam Kagyu Tadri.ttf | Minam Kagyu Tadri | Minam Kagyu Tadri, MinamKagyuTadri |
 | Unicode Font Families & Typefaces/Minam Font Family/Minam Nangdri Norbuma.otf | Minam Nangdri Norbuma,米南-囊智诺布玛 | Minam Nangdri Norbuma, MinamNangdriNorbuma, 米南-囊智诺布玛 |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Monlam Unicode Font Family 3.0/Monlam Uni Chouk.ttf | Monlam Uni Chouk | Monlam Uni Chouk, MonlamUniChouk |
 | Unicode Font Families & Typefaces/Monlam Unicode Font Family 3.0/Monlam Uni ChoukMatik.ttf | Monlam Uni Choukmatik | Monlam Uni Choukmatik, MonlamUniChoukmatik |
@@ -791,6 +828,10 @@
 | Unicode Font Families & Typefaces/Qomolangma Font Family/Qomolangma-UchenSutung.ttf | Qomolangma-Uchen Sutung,珠穆朗玛—乌金苏通体 | Qomolangma-Uchen Sutung, Qomolangma-Uchen-Sutung, 珠穆朗玛—乌金苏通体 |
 | Unicode Font Families & Typefaces/Qomolangma Font Family/Qomolangma-Woodblock.ttf | Qomolangma-Woodblock,珠穆朗玛—雕版体 | Qomolangma-Woodblock, 珠穆朗玛—雕版体 |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+| Unicode Font Families & Typefaces/Rebod Font Family/Rebod tibetan Power(རེ་འབོད་སྟོབས་ལྡན་མ།).ttf | Rebod Tibetan Power,Rebod-藏文力量体 | Rebod Tibetan Power ´, Rebod Tibetan Power 粗体, Rebod-藏文力量体, RebodTibetanPower- |
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 =======
 | Unicode Font Families & Typefaces/Rebod Font Family/Rebod tibetan Power(རེ་འབོད་སྟོབས་ལྡན་མ།).ttf | Rebod Tibetan Power,Rebod-藏文力量体 | Rebod Tibetan Power ´, Rebod Tibetan Power 粗体, Rebod-藏文力量体, RebodTibetanPower- |
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
@@ -806,20 +847,30 @@
 | Unicode Font Families & Typefaces/Rebod Font Family/Rebod-印意藏体རྒྱ་གར་ཡིག་འདྲ།.ttf | Rebod-India style,Rebod-印意藏体 | Rebod-India style, Rebod-Indiastyle, Rebod-印意藏体 |
 | Unicode Font Families & Typefaces/Rebod Font Family/Rebod-端智嘉手写体དོན་གྲུབ་རྒྱལ་ཕྱག་བྲིས་མ།.ttf | Rebod-Don grub rgyal,Rebod-端智嘉手写体 | Rebod-Don grub rgyal, Rebod-Dongrubrgyal, Rebod-端智嘉手写体 |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/ShangshungSgoba-KhraChen.ttf | Shangshung Sgoba-KhraChen,象雄古巴—察钦体 | Shangshung Sgoba-KhraChen, ShangshungSgoba-KhraChen, 象雄古巴—察钦体 |
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/ShangshungSgoba-KhraChung.ttf | Shangshung Sgoba-KhraChung,象雄古巴—察琼体 | Shangshung Sgoba-KhraChung, ShangshungSgoba-KhraChung, 象雄古巴—察琼体 |
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/SHANGSHUNG SGOBA-KHRACHEN1.TTF | Shangshung Sgoba-KhraChen,象雄古巴—察钦体,? | ?, Shangshung Sgoba-KhraChen, 象雄古巴—察钦体 |
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/SHANGSHUNG SGOBA-KHRACHUNG2.TTF | Shangshung Sgoba-KhraChung,象雄古巴—察琼体,? | ?, Shangshung Sgoba-KhraChung, 象雄古巴—察琼体 |
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/ShangshungSgoba-KhraChen.ttf | Shangshung Sgoba-KhraChen,象雄古巴—察钦体 | Shangshung Sgoba-KhraChen, ShangshungSgoba-KhraChen, 象雄古巴—察钦体 |
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/ShangshungSgoba-KhraChung.ttf | Shangshung Sgoba-KhraChung,象雄古巴—察琼体 | Shangshung Sgoba-KhraChung, ShangshungSgoba-KhraChung, 象雄古巴—察琼体 |
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/ShangshungSgoba-KhraTung.ttf | Shangshung Sgoba-KhraTung,象雄古巴—察通体 | Shangshung Sgoba-KhraTung, TibetanFont, 象雄古巴—察通体 |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Font Families & Typefaces/Shangshung Sgoba Typeface/ShangshungSgoba-Khyungpo.ttf | Shangshung Sgoba-Khyungpo,象雄古巴—琼布体,Shangshung Sgoba-KhraTung | Shangshung Sgoba-KhraTung, Shangshung Sgoba-Khyungpo, TibetanFont, 象雄古巴—琼布体 |
 | Unicode Font Families & Typefaces/Tanzin Kabree Font Family/Tanzin Kabree Capital Letters Tanzin Kabree Capital Letters.ttf | Tanzin Kabree Capital Letters,丹增噶智意钦,Tanzin Kabree Capital Letters Tanzin Kabree Capital Letters,丹增噶智意钦 丹增噶智意钦 | Tanzin Kabree Capital Letters Tanzin Kabree Capital Letters, TanzinKabreeCapitalLetters-TanzinKabreeCapitalLetters, 丹增噶智意钦 丹增噶智意钦 |
 | Unicode Font Families & Typefaces/Tanzin Kabree Font Family/Tanzin Kabree mediocre Letters Tanzin Kabree mediocre Letters.ttf | Tanzin Kabree mediocre Letters,丹增噶智意章,Tanzin Kabree mediocre Letters Tanzin Kabree mediocre Letters,丹增噶智意章 丹增噶智意章 | Tanzin Kabree mediocre Letters Tanzin Kabree mediocre Letters, TanzinKabreemediocreLetters-TanzinKabreemediocreLetters, 丹增噶智意章 丹增噶智意章 |
 | Unicode Font Families & Typefaces/Tanzin Kabree Font Family/Tanzin Kabree Small Letters Tanzin Kabree Small Letters.ttf | Tanzin Kabree Small Letters,丹增噶智意琼,Tanzin Kabree Small Letters Tanzin Kabree Small Letters,丹增噶智意琼 丹增噶智意琼 | Tanzin Kabree Small Letters Tanzin Kabree Small Letters, TanzinKabreeSmallLetters-TanzinKabreeSmallLetters, 丹增噶智意琼 丹增噶智意琼 |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+| Unicode Font Families & Typefaces/Tanzin Kabree Font Family/Tanzin Kabree Sug ring Tanzin Kabree Sug ring.ttf | Tanzin Kabree Sug ring,丹增噶智苏让,Tanzin Kabree Sug ring Tanzin Kabree Sug ring,丹增噶智苏让 丹增噶智苏让 | Tanzin Kabree Sug ring Tanzin Kabree Sug ring, TanzinKabreeSugring-TanzinKabreeSugring, 丹增噶智苏让 丹增噶智苏让 |
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 =======
 | Unicode Font Families & Typefaces/Tanzin Kabree Font Family/Tanzin Kabree Sug ring Tanzin Kabree Sug ring.ttf | Tanzin Kabree Sug ring,丹增噶智苏让,Tanzin Kabree Sug ring Tanzin Kabree Sug ring,丹增噶智苏让 丹增噶智苏让 | Tanzin Kabree Sug ring Tanzin Kabree Sug ring, TanzinKabreeSugring-TanzinKabreeSugring, 丹增噶智苏让 丹增噶智苏让 |
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
@@ -845,6 +896,10 @@
 | Unicode Font Families & Typefaces/Xenotype Tibetan/XenoTypeTBdBuMed.ttf | XenoType TB dBuMed | XenoType TB dBuMed, XenoTypeTBdBuMed |
 | Unicode Font Families & Typefaces/Xenotype Tibetan/XenoTypeTibetan.ttf | XenoType Tibetan | XenoType Tibetan, XenoTypeTibetan |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+| Unicode Font Families & Typefaces/Yagpo Tibetan Font Family/Yagpo_PALI_OT_21_06_10.ttf | Yagpo | Yagpo |
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 =======
 | Unicode Font Families & Typefaces/Yagpo Tibetan Font Family/Yagpo_PALI_OT_21_06_10.ttf | Yagpo | Yagpo |
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
@@ -869,6 +924,10 @@
 | Unicode Individual fonts/FZZW_WD.TTF | Tibetan_QT,藏文吾坚琼体 | FZZW-QT, Tibetan_QT, 藏文吾坚琼体 |
 | Unicode Individual fonts/HandsomeJuZang.ttf | Handsome Ju Zang,<字体子系> | <字体全名>, Handsome Ju Zang, HandsomeJuZang |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+| Unicode Individual fonts/JYWJT.ttf | JYWJT,嘉木杨乌金体 | JYWJT, 嘉木杨乌金体 |
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 =======
 | Unicode Individual fonts/JYWJT.ttf | JYWJT,嘉木杨乌金体 | JYWJT, 嘉木杨乌金体 |
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
@@ -878,6 +937,12 @@
 | Unicode Individual fonts/Microsoft Himalaya/himalaya.ttf | Microsoft Himalaya | Microsoft Himalaya, MicrosoftHimalaya |
 | Unicode Individual fonts/Microsoft Himalaya/himalaya_2.ttf | Microsoft Himalaya | Microsoft Himalaya, MicrosoftHimalaya |
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+| Unicode Individual fonts/MinamKagyuTadri/Minam Kagyu Tadri.ttf | Minam Kagyu Tadri | Minam Kagyu Tadri, MinamKagyuTadri |
+| Unicode Individual fonts/MinamKagyuTadri/嘉木杨-聂智体2.otf | JMYZK-NZT2,嘉木杨字库-聂智体2 | JMYZK-NZT2, JMYZKNZT2, 嘉木杨字库-聂智体2 |
+| Unicode Individual fonts/MinamKagyuTadri/米南-囊智诺布玛.otf | Minam Nangdri Norbuma,米南-囊智诺布玛 | Minam Nangdri Norbuma, MinamNangdriNorbuma, 米南-囊智诺布玛 |
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 =======
 | Unicode Individual fonts/MinamKagyuTadri/Minam Kagyu Tadri.ttf | Minam Kagyu Tadri | Minam Kagyu Tadri, MinamKagyuTadri |
 | Unicode Individual fonts/MinamKagyuTadri/嘉木杨-聂智体2.otf | JMYZK-NZT2,嘉木杨字库-聂智体2 | JMYZK-NZT2, JMYZKNZT2, 嘉木杨字库-聂智体2 |
@@ -890,11 +955,17 @@
 | Unicode Individual fonts/Snow_Lotus.ttf | Snow Lotus | -, SnowLotus, 雪莲花-藏文字体 |
 | Unicode Individual fonts/Sun-ExtA.ttf | Sun-ExtA | Sun-ExtA |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Individual fonts/TanviDev/Tibetanmanistones-Regular.otf | Tibetan mani stones | Tibetan mani stones Regular, Tibetanmanistones-Regular |
 | Unicode Individual fonts/TanviDev/Tibetanmanistonesstencil01-Regular.otf | Tibetan mani stones stencil 01 | Tibetan mani stones stencil 01 Regular, Tibetanmanistonesstencil01-Regular |
 | Unicode Individual fonts/TanviDev/Tibetanmanistonesstencil-Regular.otf | Tibetan mani stones stencil | Tibetan mani stones stencil Regular, Tibetanmanistonesstencil-Regular |
 | Unicode Individual fonts/TanviDev/TibetanUchen-Regular.otf | Tibetan Uchen | Tibetan Uchen Regular, TibetanUchen-Regular |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Individual fonts/TibetanManglamUni.ttf | Tibetan Mangalam Uni | Tibetan Mangalam Uni, TibetanMangalamUni |
 | Unicode Individual fonts/tibetansambhotayigchung.ttf | TibetanYigchung,TibetanSambhotaYigchung | TibetanSambhotaYigchung, TibetanYigchung |
@@ -910,7 +981,11 @@
 | Unicode Individual fonts/yalasoo_Uchen.ttf | yalasoo-Uchen,呀啦嗦-乌金体 | yalasoo-Uchen, 呀啦嗦-乌金体 |
 | Unicode Individual fonts/公巴藏文字体GONGBA-Tibet.otf | 公巴藏文字体GONGBA-Tibet,公巴藏文字体GONGBA-Tibet GONGBA-Tibet,______GONGBA-Tibet GONGBA-Tibet | ______GONGBA-Tibet, 公巴藏文字体GONGBA-Tibet |
 <<<<<<< HEAD
+<<<<<<< HEAD
 | Unicode Individual fonts/尼永-永字加尾-Yongzi_with_Tail.ttf | Smuza-Yongzi with Tail | Smuza-YongziwithTail-Smuza-YongziwithTail, Smuza-Yongzi with Tail Smuza-Yongzi with Tail |
+=======
+| Unicode Individual fonts/尼永-永字加尾-Yongzi_with_Tail.ttf | Error | Error |
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 =======
 | Unicode Individual fonts/尼永-永字加尾-Yongzi_with_Tail.ttf | Error | Error |
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
@@ -942,11 +1017,17 @@
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/CTRC/ctrc-uchen.ttf | CTRC-Uchen,藏研乌坚体 | CTRC-Uchen, 藏研乌坚体 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Mangalam.otf | Mangalam | Mangalam |
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Old versions of Khampa Dedri/Kangba Derchi- Bechu.ttf | Kangba Derchi- Bechu,康巴德智-柏丘体 | Kangba Derchi- Bechu, KangbaDerchiBechu, 康巴德智-柏丘体 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Old versions of Khampa Dedri/Kangba Derchi-Chuyig.ttf | Kangba Derchi-Chuyig,Normal,obyčejné,Standard,Κανονικά,Normaali,Normál,Normale,Standaard,Normalny,Обычный,Normálne,Navadno,Arrunta,康巴德智-丘艺体 | Kangba Derchi-Chuyig, KangbaDerchiChuyig, 康巴德智-丘艺体 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Old versions of Khampa Dedri/Kangba Derchi-Drutsa.ttf | Kangba Derchi-Drutsa,康巴德智－珠擦体 | Kangba Derchi-Drutsa, KangbaDerchiDrutsa, 康巴德智－珠擦体 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Old versions of Khampa Dedri/Kangba Derchi-Zhugang.ttf | Kangba Derchi-Zhugang,康巴德智-珠岗体 | Kangba Derchi-Zhugang, KangbaDerchiZhugang, 康巴德智-珠岗体 |
+<<<<<<< HEAD
+>>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
+=======
 >>>>>>> a7a236a36424f90a13406026acb63ce20effdbb2
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Yesang Karmo - Old name of Bhozuk/Yesang Karmo-Bhodor(02).otf | Yesang Karmo-Bhodor(02) | Yesang Karmo-Bhodor(02), YesangKarmo-Bhodor02 |
 | Unicode Problematic:Outdated:ReExported:Incomplete fonts/Outdated fonts/Yesang Karmo - Old name of Bhozuk/Yesang Karmo-Bhodor(03).ttf | Yesang Karmo-Bhodor(03) | Yesang Karmo-Bhodor(03), YesangKarmo-Bhodor03 |
