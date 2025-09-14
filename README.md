@@ -6,7 +6,35 @@ Public repository of open access Tibetan fonts.
 
 See [CATALOG.md](CATALOG.md) for a full catalog.
 
-## Type Foundries and Designers' Official Websites: 
+### See preview page [here](https://openpecha.github.io/tibetan-fonts/)
+
+### Acknowledgement
+
+This collection of font was made possible through individual and institutional contributions. We want to thank:
+- the Buddhist Digital Resource Center
+- the MonlamAI project
+- the OpenPecha project
+- the Tsadra Foundation
+- TCRC
+- Gangchen Yangtso གངས་ཅན་དབྱངས་འཚོ།
+- Tamdrin Gombo རྟ་མགྲིན་མགོན་པོ།
+- Bhod Dhorchang བྷོད་རྡོར་འཆང་།
+- Kalsang Tsebtan སྐལ་བཟང་ཚེ་བརྟན།
+- the Padmakara translation committee
+- Georg Fischer
+- Leigh Brasington
+- Roger Espel Llima
+- Chris Fynn
+- Peter Lofting
+- Gerry Wiener
+- Pierre Robillard
+- Tanvi Dev
+- Luktsang ལུང་ཚང་།
+- Dharma Drum Institute of Liberal Arts (DILA)
+
+## Resources
+
+##### Type Foundries and Designers' Official Websites: 
 
 - Yalasoo, Qomolangma font family: http://www.yalasoo.com
 - Monlam Tibetan font family: https://monlamit.com/app-store/monlam-bodyig.html
@@ -17,9 +45,12 @@ See [CATALOG.md](CATALOG.md) for a full catalog.
 - Noto Serif Tibetan variable font, Jomolhari and Uchen: https://fonts.google.com/?subset=tibetan
 - MiSans Tibetan variable font: https://hyperos.mi.com/font/details/tibetan
 - Bhozuk Tibetan font family's official website Thempengma and other Tibetan fonts: www.Tibetanfonts.com
+- archive version of Jamyang Commercial fonts: https://web.archive.org/web/20160329121542/https://www.jamyang.de/fonts/tibfonts.htm
+- LaTeX fonts: https://ctan.org/tex-archive/language/tibetan/
 
-## Third-Party Fonts Websites: 
+##### Third-Party Fonts Websites: 
 
+- Thempangma Tibetan Fonts Website: http://tibetanfonts.com/site-List-13.html
 - Tibetan Typography website: http://www.tibetanfont.com
 - Sonamdawa's collection: https://sonamdawa.com/gdrive/
 - Zangtsul IT Font website 1: https://www.zangtsul.cn/page/4583378
@@ -28,9 +59,21 @@ See [CATALOG.md](CATALOG.md) for a full catalog.
 - Tibetan Calligraphy Website, China, font page: http://www.zgzzsfw.com/h-col-137.html 
 - Fontke: https://eng.fontke.com/
 
-### Font lists
+##### Font lists
 
 - http://luc.devroye.org/tibet.html
 - https://digitaltibetan.github.io/DigitalTibetan/docs/tibetan_fonts.html
 - https://collab.its.virginia.edu/wiki/tibetan-script/Tibetan%20Fonts.html
 - https://collab.its.virginia.edu/wiki/tibetan-script/Legacy%20Tibetan%20Font%20Systems.html
+- https://salrc.uchicago.edu/resources/fonts/available/tibetan/
+- https://www.alanwood.net/unicode/fontsbyrange.html#u0f00
+- http://www.wazu.jp/gallery/Fonts_Tibetan.html
+- https://orient.org/unicode/#fonts
+
+##### Sources
+
+https://web.archive.org/web/20240716194129/https://www.trace.org/profile/catching-lobsang-monlam
+
+##### Fonts to import
+
+https://ctan.org/tex-archive/language/tibetan/

@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tibetan fonts preview</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @@FONTFACES
+    </style>
+</head>
+<body>
+
+<h1>Tibetan fonts preview</h1>
+
+<p class="gh">
+    Repository: 
+    <a target="_blank" href="@@REPO">@@REPO</a>
+</p>
+
+<form class="controls">
+    <label for="fz">
+        <span>Font size: <b></b></span>
+        <input type="range" name="fz" id="fz" min="14" max="81" step="1" value="32">
+    </label>
+
+    <label for="text">
+        <span>Type here to preview text: <b></b></span>
+        <textarea id="text" name="text" data-default-text="@@MAIN_TEXT"></textarea>
+    </label>
+    
+    <div>
+        <button type="button" id="toggleExpand">Expand/collapse all</button>
+    </div>
+    
+</form>
+
+@@PARAGRAPHS
+
+<script type="text/html">
+@@TPL--paragraph
+<article class="font">
+    <h3>@@NAME</h3>
+    <p class="txt" style="@@STYLE">@@TEXT</p>
+</article>
+@@/TPL
+</script>
+
+
+<script type="text/html">
+@@TPL--acc
+<section class="acc">
+    <h3 class="acc-title">
+        @@TITLE
+        <a target="_blank" href="@@SRC">[src]</a>
+    </h3>
+
+    <div class="acc-content">
+        @@CONTENT
+    </div>
+</section>
+@@/TPL
+</script>
+
+
+<script src="./preview_index.js"></script>
+</body>
+</html>
