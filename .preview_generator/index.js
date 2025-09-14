@@ -29,7 +29,7 @@ const dirsToWalk = [
     'Unicode Problematic:Outdated:ReExported:Incomplete fonts'
 ].map(dirName => path.join(ROOT_DIR, dirName))
 
-const MAIN_TEXT = '༄༅། །སངས་རྒྱས་ཆོས་དང་ཚོགས་ཀྱི་མཆོག་རྣམས་ལ། །བྱང་ཆུབ་བར་དུ་བདག་ནི་སྐྱབས་སུ་མཆི། །བདག་གྱིས་སྤྱིན་སོགས་བགྱིས་པའི་བསོད་ནམས་ཀྱིས། །འགྲོ་ལ་ཕན་ཕྱིར་སངས་རྒྱས་འགྲུབ་པར་ཤོག ༈'
+const MAIN_TEXT = '༄༅། །ཀུན་མཁྱེན་གྲུབ་དངོས་གཅིག་མཆོག་རྗེ་ཉིད་སྟོན། །ཐུགས་དག་རྣམ་དཔྱོད་འཕྲུལ་དབང་སྨྲ་རྩོམ་མཚྭར། །འཚོ་མཛད་ཝེར་ཞིའི་ཟླ་འོད་ཡེ་རིཊ་ལེཌ༑ ༈ །གཤེན་སྲས་ལྷ་རྗེའི་ཨོཾ་ཨཱཿ ཧཱུཾ་ལས་འཁྲུངས།། ༠༡༢༣༤༥༦༧༨༩'
 
 async function generateIndexHtml() {
     const TPL = (await fs.promises.readFile(path.join(CURRENT_DIR, 'tpl.html'))).toString()
