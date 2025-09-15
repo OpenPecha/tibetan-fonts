@@ -47,6 +47,7 @@ async function generateIndexHtml() {
                 return tplParts.paragraph.render({
                     '@@STYLE': f.cssStyle,
                     '@@NAME': f.name,
+                    '@@FONT_PATH': f.pathRel,
                     '@@TEXT': MAIN_TEXT,
                 })
             }).join('\n'),
