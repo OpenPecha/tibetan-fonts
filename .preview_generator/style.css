@@ -43,6 +43,23 @@ a {
     margin: 0;
     padding-bottom: 16px;
     border-bottom: 1px dashed #989c94;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.download-btn {
+    background: #6b8435;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: auto;
+    flex-shrink: 0;
+}
+.download-btn:hover {
+    background: #5a6f2d;
 }
 .font p {
     font-size: var(--tib-fz);
@@ -168,5 +185,16 @@ a {
     .font p {
         padding-left: 0;
         padding-right: 0;
+    }
+    
+    .font h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .download-btn {
+        margin-left: 0;
+        align-self: flex-end;
     }
 }
