@@ -9,3 +9,8 @@ The 6 fonts in CTRC (CTRC-Betsu, CTRC-BT, CTRC-Drutsa, CTRC-HT, CTRC-Tsumachu, a
 - CTRC-HT is Qomolangma-Sarchen, HT stands for Heiti, which is the Chinese name (Pinyin) for sarchen, that is the Tibetan boldface, similiar to bold roman fonts. 
 - CTRC-Tsumachu is Qomolangma-Tsumachu
 - CTRC-Uchen is Qomolangma-Uchen Sutung, that is a short-leg (sugtung) uchan style. 
+
+
+Updates: 
+
+We have confirmed with the font creator that the 6 fonts of CTRC have indeed been incorporated into the 17 fonts of the Qomolangma font family without any changes to the glypghs. The only change is the adoption of the 6 fonts into the Qomolangma family as pointed above. 
