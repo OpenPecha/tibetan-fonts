@@ -4,10 +4,53 @@
 
 \usepackage{fontspec}
 \usepackage{cmap}
-
 \usepackage[left=1in,right=1.5in,top=1in,bottom=1in]{geometry}
+
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
+
+% ------------------------------------------------------------
+% Syllable marker infrastructure (logical text -> stable IDs)
+% ------------------------------------------------------------
+\newcount\syllid
+\syllid=0
+
+\newattribute\syllattr
+
+% Insert a zero-width user whatsit with an increasing ID.
+% Lua will read these IDs from line boxes.
+\def\syllmark{%
+  \global\advance\syllid by 1
+  \directlua{
+    local n = node.new("kern")
+    n.kern = 0
+    node.set_attribute(n, tex.attribute.syllattr, tex.count.syllid)
+
+    local nest = tex.nest[tex.nest.ptr]
+    if nest and nest.tail then
+      node.insert_after(nest.head, nest.tail, n)
+      nest.tail = n
+    else
+      node.write(n)
+    end
+  }%
+}
+
+\emergencystretch=1em
+\tolerance=9999
+\pretolerance=9999
+
+% ------------------------------------------------------------
+% TeX -> Lua communication
+% ------------------------------------------------------------
+\newtoks\gtoutfile
+\gtoutfile={GTOUTFILE}     % not used now, kept for compatibility
+
+\newtoks\gtbreakfile
+\gtbreakfile={GTBREAKFILE} % will be replaced per-font
+
+% Load Lua callback that writes page-1 line breaks
+\directlua{dofile("gt_page1.lua")}
 
 \begin{document}
 
@@ -15,7 +58,7 @@
   Path=FONTDIR,
   UprightFont={FONTFILEONLY},
   Renderer=HarfBuzz,
-  RawFeature={script=tibt}
+  RawFeature={script=tibt}%SCRIPTEXTRA
 ]
 
 \fontsize{FONTSIZE}{\dimexpr 1.25FONTSIZE pt\relax}\selectfont
