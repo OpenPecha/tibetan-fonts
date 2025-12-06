@@ -1,0 +1,24 @@
+\documentclass[12pt]{article}
+
+\pagestyle{empty}
+
+\usepackage{fontspec}
+\usepackage{cmap}
+
+\usepackage[left=1in,right=1.5in,top=1in,bottom=1in]{geometry}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\begin{document}
+
+\setmainfont{DUMMY}[
+  Path=FONTDIR,
+  UprightFont={FONTFILEONLY},
+  Renderer=HarfBuzz,
+  RawFeature={script=tibt}
+]
+
+\fontsize{FONTSIZE}{\dimexpr 1.25FONTSIZE pt\relax}\selectfont
+TEXTBODY
+
+\end{document}
