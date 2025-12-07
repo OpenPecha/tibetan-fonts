@@ -39,6 +39,18 @@ def contains_skt_chars(text):
     """Check if text contains any SKT filter characters."""
     return any(char in text for char in SKT_FILTER_CHARS)
 
+def fmt_pt(x, digits=1):
+    """
+    Format a float for TeX dimensions.
+    Keeps up to `digits` decimals, strips trailing zeros/dot.
+    Examples:
+      24.0 -> "24"
+      24.5 -> "24.5"
+      24.125 -> "24.125"
+    """
+    s = f"{x:.{digits}f}".rstrip("0").rstrip(".")
+    return s
+
 def load_corpus_units(text_dir, filter_skt=False):
     units = []
     page_pattern = re.compile(r'^--\s*page\s+\d+\s*--\s*$', re.IGNORECASE)
@@ -135,9 +147,9 @@ def add_tibetan_breakpoints(s: str) -> str:
 
 def escape_tex(s):
     # minimal TeX escaping for ASCII specials; Tibetan unaffected
-    return (s.replace('\\', '\\textbackslash{}')
-             .replace('%','\\%').replace('&','\\&').replace('#','\\#')
-             .replace('_','\\_').replace('{','\\{').replace('}','\\}'))
+    return (s.replace('\\', '')
+             .replace('%','').replace('$','').replace('&','').replace('#','')
+             .replace('_','').replace('{','').replace('}',''))
 
 def add_tibetan_breakpoints(s: str) -> str:
     # tsheg: allow break + marker unless followed by shad
@@ -155,10 +167,14 @@ def make_tex(template_str, base, font_path, font_size_pt, body, ttc_face_index="
         font_dir += "/"
     font_fileonly = os.path.basename(font_path)
 
+    font_size_str = fmt_pt(font_size_pt)
+    baseline_skip_str = fmt_pt(font_size_pt * 1.25)
+
     tex = template_str
     tex = tex.replace("FONTDIR", font_dir)
     tex = tex.replace("FONTFILEONLY", font_fileonly)
-    tex = tex.replace("FONTSIZE", str(font_size_pt))
+    tex = tex.replace("FONTSIZE", font_size_str)
+    tex = tex.replace("BASELINESKIP", baseline_skip_str)
     tex = tex.replace("TEXTBODY", body_escaped)
     tex = tex.replace("GTOUTFILE", f"out/{base}.txt")
     tex = tex.replace("GTBREAKFILE", f"out/{base}.breaks")
@@ -182,7 +198,7 @@ def main(csv_in="digital_fonts.filtered.csv"):
             base = row["basename"]
             font_path = row["font_path"]
             face_index = row.get("ttc_face_index","")
-            font_size_pt = int(row["font_size_pt"])
+            font_size_pt = float(row["font_size_pt"])
             
             # Read skt_ok column and determine if we should filter SKT characters
             skt_ok = row.get("skt_ok", "1")
@@ -193,6 +209,7 @@ def main(csv_in="digital_fonts.filtered.csv"):
 
             # rule 1: if both exist, skip
             if out_txt.exists() and out_tex.exists():
+                print("skip "+base)
                 continue
 
             # rule 2: if .txt exists but .tex doesn't, read .txt and generate .tex
@@ -200,10 +217,12 @@ def main(csv_in="digital_fonts.filtered.csv"):
                 body = out_txt.read_text(encoding="utf-8").strip()
                 tex = make_tex(template, base, font_path, font_size_pt, body, face_index)
                 out_tex.write_text(tex, encoding="utf-8")
+                print("generate tex for "+base)
                 continue
 
             # rule 3: otherwise, generate both files
             # Load corpus units with SKT filtering if needed
+            print("generate txt for "+base)
             units = load_corpus_units(TEXT_DIR, filter_skt=filter_skt)
             if not units:
                 print(f"No usable shad units found in texts/ for {base} (filter_skt={filter_skt})", file=sys.stderr)
@@ -212,7 +231,7 @@ def main(csv_in="digital_fonts.filtered.csv"):
             body = build_random_text(units, filter_skt=filter_skt)
             out_txt.write_text(body + "\n", encoding="utf-8")
 
-            tex = make_tex(template, font_path, font_size_pt, body, face_index)
+            tex = make_tex(template, base, font_path, font_size_pt, body, face_index)
             out_tex.write_text(tex, encoding="utf-8")
 
 if __name__ == "__main__":

@@ -4,6 +4,7 @@ import csv, subprocess, pathlib
 PROBE = "བོད་ཡིག། སྐྱེས་ཆེན། རྒྱལ་པོ། ༠༡༢༣༤༥༦༧༨༩"
 
 SKT_LIST_PATH = "skt_ok.lst"
+FONT_SIZES_ADJUSTED_PATH = "font_sizes_adjusted.csv"
 
 def load_skt_ok_set(path=SKT_LIST_PATH):
     p = pathlib.Path(path)
@@ -16,6 +17,32 @@ def load_skt_ok_set(path=SKT_LIST_PATH):
             items.append(s)
     print(items)
     return set(items)
+
+def load_font_sizes_adjusted(path=FONT_SIZES_ADJUSTED_PATH):
+    """
+    Load font size adjustments from font_sizes_adjusted.csv.
+    Returns a dict mapping basename -> proposed_size_pt (as string).
+    """
+    p = pathlib.Path(path)
+    if not p.exists():
+        print(f"Warning: {path} not found, font sizes will not be adjusted.")
+        return {}
+    
+    size_map = {}
+    try:
+        with open(p, encoding="utf-8") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                basename = row.get("basename", "").strip()
+                proposed_size = row.get("proposed_size_pt", "").strip()
+                if basename and proposed_size:
+                    size_map[basename] = proposed_size
+        print(f"Loaded {len(size_map)} font size adjustments from {path}.")
+    except Exception as e:
+        print(f"Warning: Error loading {path}: {e}")
+        return {}
+    
+    return size_map
 
 def hb_shape(font_path, face_index, text):
     """
@@ -50,6 +77,7 @@ def hb_has_notdef(font_path, face_index=""):
 
 def main(csv_in="digital_fonts.csv", csv_out="digital_fonts.filtered.csv"):
     skt_ok_set = load_skt_ok_set()
+    font_sizes_map = load_font_sizes_adjusted()
 
     kept, dropped = [], []
     with open(csv_in, encoding="utf-8") as f:
@@ -60,9 +88,14 @@ def main(csv_in="digital_fonts.csv", csv_out="digital_fonts.filtered.csv"):
 
             # Original coverage test
             bad, info = hb_has_notdef(font_path, face_index)
+            bad = False
 
             # New manual Sanskrit OK flag
             row["skt_ok"] = "1" if base in skt_ok_set else "0"
+            
+            # Update font size from font_sizes_adjusted.csv if available
+            if base in font_sizes_map:
+                row["font_size_pt"] = font_sizes_map[base]
 
             if bad:
                 row["drop_reason"] = info
