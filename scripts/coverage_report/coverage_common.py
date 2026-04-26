@@ -25,6 +25,8 @@ REPO_ROOT = SCRIPT_DIR.parents[1]
 BENCHMARK_DIR = REPO_ROOT / "scripts" / "benchmark_gen"
 DEFAULT_FONTS_CSV = BENCHMARK_DIR / "digital_fonts.filtered.csv"
 DEFAULT_OUT_DIR = SCRIPT_DIR / "out"
+# BoCorpus stack frequencies; produce with get_stacks_from_corpus.py
+DEFAULT_STACKS_CSV = DEFAULT_OUT_DIR / "bocorpus_stacks.csv"
 
 TIBETAN_START = 0x0F00
 TIBETAN_END = 0x0FFF
@@ -225,6 +227,36 @@ def read_stack_lines(path: Path, *, limit: int | None = None) -> list[str]:
         if limit is not None and len(stacks) >= limit:
             break
     return stacks
+
+
+def _read_stacks_from_csv(path: Path, *, limit: int | None = None) -> list[str]:
+    """Load stacks from get_stacks_from_corpus output (stack, nb_occurences)."""
+    stacks: list[str] = []
+    seen: set[str] = set()
+    with path.open(encoding="utf-8-sig", newline="") as f:
+        reader = csv.DictReader(f)
+        if not reader.fieldnames or "stack" not in reader.fieldnames:
+            raise ValueError(
+                f"{path}: CSV must have a 'stack' column, got {reader.fieldnames!r}"
+            )
+        for row in reader:
+            stack = (row.get("stack") or "").strip()
+            if not is_tibetan_line(stack):
+                continue
+            if stack in seen:
+                continue
+            seen.add(stack)
+            stacks.append(stack)
+            if limit is not None and len(stacks) >= limit:
+                break
+    return stacks
+
+
+def read_stacks_path(path: Path, *, limit: int | None = None) -> list[str]:
+    """NFD stack list: newline file (read_stack_lines) or BoCorpus .csv (stack column)."""
+    if path.suffix.lower() == ".csv":
+        return _read_stacks_from_csv(path, limit=limit)
+    return read_stack_lines(path, limit=limit)
 
 
 def read_probe_lines(path: Path, *, limit: int | None = None) -> list[str]:

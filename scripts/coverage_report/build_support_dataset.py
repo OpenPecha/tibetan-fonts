@@ -9,11 +9,12 @@ from pathlib import Path
 from coverage_common import (
     DEFAULT_FONTS_CSV,
     DEFAULT_OUT_DIR,
+    DEFAULT_STACKS_CSV,
     NORMAL_TIBETAN_PROBES,
     ParquetRowWriter,
     load_font_rows,
     read_probe_lines,
-    read_stack_lines,
+    read_stacks_path,
     select_font_rows,
     shape_rows,
     summarize_support_parquet,
@@ -27,7 +28,14 @@ def parse_args() -> argparse.Namespace:
         description="Shape Tibetan stacks with every selected font and write Parquet evidence."
     )
     parser.add_argument("--fonts-csv", type=Path, default=DEFAULT_FONTS_CSV)
-    parser.add_argument("--stacks", type=Path, help="NFD stack list, one stack per line.")
+    parser.add_argument(
+        "--stacks",
+        type=Path,
+        help=(
+            "Stack probes: one NFD stack per line, or bocorpus_stacks.csv from "
+            f"get_stacks_from_corpus.py. Default for --mode stacks/both: {DEFAULT_STACKS_CSV}"
+        ),
+    )
     parser.add_argument(
         "--mode",
         choices=("stacks", "normal", "both"),
@@ -58,8 +66,16 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     args = parse_args()
-    if args.mode in {"stacks", "both"} and args.stacks is None:
-        raise SystemExit("--stacks is required for --mode stacks or --mode both")
+    if args.mode in {"stacks", "both"}:
+        stacks_path = args.stacks if args.stacks is not None else DEFAULT_STACKS_CSV
+        if not stacks_path.is_file():
+            raise SystemExit(
+                f"Stack list not found: {stacks_path}\n"
+                "Generate it with: python get_stacks_from_corpus.py\n"
+                "Or pass an explicit file: --stacks /path/to/stacks.txt"
+            )
+    else:
+        stacks_path = None
 
     fonts = select_font_rows(
         load_font_rows(args.fonts_csv),
@@ -83,7 +99,10 @@ def main() -> None:
         )
         jobs.append(("normal", normal))
     if args.mode in {"stacks", "both"}:
-        jobs.append(("stack", read_stack_lines(args.stacks, limit=args.limit_stacks)))
+        assert stacks_path is not None
+        jobs.append(
+            ("stack", read_stacks_path(stacks_path, limit=args.limit_stacks))
+        )
 
     with ParquetRowWriter(output, batch_size=args.batch_size) as writer:
         for test_kind, probes in jobs:
