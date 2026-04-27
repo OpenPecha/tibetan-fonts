@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import random
 from pathlib import Path
 
 import pandas as pd
@@ -39,7 +40,12 @@ def parse_args() -> argparse.Namespace:
         default="mixed",
     )
     parser.add_argument("--sample-size", type=int, default=80)
-    parser.add_argument("--seed", type=int, default=13)
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        help="Random seed for reproducible sampling. Omit for a fresh random sample each run.",
+    )
     parser.add_argument("--hb-view", default="hb-view")
     parser.add_argument("--render-margin", type=int, default=80)
     parser.add_argument("--columns", type=int, default=4)
@@ -93,20 +99,36 @@ def filter_rows(df: pd.DataFrame, kind: str) -> pd.DataFrame:
     return df
 
 
-def sample_rows(df: pd.DataFrame, sample_size: int, seed: int) -> pd.DataFrame:
+def sample_rows(df: pd.DataFrame, sample_size: int, seed: int | None) -> pd.DataFrame:
     if len(df) <= sample_size:
         return df
-    # Prefer suspicious cases while still spreading across fonts.
+    random_state = seed if seed is not None else random.SystemRandom().randrange(2**31)
+    # Prefer suspicious cases, then sample round-robin by font so one large font
+    # group does not dominate the contact sheet.
     ranked = df.assign(
         audit_rank=(
             df["final_ok"].astype(int) * 2
             + df["has_vowel_diacritic"].astype(int)
             + df["complexity"].clip(upper=6)
         )
-    ).sort_values(["audit_rank", "basename"], ascending=[False, True])
-    top = ranked.head(sample_size // 2)
-    rest = ranked.drop(top.index).sample(sample_size - len(top), random_state=seed)
-    return pd.concat([top, rest]).sort_values(["basename", "stack"])
+    )
+    selected = []
+    groups = [
+        group.sort_values("audit_rank", ascending=False)
+        .head(max(sample_size, 1))
+        .sample(frac=1, random_state=random_state + i)
+        for i, (_, group) in enumerate(ranked.groupby("basename", sort=False))
+    ]
+    while groups and len(selected) < sample_size:
+        next_groups = []
+        for group in groups:
+            if len(selected) >= sample_size:
+                break
+            selected.append(group.iloc[[0]])
+            if len(group) > 1:
+                next_groups.append(group.iloc[1:])
+        groups = next_groups
+    return pd.concat(selected).sample(frac=1, random_state=random_state).drop(columns=["audit_rank"])
 
 
 def render_rows(rows: pd.DataFrame, font_map: dict[str, object], args: argparse.Namespace) -> list[dict[str, str]]:
@@ -138,6 +160,7 @@ def render_rows(rows: pd.DataFrame, font_map: dict[str, object], args: argparse.
                 "test_kind": row.test_kind,
                 "stack": row.stack,
                 "codepoints": row.codepoints,
+                "is_standard_tibetan": str(row.is_standard_tibetan),
                 "auto_ok": str(row.ok),
                 "final_ok": str(final_ok),
                 "reason": row.reason,

@@ -16,11 +16,20 @@ Run with the project venv:
 - `font_features.parquet`: static `cmap`, `GSUB`, and `GPOS` evidence per font face.
 - `audit/`: rendered PNG samples, a manifest, and a contact sheet for manual false-positive/false-negative review.
 
-Generated outputs default to `scripts/coverage_report/out/`.
+The default `bocorpus_stacks.csv` path is `scripts/coverage_report/`. Parquet and font evidence still default to `scripts/coverage_report/out/`.
 
 ## Build Dynamic Support Data
 
-The stack file is treated as already normalized in NFD. The loader preserves that text and only skips obvious metadata/non-Tibetan lines.
+Default stack probes come from BoCorpus-derived frequencies: run `get_stacks_from_corpus.py` once to write `scripts/coverage_report/bocorpus_stacks.csv` (columns `stack`, `nb_occurences`, and `hunspell_bo`: the latter is 1 if the stack appears when segmenting at least one syllable form allowed by [hunspell-bo](https://github.com/eroux/hunspell-bo/) `bo.aff`/`bo.dic`, using the same botok normalization and stack tokenization as the corpus pass; see `hunspell_bo_stacks.py`). Then `build_support_dataset.py` uses that path by default for `--mode stacks` or `--mode both`.
+
+The stack file is treated as already normalized in NFD. The loader preserves that text and only skips obvious metadata/non-Tibetan lines. For `.csv` output from `get_stacks_from_corpus.py`, the `stack` column is read (see `read_stacks_path` in `coverage_common.py`).
+
+```bash
+/home/eroux/pvenvs/1/bin/python scripts/coverage_report/get_stacks_from_corpus.py
+/home/eroux/pvenvs/1/bin/python scripts/coverage_report/build_support_dataset.py --mode both
+```
+
+To use a plain newline-delimited stack list instead:
 
 ```bash
 /home/eroux/pvenvs/1/bin/python scripts/coverage_report/build_support_dataset.py \
@@ -46,6 +55,14 @@ Useful smaller runs:
 ```
 
 The builder uses `uharfbuzz` with `script=tibt`, `language=bo`, and `direction=ltr`. Each row records glyph IDs, glyph names, clusters, advances, offsets, bounding box, ink area, HarfBuzz version, existing `skt_ok`, and stack metrics.
+
+When the stack input is `bocorpus_stacks.csv`, the `hunspell_bo` column is stored as `is_standard_tibetan`. If `is_standard_tibetan=0` and a font has `skt_ok=0`, the row is marked invalid without shaping:
+
+```text
+ok=False
+reason=non_standard_tibetan_for_skt0
+support_class=non_standard_for_skt0
+```
 
 The main Parquet file is deliberately long-form, not a wide table:
 
@@ -86,12 +103,14 @@ Use audit sheets to look for false positives and false negatives. This is expect
   --sample-size 80
 ```
 
+By default, audit sampling is random each run and balanced round-robin across fonts, so repeated runs should expose different supported stacks. Pass `--seed 13` or another integer when you need a reproducible sheet.
+
 If the audit script warns that `placement_warning_count` is missing, rebuild the support Parquet first. Audit filtering uses the stored classification in the Parquet file, so older files will not include newer heuristics.
 
 Audit kinds:
 
 - `complex-pass`: automated passes from the stack list with at least two subjoined letters and at least one vowel/diacritic. These are good potential false positives to inspect manually.
-- `placement-warning`: rows flagged by placement heuristics, for example top marks colliding, a below-mark placed too far horizontally from its base, a bottom-vowel glyph floating around the middle of a tall stack, repeated top diacritics piling up, a subscript swallowed by the previous stack layer, or many subscript components drawn in the same vertical layer.
+- `placement-warning`: rows flagged by placement heuristics, for example top marks colliding or drifting horizontally, a below-mark placed too far horizontally from its base, a bottom-vowel glyph floating around the middle of a tall stack, repeated top diacritics piling up, a subscript swallowed by or detached from the previous stack layer, or many subscript components drawn in the same vertical layer.
 - `false-positive`: automated passes that are suspicious because they include hard stacks, vowels/diacritics, or `skt_ok=0` fonts.
 - `false-negative`: automated failures in fonts already marked `skt_ok=1`.
 - `normal-fail`: ordinary Tibetan probes that failed, useful for checking whether `skt_ok=0` fonts are still safe for normal text.
@@ -110,9 +129,11 @@ Hard failures:
 - empty shape
 - zero ink for a non-empty glyph sequence
 - floating bottom-vowel geometry in tall stacks
-- horizontal below-mark misalignment, where U+0F37 is drawn too far outside the base stack's horizontal span
+- horizontal below-mark misalignment, where U+0F35 or U+0F37 is drawn too far outside the base stack's horizontal span
 - top mark overlap, where a top mark collides with a top vowel/mark already present in the preceding composite glyph
+- top mark horizontal misalignment, where a trailing top-mark cluster is drawn mostly to the side of the base stack
 - top diacritic collision, where repeated top marks are drawn with identical geometry
+- subscript horizontal misalignment, where a subscript layer is drawn mostly to the side instead of under the previous stack layer
 - subscript containment, where the final subscript is drawn entirely inside the previous stack component instead of becoming a lower layer
 - subscript overlap, where adjacent subscript layers overlap too much to read as separate vertical layers
 - subscript insufficient descent, where the next subscript starts too high relative to the previous subscript layer
@@ -126,13 +147,17 @@ Pass classes:
 - `font_error`: the font face could not be loaded.
 - `shape_error`: HarfBuzz failed on the probe.
 
-The floating bottom-vowel check is a first-pass geometry heuristic: when a stack has a bottom vowel such as U+0F71 or U+0F74, late mark glyphs are expected to sit near the lower part of the stack. If their ink stays around the middle or inside the preceding stack glyph, the row is flagged with `floating_bottom_vowel`.
+The floating bottom-vowel check is a first-pass geometry heuristic: when a stack has a bottom vowel such as U+0F71 or U+0F74, late mark glyphs are expected to sit near the lower part of the stack. If their ink stays around the middle or too far inside the preceding stack glyph, the row is flagged with `floating_bottom_vowel`.
 
-The horizontal below-mark check flags cases where U+0F37 is emitted as a separate glyph but lies mostly outside the horizontal span of the base stack. The row is flagged with `mark_horizontal_misalignment`.
+The horizontal below-mark check flags cases where U+0F35 or U+0F37 is emitted as a separate glyph but lies mostly outside the horizontal span of the base stack. The row is flagged with `mark_horizontal_misalignment`.
 
-The top mark overlap check flags cases such as U+0F7A plus U+0F7E where a separately emitted top mark overlaps the preceding composite glyph instead of sitting above it. The row is flagged with `top_mark_overlap`.
+The top mark overlap check flags cases such as U+0F7A plus U+0F7E where a separately emitted top mark overlaps the preceding composite glyph instead of sitting above it, including cases where a top vowel is swallowed by an earlier body glyph. The row is flagged with `top_mark_overlap`.
+
+The top mark horizontal misalignment check flags trailing top-mark clusters that are mostly detached to the left or right of the base stack. The row is flagged with `top_mark_horizontal_misalignment`.
 
 The top diacritic collision check flags repeated top marks, such as multiple U+0F83 signs, when the resulting glyph boxes are identical and therefore pile up in the same position. The row is flagged with `top_diacritic_collision`.
+
+The subscript horizontal misalignment check catches cases where a separate subscript layer, even in a single-subscript stack, is mostly detached to the left or right of the previous stack component. The row is flagged with `subscript_horizontal_misalignment`.
 
 The subscript containment check targets shallower stacks where a final subscript glyph is emitted separately but sits entirely inside the previous stack component. The row is flagged with `subscript_containment`.
 

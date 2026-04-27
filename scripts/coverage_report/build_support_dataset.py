@@ -6,6 +6,8 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from tqdm import tqdm
+
 from coverage_common import (
     DEFAULT_FONTS_CSV,
     DEFAULT_OUT_DIR,
@@ -106,14 +108,18 @@ def main() -> None:
 
     with ParquetRowWriter(output, batch_size=args.batch_size) as writer:
         for test_kind, probes in jobs:
+            total = len(fonts) * len(probes)
             print(f"Testing {len(fonts)} font(s) x {len(probes)} {test_kind} probe(s)")
-            for row in shape_rows(fonts, probes, test_kind=test_kind):
+            rows = shape_rows(fonts, probes, test_kind=test_kind)
+            for row in tqdm(rows, total=total, unit="row", desc=f"{test_kind} shaping"):
                 writer.write(row)
 
+    print("Writing summary CSV...")
     count = write_csv_summary(summarize_support_parquet(output), summary_csv)
     print(f"Wrote {output}")
     print(f"Wrote {summary_csv} ({count} font summaries)")
     if args.mode in {"stacks", "both"} and not args.no_matrix_csv:
+        print("Writing stack x font matrix CSV...")
         matrix_count = write_support_matrix_csv(output, matrix_csv, test_kind="stack")
         print(f"Wrote {matrix_csv} ({matrix_count} stack rows)")
 

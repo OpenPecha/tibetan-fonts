@@ -26,7 +26,7 @@ BENCHMARK_DIR = REPO_ROOT / "scripts" / "benchmark_gen"
 DEFAULT_FONTS_CSV = BENCHMARK_DIR / "digital_fonts.filtered.csv"
 DEFAULT_OUT_DIR = SCRIPT_DIR / "out"
 # BoCorpus stack frequencies; produce with get_stacks_from_corpus.py
-DEFAULT_STACKS_CSV = DEFAULT_OUT_DIR / "bocorpus_stacks.csv"
+DEFAULT_STACKS_CSV = SCRIPT_DIR / "bocorpus_stacks.csv"
 
 TIBETAN_START = 0x0F00
 TIBETAN_END = 0x0FFF
@@ -134,6 +134,13 @@ class FontRow:
     skt_ok: int | None
 
 
+@dataclass(frozen=True)
+class StackProbe:
+    stack: str
+    is_standard_tibetan: int = 1
+    nb_occurrences: int = 0
+
+
 def parse_int(value: object, default: int = 0) -> int:
     text = "" if value is None else str(value).strip()
     if text == "":
@@ -205,6 +212,41 @@ def in_tibetan_block(ch: str) -> bool:
     return TIBETAN_START <= ord(ch) <= TIBETAN_END
 
 
+# Tibetan punctuation, marks, and digits that hunspell-bo does not list as syllables, but
+# should still count as valid for the get_stacks_from_corpus hunspell_bo tag when a stack
+# is composed only of these (Unicode scalars, same block as the listed ranges):
+# U+0F04–0F08, U+0F0B–0F14, U+0F20–0F29, and U+0F34, U+0F39, U+0F3C, U+0F3D.
+_HARDCODED_HUNSPELL_BO_EXTRA_RANGES: tuple[tuple[int, int], ...] = (
+    (0x0F04, 0x0F08),
+    (0x0F0B, 0x0F14),
+    (0x0F20, 0x0F29),
+)
+_HARDCODED_HUNSPELL_BO_EXTRA_SINGLES: frozenset[int] = frozenset(
+    (0x0F34, 0x0F39, 0x0F3C, 0x0F3D)
+)
+
+
+def _build_hunspell_bo_extra_char_set() -> frozenset[str]:
+    s: set[str] = set()
+    for a, b in _HARDCODED_HUNSPELL_BO_EXTRA_RANGES:
+        s.update(chr(cp) for cp in range(a, b + 1))
+    s.update(chr(cp) for cp in _HARDCODED_HUNSPELL_BO_EXTRA_SINGLES)
+    return frozenset(s)
+
+
+HARDCODED_HUNSPELL_BO_EXTRA_CHARS: frozenset[str] = _build_hunspell_bo_extra_char_set()
+
+
+def is_hunspell_bo_extra_stack(stack: str) -> bool:
+    """
+    Return True if *stack* is non-empty and every character is in
+    HARDCODED_HUNSPELL_BO_EXTRA_CHARS (punctuation / marks / digits not in hunspell syllables).
+    """
+    if not stack:
+        return False
+    return all(ch in HARDCODED_HUNSPELL_BO_EXTRA_CHARS for ch in stack)
+
+
 def is_tibetan_line(text: str) -> bool:
     stripped = text.strip()
     if not stripped:
@@ -212,9 +254,9 @@ def is_tibetan_line(text: str) -> bool:
     return all(in_tibetan_block(ch) for ch in stripped)
 
 
-def read_stack_lines(path: Path, *, limit: int | None = None) -> list[str]:
+def read_stack_lines(path: Path, *, limit: int | None = None) -> list[StackProbe]:
     """Read NFD stack lines, preserving normalization and filtering metadata."""
-    stacks: list[str] = []
+    stacks: list[StackProbe] = []
     seen: set[str] = set()
     for raw in path.read_text(encoding="utf-8").splitlines():
         stack = raw.strip()
@@ -223,15 +265,15 @@ def read_stack_lines(path: Path, *, limit: int | None = None) -> list[str]:
         if stack in seen:
             continue
         seen.add(stack)
-        stacks.append(stack)
+        stacks.append(StackProbe(stack=stack, is_standard_tibetan=1))
         if limit is not None and len(stacks) >= limit:
             break
     return stacks
 
 
-def _read_stacks_from_csv(path: Path, *, limit: int | None = None) -> list[str]:
-    """Load stacks from get_stacks_from_corpus output (stack, nb_occurences)."""
-    stacks: list[str] = []
+def _read_stacks_from_csv(path: Path, *, limit: int | None = None) -> list[StackProbe]:
+    """Load stacks from get_stacks_from_corpus output."""
+    stacks: list[StackProbe] = []
     seen: set[str] = set()
     with path.open(encoding="utf-8-sig", newline="") as f:
         reader = csv.DictReader(f)
@@ -246,13 +288,20 @@ def _read_stacks_from_csv(path: Path, *, limit: int | None = None) -> list[str]:
             if stack in seen:
                 continue
             seen.add(stack)
-            stacks.append(stack)
+            standard_raw = (row.get("hunspell_bo") or "1").strip()
+            stacks.append(
+                StackProbe(
+                    stack=stack,
+                    is_standard_tibetan=1 if standard_raw == "1" else 0,
+                    nb_occurrences=parse_int(row.get("nb_occurences"), 0),
+                )
+            )
             if limit is not None and len(stacks) >= limit:
                 break
     return stacks
 
 
-def read_stacks_path(path: Path, *, limit: int | None = None) -> list[str]:
+def read_stacks_path(path: Path, *, limit: int | None = None) -> list[StackProbe]:
     """NFD stack list: newline file (read_stack_lines) or BoCorpus .csv (stack column)."""
     if path.suffix.lower() == ".csv":
         return _read_stacks_from_csv(path, limit=limit)
@@ -280,7 +329,12 @@ def in_ranges(ch: str, ranges: tuple[tuple[int, int], ...]) -> bool:
     return any(start <= cp <= end for start, end in ranges)
 
 
-def stack_metrics(text: str) -> dict[str, object]:
+def stack_metrics(
+    text: str,
+    *,
+    is_standard_tibetan: int = 1,
+    nb_occurrences: int = 0,
+) -> dict[str, object]:
     names = []
     for ch in text:
         try:
@@ -296,6 +350,8 @@ def stack_metrics(text: str) -> dict[str, object]:
     combining_count = sum(1 for ch in text if unicodedata.combining(ch))
     return {
         "stack": text,
+        "is_standard_tibetan": is_standard_tibetan,
+        "stack_nb_occurrences": nb_occurrences,
         "stack_len": len(text),
         "codepoints": " ".join(codepoints(text)),
         "unicode_names": " | ".join(names),
@@ -311,6 +367,12 @@ def stack_metrics(text: str) -> dict[str, object]:
 
 def has_bottom_vowel(text: str) -> bool:
     return any(ch in BOTTOM_VOWELS for ch in text)
+
+
+def normalize_stack_probe(probe: str | StackProbe) -> StackProbe:
+    if isinstance(probe, StackProbe):
+        return probe
+    return StackProbe(stack=probe, is_standard_tibetan=1)
 
 
 def font_file_sha256(path: Path) -> str:
@@ -469,6 +531,8 @@ def detect_placement_warnings(text: str, glyph_boxes: list[dict[str, object]]) -
         warnings.append("top_diacritic_collision")
     if detect_top_mark_overlap(text, glyph_boxes):
         warnings.append("top_mark_overlap")
+    if detect_top_mark_horizontal_misalignment(text, glyph_boxes):
+        warnings.append("top_mark_horizontal_misalignment")
     if detect_mark_horizontal_misalignment(text, glyph_boxes):
         warnings.append("mark_horizontal_misalignment")
 
@@ -495,14 +559,33 @@ def detect_placement_warnings(text: str, glyph_boxes: list[dict[str, object]]) -
                 previous_height > 0
                 and bottom_bottom > previous_bottom + 0.10 * previous_height
             )
-            if bottom_top > previous_top - min_layer_gap or bottom_too_high:
+            overlap = min(bottom_top, previous_top) - max(bottom_bottom, previous_bottom)
+            bottom_height = bottom_top - bottom_bottom
+            bottom_absorbed = (
+                bottom_height > 0
+                and overlap / bottom_height >= 0.85
+                and bottom_bottom > previous_bottom - 0.08 * stack_height
+            )
+            bottom_inside_previous = (
+                bottom_height > 0
+                and overlap / bottom_height >= 0.45
+                and bottom_top > previous_bottom + 0.20 * bottom_height
+            )
+            if (
+                bottom_top > previous_top - min_layer_gap
+                or bottom_too_high
+                or bottom_absorbed
+                or bottom_inside_previous
+            ):
                 warnings.append("floating_bottom_vowel")
 
-    if metrics["subjoined_count"] < 2 or len(glyph_boxes) < 2:
+    if metrics["subjoined_count"] < 1 or len(glyph_boxes) < 2:
         return warnings
 
     if detect_subscript_layer_collision(text, glyph_boxes, stack_height):
         warnings.append("subscript_layer_collision")
+    if detect_subscript_horizontal_misalignment(text, glyph_boxes):
+        warnings.append("subscript_horizontal_misalignment")
     if detect_subscript_containment(text, glyph_boxes):
         warnings.append("subscript_containment")
     elif detect_subscript_overlap(text, glyph_boxes):
@@ -558,7 +641,7 @@ def detect_top_diacritic_collision(text: str, glyph_boxes: list[dict[str, object
 
 def detect_top_mark_overlap(text: str, glyph_boxes: list[dict[str, object]]) -> bool:
     top_mark_count = sum(1 for ch in text if ch in TOP_MARKS)
-    if top_mark_count < 2 or len(glyph_boxes) < 2:
+    if top_mark_count < 1 or text[-1:] not in TOP_MARKS or len(glyph_boxes) < 2:
         return False
 
     last = glyph_boxes[-1]
@@ -572,22 +655,57 @@ def detect_top_mark_overlap(text: str, glyph_boxes: list[dict[str, object]]) -> 
         return False
 
     overlap = min(last_top, previous_top) - max(last_bottom, previous_bottom)
-    if overlap <= 0:
-        return False
-    overlap_ratio = overlap / last_height
+    overlap_ratio = overlap / last_height if overlap > 0 else 0
 
     # Top marks should sit above the preceding body/stack glyph. If a separate
     # top mark is mostly inside that preceding glyph's vertical span, it is
     # colliding with a top vowel/mark already present in the composite glyph.
-    return overlap_ratio >= 0.65 and last_bottom < previous_top
+    if overlap_ratio >= 0.65 and last_bottom < previous_top:
+        return True
+
+    for body in glyph_boxes[:-1]:
+        body_top = int(body["ytop"])
+        body_bottom = int(body["ybot"])
+        body_height = body_top - body_bottom
+        if body_height <= 0:
+            continue
+        body_overlap = min(last_top, body_top) - max(last_bottom, body_bottom)
+        if body_overlap <= 0:
+            continue
+        # A top vowel/mark should not be swallowed by the body glyph below it.
+        if body_overlap / last_height >= 0.75 and last_top <= body_top:
+            return True
+    return False
+
+
+def detect_top_mark_horizontal_misalignment(text: str, glyph_boxes: list[dict[str, object]]) -> bool:
+    if text[-1:] not in TOP_MARKS or len(glyph_boxes) < 2:
+        return False
+
+    mark = glyph_boxes[-1]
+    base_boxes = glyph_boxes[:-1]
+    base_x0 = min(int(box["x0"]) for box in base_boxes)
+    base_x1 = max(int(box["x1"]) for box in base_boxes)
+    mark_x0 = int(mark["x0"])
+    mark_x1 = int(mark["x1"])
+    mark_width = mark_x1 - mark_x0
+    if mark_width <= 0:
+        return False
+
+    overlap = min(mark_x1, base_x1) - max(mark_x0, base_x0)
+    overlap_ratio = max(0, overlap) / mark_width
+    mark_center = (mark_x0 + mark_x1) / 2
+    base_width = max(1, base_x1 - base_x0)
+    center_outside = mark_center < base_x0 - 0.10 * base_width or mark_center > base_x1 + 0.10 * base_width
+    return overlap_ratio < 0.25 and center_outside
 
 
 def detect_mark_horizontal_misalignment(text: str, glyph_boxes: list[dict[str, object]]) -> bool:
-    # U+0F37 is a below/side mark. In invalid Amdo-style renderings it appears
-    # as a separate glyph almost entirely outside the base stack's horizontal
-    # span. Treat that as unsupported; a few false negatives are acceptable for
-    # this coverage report.
-    if "\u0F37" not in text or len(glyph_boxes) < 2:
+    # U+0F35 and U+0F37 are below/side marks. In invalid renderings they can
+    # appear as separate glyphs almost entirely outside the base stack's
+    # horizontal span. Treat that as unsupported; a few false negatives are
+    # acceptable for this coverage report.
+    if not ({"\u0F35", "\u0F37"} & set(text)) or len(glyph_boxes) < 2:
         return False
 
     mark = glyph_boxes[-1]
@@ -606,6 +724,50 @@ def detect_mark_horizontal_misalignment(text: str, glyph_boxes: list[dict[str, o
     base_width = max(1, base_x1 - base_x0)
     center_outside = mark_center < base_x0 - 0.10 * base_width or mark_center > base_x1 + 0.10 * base_width
     return overlap_ratio < 0.40 or center_outside
+
+
+def detect_subscript_horizontal_misalignment(text: str, glyph_boxes: list[dict[str, object]]) -> bool:
+    metrics = stack_metrics(text)
+    if int(metrics["subjoined_count"]) < 1 or len(glyph_boxes) < 2:
+        return False
+
+    # Subscript layers should remain horizontally anchored under the previous
+    # stack component. If a separately emitted layer is mostly to the left or
+    # right while vertically overlapping it, the visual stack falls apart. Work
+    # from glyph geometry because several fonts combine or split trailing marks
+    # in ways that do not map one-to-one with Unicode codepoints.
+    for previous, current in zip(glyph_boxes, glyph_boxes[1:]):
+        previous_x0 = int(previous["x0"])
+        previous_x1 = int(previous["x1"])
+        previous_top = int(previous["ytop"])
+        previous_bottom = int(previous["ybot"])
+        current_x0 = int(current["x0"])
+        current_x1 = int(current["x1"])
+        current_top = int(current["ytop"])
+        current_bottom = int(current["ybot"])
+        previous_width = previous_x1 - previous_x0
+        current_width = current_x1 - current_x0
+        current_height = current_top - current_bottom
+        if previous_width <= 0 or current_width <= 0 or current_height <= 0:
+            continue
+        x_overlap = min(previous_x1, current_x1) - max(previous_x0, current_x0)
+        x_overlap_ratio = max(0, x_overlap) / current_width
+        y_overlap = min(previous_top, current_top) - max(previous_bottom, current_bottom)
+        y_overlap_ratio = max(0, y_overlap) / current_height
+        current_center = (current_x0 + current_x1) / 2
+        center_outside = (
+            current_center < previous_x0 - 0.10 * previous_width
+            or current_center > previous_x1 + 0.10 * previous_width
+        )
+        vertical_gap = current_top - previous_bottom
+        near_vertical_contact = 0 <= vertical_gap <= 0.08 * max(1, previous_top - previous_bottom)
+        if (
+            x_overlap_ratio < 0.25
+            and (y_overlap_ratio >= 0.35 or near_vertical_contact)
+            and center_outside
+        ):
+            return True
+    return False
 
 
 def detect_subscript_layer_collision(
@@ -659,35 +821,36 @@ def detect_subscript_containment(text: str, glyph_boxes: list[dict[str, object]]
     if len(stack_boxes) < 2:
         return False
 
-    last = stack_boxes[-1]
-    previous = stack_boxes[-2]
-    last_top = int(last["ytop"])
-    last_bottom = int(last["ybot"])
-    previous_top = int(previous["ytop"])
-    previous_bottom = int(previous["ybot"])
-
-    # Coordinates increase upwards. If the final subscript glyph mostly sits
+    # Coordinates increase upwards. If a separate subscript glyph mostly sits
     # inside the previous stack component, it is likely overlayed rather than
     # placed as the next lower layer. This catches shallow failures such as
-    # Amdo_classic_1 rendering U+0F40 U+0F9F U+0FB2 and Amdo_classic_3
-    # rendering U+0F62 U+0F90 U+0FB5 U+0FB1.
-    if last_bottom <= previous_bottom:
-        return False
+    # Amdo_classic_1 rendering U+0F40 U+0F9F U+0FB2, Amdo_classic_3 rendering
+    # U+0F62 U+0F90 U+0FB5 U+0FB1, and compact Monlam stacks where the first
+    # visible subscript is swallowed by the previous composite glyph.
+    for previous, current in zip(stack_boxes, stack_boxes[1:]):
+        current_top = int(current["ytop"])
+        current_bottom = int(current["ybot"])
+        previous_top = int(previous["ytop"])
+        previous_bottom = int(previous["ybot"])
+        if current_bottom <= previous_bottom:
+            continue
 
-    previous_height = previous_top - previous_bottom
-    last_height = last_top - last_bottom
-    if previous_height <= 0 or last_height <= 0:
-        return False
+        previous_height = previous_top - previous_bottom
+        current_height = current_top - current_bottom
+        if previous_height <= 0 or current_height <= 0:
+            continue
 
-    containment_margin = 0.05 * previous_height
-    overlap = min(last_top, previous_top) - max(last_bottom, previous_bottom)
-    overlap_ratio = overlap / last_height
-    swallowed = (
-        overlap_ratio >= 0.85
-        and last_bottom > previous_bottom - containment_margin
-        and last_height <= 0.80 * previous_height
-    )
-    return swallowed
+        containment_margin = 0.05 * previous_height
+        overlap = min(current_top, previous_top) - max(current_bottom, previous_bottom)
+        overlap_ratio = overlap / current_height
+        swallowed = (
+            overlap_ratio >= 0.85
+            and current_bottom > previous_bottom - containment_margin
+            and current_height <= 0.80 * previous_height
+        )
+        if swallowed:
+            return True
+    return False
 
 
 def detect_subscript_overlap(text: str, glyph_boxes: list[dict[str, object]]) -> bool:
@@ -707,25 +870,24 @@ def detect_subscript_overlap(text: str, glyph_boxes: list[dict[str, object]]) ->
     if len(stack_boxes) < 2:
         return False
 
-    last = stack_boxes[-1]
-    previous = stack_boxes[-2]
-    last_top = int(last["ytop"])
-    last_bottom = int(last["ybot"])
-    previous_top = int(previous["ytop"])
-    previous_bottom = int(previous["ybot"])
-    last_height = last_top - last_bottom
-    if last_height <= 0 or last_bottom >= previous_bottom:
-        return False
-
-    overlap = min(last_top, previous_top) - max(last_bottom, previous_bottom)
-    if overlap <= 0:
-        return False
-    overlap_ratio = overlap / last_height
-
     # Valid adjacent subscript layers can touch or overlap slightly. If the
     # later layer spends a large share of its height inside the previous layer,
     # it still appears collapsed rather than stacked.
-    return overlap_ratio >= 0.35
+    for previous, current in zip(stack_boxes, stack_boxes[1:]):
+        current_top = int(current["ytop"])
+        current_bottom = int(current["ybot"])
+        previous_top = int(previous["ytop"])
+        previous_bottom = int(previous["ybot"])
+        current_height = current_top - current_bottom
+        if current_height <= 0 or current_bottom >= previous_bottom:
+            continue
+        overlap = min(current_top, previous_top) - max(current_bottom, previous_bottom)
+        if overlap <= 0:
+            continue
+        overlap_ratio = overlap / current_height
+        if overlap_ratio >= 0.35:
+            return True
+    return False
 
 
 def detect_subscript_insufficient_descent(text: str, glyph_boxes: list[dict[str, object]]) -> bool:
@@ -745,36 +907,40 @@ def detect_subscript_insufficient_descent(text: str, glyph_boxes: list[dict[str,
     if len(stack_boxes) < 3:
         return False
 
-    last = stack_boxes[-1]
-    previous = stack_boxes[-2]
-    last_top = int(last["ytop"])
-    previous_top = int(previous["ytop"])
-    previous_bottom = int(previous["ybot"])
-    previous_height = previous_top - previous_bottom
-    if previous_height <= 0:
-        return False
-
     # The next subscript layer should start noticeably below the previous one.
     # If its top is aligned with or above the previous layer, the stack has
     # visually collapsed even if the glyph descends.
-    min_descent = 0.20 * previous_height
-    return last_top > previous_top - min_descent
+    for previous, current in zip(stack_boxes, stack_boxes[1:]):
+        previous_top = int(previous["ytop"])
+        previous_bottom = int(previous["ybot"])
+        current_top = int(current["ytop"])
+        previous_height = previous_top - previous_bottom
+        if previous_height <= 0:
+            continue
+        min_descent = 0.20 * previous_height
+        if current_top > previous_top - min_descent:
+            return True
+    return False
 
 
 def shape_rows(
     fonts: Iterable[FontRow],
-    stacks: Iterable[str],
+    stacks: Iterable[str | StackProbe],
     *,
     test_kind: str,
 ) -> Iterator[dict[str, object]]:
-    stack_list = list(stacks)
+    stack_list = [normalize_stack_probe(stack) for stack in stacks]
     hb_version = hb.version_string()
     for font_row in fonts:
         try:
             shaper = HarfbuzzShaper(font_row)
         except Exception as exc:
-            for stack in stack_list:
-                metrics = stack_metrics(stack)
+            for probe in stack_list:
+                metrics = stack_metrics(
+                    probe.stack,
+                    is_standard_tibetan=probe.is_standard_tibetan,
+                    nb_occurrences=probe.nb_occurrences,
+                )
                 yield base_result_row(font_row, metrics, test_kind) | {
                     "hb_version": hb_version,
                     "ok": False,
@@ -797,9 +963,40 @@ def shape_rows(
                 }
             continue
 
-        for stack in stack_list:
-            metrics = stack_metrics(stack)
-            shaped = shaper.shape(stack)
+        for probe in stack_list:
+            metrics = stack_metrics(
+                probe.stack,
+                is_standard_tibetan=probe.is_standard_tibetan,
+                nb_occurrences=probe.nb_occurrences,
+            )
+            if (
+                test_kind == "stack"
+                and font_row.skt_ok == 0
+                and probe.is_standard_tibetan == 0
+            ):
+                yield base_result_row(font_row, metrics, test_kind) | {
+                    "hb_version": hb_version,
+                    "ok": False,
+                    "support_class": "non_standard_for_skt0",
+                    "reason": "non_standard_tibetan_for_skt0",
+                    "notdef_count": 0,
+                    "has_dotted_circle": False,
+                    "glyph_count": 0,
+                    "cluster_count": 0,
+                    "glyph_ids": "",
+                    "glyph_names": "",
+                    "clusters": "",
+                    "advances": "",
+                    "offsets": "",
+                    "bbox": "",
+                    "ink_area": 0,
+                    "glyph_boxes": "",
+                    "placement_warnings": "",
+                    "placement_warning_count": 0,
+                }
+                continue
+
+            shaped = shaper.shape(probe.stack)
             support_class = shaped["support_class"]
             if shaped["ok"]:
                 support_class = "normal_tibetan_ok" if test_kind == "normal" else "complex_stack_ok"
