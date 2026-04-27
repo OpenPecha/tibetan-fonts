@@ -6,9 +6,19 @@ Uses botok: normalize_unicode, normalize_graphical, then tokenize_in_stacks.
 Only stacks whose every code point is in the Tibetan block (U+0F00–U+0FFF) are
 counted; ASCII, spaces, and other non-Tibetan code points drop the whole stack.
 
-Requires: botok, pyarrow, tqdm (and network on first run to download the Parquet, unless
-  --parquet is passed). Optional: pip install datasets to use the HuggingFace cache
-  via --use-datasets.
+A third CSV column, ``hunspell_bo``, is 1 iff the stack appears when segmenting (with
+botok, after the same Unicode/graphical normalization as above) at least one **valid
+syllable** licensed by [hunspell-bo](https://github.com/eroux/hunspell-bo/) ``bo.aff`` /
+``bo.dic``, **or** the stack is made only of hardcoded Tibetan punctuation / marks /
+digits (``coverage_common`` ``HARDCODED_HUNSPELL_BO_EXTRA_CHARS``), since hunspell has no
+syllable entries for those. Syllables are enumerated by expanding ``bo.dic`` stems
+through the SFX rules (spylls reads the files; we BFS affix combinations and keep strings
+where ``lookup`` is true). By default SFX ``C`` and ``S`` expansion is skipped for speed
+(see ``--full-sfx``).
+
+Requires: botok, pyarrow, tqdm, spylls (and network on first run to download the Parquet
+  and/or hunspell-bo files, unless paths are provided). Optional: ``pip install datasets``
+  for the HuggingFace cache via ``--use-datasets``.
 """
 
 from __future__ import annotations
@@ -28,12 +38,20 @@ from tqdm import tqdm
 if TYPE_CHECKING:
     import pyarrow.parquet as pq  # noqa: F401
 
-from coverage_common import DEFAULT_STACKS_CSV, in_tibetan_block
+from coverage_common import (
+    DEFAULT_STACKS_CSV,
+    in_tibetan_block,
+    is_hunspell_bo_extra_stack,
+)
+from hunspell_bo_stacks import build_valid_stack_set
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 BOCORPUS_HF_RELPATH = "datasets/openpecha/BoCorpus/resolve/main/bo_corpus.parquet"
 BOCORPUS_HF = f"https://huggingface.co/{BOCORPUS_HF_RELPATH}"
 DEFAULT_CACHE_PARQUET = SCRIPT_DIR / ".cache" / "bocorpus" / "bo_corpus.parquet"
+# https://github.com/eroux/hunspell-bo/
+HUNSPELL_BO_RAW = "https://raw.githubusercontent.com/eroux/hunspell-bo/master"
+DEFAULT_HUNSPELL_BO_CACHE = SCRIPT_DIR / ".cache" / "hunspell-bo"
 
 
 def _default_parquet_path() -> Path:
@@ -91,6 +109,46 @@ def ensure_parquet(path: Path, force_download: bool) -> Path:
         path.unlink()
     download_bocorpus_parquet(path)
     return path
+
+
+def _download_hunspell_bo_artifact(
+    relpath: str, dest: Path, user_agent: str
+) -> None:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    url = f"{HUNSPELL_BO_RAW.rstrip('/')}/{relpath}"
+    tmp = dest.with_name(dest.name + ".part")
+    if tmp.exists():
+        tmp.unlink()
+    ctx = ssl.create_default_context()
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": user_agent},
+    )
+    try:
+        with urllib.request.urlopen(req, context=ctx, timeout=60) as r, open(
+            tmp, "wb"
+        ) as f:
+            f.write(r.read())
+    except (urllib.error.URLError, OSError) as e:
+        if tmp.exists():
+            tmp.unlink()
+        raise SystemExit(
+            f"Failed to download {url}: {e}\n"
+            " Or pass a local hunspell-bo directory: --hunspell-bo-dir PATH"
+        ) from e
+    tmp.replace(dest)
+
+
+def ensure_hunspell_bo_aff_dic(
+    cache_dir: Path, *, force_download: bool, user_agent: str
+) -> None:
+    """Download bo.aff and bo.dic from eroux/hunspell-bo if missing."""
+    for name in ("bo.aff", "bo.dic"):
+        dest = cache_dir / name
+        if dest.is_file() and dest.stat().st_size > 0 and not force_download:
+            continue
+        sys.stderr.write(f"Downloading hunspell-bo {name}…\n")
+        _download_hunspell_bo_artifact(name, dest, user_agent)
 
 
 def iter_bocorpus_texts_use_datasets() -> Iterator[str]:
@@ -163,16 +221,35 @@ def count_stacks_from_texts(
     return counts
 
 
-def write_stacks_csv(path: Path, counts: Counter[str]) -> None:
+def write_stacks_csv(
+    path: Path,
+    counts: Counter[str],
+    *,
+    valid_stacks: frozenset[str],
+    show_progress: bool,
+) -> None:
     import csv
 
     path.parent.mkdir(parents=True, exist_ok=True)
     rows = sorted(counts.items(), key=lambda x: (-x[1], x[0]))
+    it: Iterable[tuple[str, int]] = rows
+    if show_progress:
+        it = tqdm(
+            rows,
+            desc="Tag stacks (hunspell-bo syllable → stacks)",
+            unit="stack",
+            file=sys.stderr,
+        )
     with open(path, "w", encoding="utf-8", newline="") as f:
         w = csv.writer(f)
-        w.writerow(["stack", "nb_occurences"])
-        for stack, n in rows:
-            w.writerow([stack, n])
+        w.writerow(["stack", "nb_occurences", "hunspell_bo"])
+        for stack, n in it:
+            ok = (
+                1
+                if (stack in valid_stacks or is_hunspell_bo_extra_stack(stack))
+                else 0
+            )
+            w.writerow([stack, n, ok])
 
 
 def main() -> None:
@@ -208,6 +285,27 @@ def main() -> None:
         type=int,
         default=None,
         help="Process only the first N corpus rows (for testing)",
+    )
+    ap.add_argument(
+        "--hunspell-bo-dir",
+        type=Path,
+        default=None,
+        help=f"Directory containing bo.aff and bo.dic (default: download to {DEFAULT_HUNSPELL_BO_CACHE})",
+    )
+    ap.add_argument(
+        "--force-download-hunspell",
+        action="store_true",
+        help="Re-download bo.aff and bo.dic from GitHub",
+    )
+    ap.add_argument(
+        "--no-lookup-progress",
+        action="store_true",
+        help="Disable tqdm while building the valid-stack set and writing CSV",
+    )
+    ap.add_argument(
+        "--full-sfx",
+        action="store_true",
+        help="Expand SFX C and S when enumerating hunspell-bo syllables (slower; more stacks marked 1)",
     )
     args = ap.parse_args()
 
@@ -245,9 +343,35 @@ def main() -> None:
         texts,
         total=total_docs,
     )
-    write_stacks_csv(args.output, counts)
+    h_dir = args.hunspell_bo_dir
+    if h_dir is None:
+        d = os.environ.get("HUNSPELL_BO_DIR")
+        h_dir = Path(d) if d else DEFAULT_HUNSPELL_BO_CACHE
+    try:
+        ensure_hunspell_bo_aff_dic(
+            h_dir,
+            force_download=args.force_download_hunspell,
+            user_agent="Mozilla/5.0 (compatible; tibetan-fonts/get_stacks_from_corpus)",
+        )
+        valid_stacks = build_valid_stack_set(
+            h_dir,
+            ignore_c_s_morphology=not args.full_sfx,
+            show_progress=not args.no_lookup_progress,
+        )
+    except ImportError as e:
+        raise SystemExit(
+            "The hunspell_bo column requires: pip install spylls\n"
+        ) from e
+    write_stacks_csv(
+        args.output,
+        counts,
+        valid_stacks=valid_stacks,
+        show_progress=not args.no_lookup_progress,
+    )
     sys.stderr.write(
-        f"Wrote {args.output} ({len(counts)} distinct stacks, {sum(counts.values())} total)\n"
+        f"Wrote {args.output} ({len(counts)} distinct stacks, {sum(counts.values())} total; "
+        f"hunspell_bo = stack in syllables from {h_dir / 'bo.aff'}+{h_dir / 'bo.dic'}, "
+        f"SFX C/S expansion {'on' if args.full_sfx else 'off'})\n"
     )
 
 
