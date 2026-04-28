@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import csv
 import glob
+import hashlib
 import json
 import math
 import re
@@ -795,7 +796,9 @@ def assign_batches(rows: list[dict[str, object]], batch_size: int) -> list[list[
         group.sort(key=lambda row: int(row["image_id"]))
         for batch_i in range(math.ceil(len(group) / batch_size)):
             chunk = group[batch_i * batch_size : (batch_i + 1) * batch_size]
-            batch_id = f"{basename}_{face_index or 'face'}_{batch_i:06d}".replace("/", "_")
+            first_image_id = int(chunk[0]["image_id"])
+            last_image_id = int(chunk[-1]["image_id"])
+            batch_id = f"{basename}_{face_index or 'face'}_{first_image_id:08d}_{last_image_id:08d}".replace("/", "_")
             for page_i, row in enumerate(chunk, start=1):
                 row["batch_id"] = batch_id
                 row["page_in_batch"] = page_i
@@ -849,7 +852,9 @@ def safe_fragment_name(batch_id: str) -> str:
 def write_catalog_fragment(out_dir: Path, batch_id: str, rows: list[dict[str, object]]) -> None:
     if not rows:
         return
-    fragment_path = catalog_fragments_dir(out_dir) / f"{safe_fragment_name(batch_id)}.csv"
+    plan_ids = sorted(completed_plan_ids(rows))
+    digest = hashlib.sha1(",".join(plan_ids).encode("utf-8")).hexdigest()[:12]
+    fragment_path = catalog_fragments_dir(out_dir) / f"{safe_fragment_name(batch_id)}_{digest}.csv"
     write_catalog(fragment_path, rows)
 
 
@@ -1027,6 +1032,59 @@ def write_benchmark_metadata(out_dir: Path, catalog_rows: list[dict[str, object]
     )
 
 
+def clone_batch_with_id(batch: list[dict[str, object]], batch_id: str) -> list[dict[str, object]]:
+    cloned: list[dict[str, object]] = []
+    for page_i, row in enumerate(batch, start=1):
+        item = dict(row)
+        item["batch_id"] = batch_id
+        item["page_in_batch"] = page_i
+        cloned.append(item)
+    return cloned
+
+
+def render_batch_with_split_retry(
+    batch: list[dict[str, object]],
+    args: argparse.Namespace,
+    start_output_id: int,
+    *,
+    batch_id: str,
+    depth: int = 0,
+) -> tuple[bool, list[dict[str, object]]]:
+    catalog_rows: list[dict[str, object]] = []
+    ok, _next_output_id = render_batch(
+        clone_batch_with_id(batch, batch_id),
+        args,
+        catalog_rows,
+        start_output_id,
+    )
+    if ok:
+        return True, catalog_rows
+
+    if len(batch) <= 1:
+        return False, []
+
+    mid = len(batch) // 2
+    left = batch[:mid]
+    right = batch[mid:]
+    print(f"Retrying failed batch {batch_id} as {len(left)} + {len(right)} row split")
+
+    left_ok, left_rows = render_batch_with_split_retry(
+        left,
+        args,
+        start_output_id,
+        batch_id=f"{batch_id}_split{depth}_a",
+        depth=depth + 1,
+    )
+    right_ok, right_rows = render_batch_with_split_retry(
+        right,
+        args,
+        start_output_id + len(left),
+        batch_id=f"{batch_id}_split{depth}_b",
+        depth=depth + 1,
+    )
+    return left_ok or right_ok, left_rows + right_rows
+
+
 def render_batch_worker(
     batch_index: int,
     batch: list[dict[str, object]],
@@ -1040,8 +1098,12 @@ def render_batch_worker(
     worker_out.mkdir(parents=True, exist_ok=True)
     worker_args = SimpleNamespace(**vars(args))
     worker_args.out_dir = worker_out
-    catalog_rows: list[dict[str, object]] = []
-    ok, _ = render_batch(batch, worker_args, catalog_rows, start_output_id)
+    ok, catalog_rows = render_batch_with_split_retry(
+        batch,
+        worker_args,
+        start_output_id,
+        batch_id=batch_id,
+    )
     return batch_index, batch_id, ok, catalog_rows, worker_out
 
 
@@ -1158,13 +1220,17 @@ def main() -> None:
         new_catalog_rows = []
         ok_batches = 0
         for batch_index, batch in enumerate(tqdm(batches, desc="Render batches", unit="batch")):
-            batch_start_id = next_output_id
-            ok, next_output_id = render_batch(batch, args, new_catalog_rows, next_output_id)
+            batch_id = str(batch[0]["batch_id"])
+            ok, fragment_rows = render_batch_with_split_retry(
+                batch,
+                args,
+                next_output_id,
+                batch_id=batch_id,
+            )
             if ok:
                 ok_batches += 1
-                fragment_rows = [
-                    row for row in new_catalog_rows if catalog_sort_key(row) >= batch_start_id
-                ]
+                new_catalog_rows.extend(fragment_rows)
+                next_output_id = next_output_id_from_catalog(existing_catalog_rows + new_catalog_rows)
                 write_catalog_fragment(args.out_dir, str(batch[0]["batch_id"]), fragment_rows)
     catalog_rows = dedupe_catalog_rows(existing_catalog_rows + new_catalog_rows)
     write_benchmark_metadata(args.out_dir, catalog_rows)
