@@ -911,6 +911,15 @@ def filter_completed_plan_rows(
     return [row for row in rows if str(row["image_id"]) not in done]
 
 
+def filter_existing_image_rows(rows: list[dict[str, object]], out_dir: Path) -> list[dict[str, object]]:
+    """Keep only catalog rows whose final image exists on disk."""
+    return [
+        row
+        for row in rows
+        if (out_dir / str(row.get("image_file_name") or "")).exists()
+    ]
+
+
 def most_common_join(values: list[str]) -> str:
     counts: dict[str, int] = defaultdict(int)
     for value in values:
@@ -1123,7 +1132,10 @@ def move_worker_output(
         final_image.parent.mkdir(parents=True, exist_ok=True)
         if old_image.exists():
             shutil.move(str(old_image), final_image)
-        catalog_rows.append(dict(row))
+        if final_image.exists():
+            catalog_rows.append(dict(row))
+        else:
+            print(f"WARNING: dropping catalog row with missing image: {final_image}")
     return catalog_rows, ok_batches
 
 
@@ -1192,6 +1204,13 @@ def main() -> None:
         existing_catalog_rows = []
     else:
         existing_catalog_rows = dedupe_catalog_rows(read_catalog_fragments(args.out_dir))
+        existing_count = len(existing_catalog_rows)
+        existing_catalog_rows = filter_existing_image_rows(existing_catalog_rows, args.out_dir)
+        if existing_count != len(existing_catalog_rows):
+            print(
+                f"Ignored {existing_count - len(existing_catalog_rows)} checkpoint row(s) "
+                "whose image file is missing."
+            )
         if existing_catalog_rows:
             print(
                 f"Loaded {len(existing_catalog_rows)} checkpointed output image row(s), "
@@ -1229,10 +1248,14 @@ def main() -> None:
             )
             if ok:
                 ok_batches += 1
+                fragment_rows = filter_existing_image_rows(fragment_rows, args.out_dir)
                 new_catalog_rows.extend(fragment_rows)
                 next_output_id = next_output_id_from_catalog(existing_catalog_rows + new_catalog_rows)
                 write_catalog_fragment(args.out_dir, str(batch[0]["batch_id"]), fragment_rows)
-    catalog_rows = dedupe_catalog_rows(existing_catalog_rows + new_catalog_rows)
+    catalog_rows = filter_existing_image_rows(
+        dedupe_catalog_rows(existing_catalog_rows + new_catalog_rows),
+        args.out_dir,
+    )
     write_benchmark_metadata(args.out_dir, catalog_rows)
     print(f"Rendered {len(new_catalog_rows)} new image(s) in {ok_batches}/{len(batches)} successful batch(es)")
     print(f"Benchmark metadata now has {len(catalog_rows)} image(s)")
