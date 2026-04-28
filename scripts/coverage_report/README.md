@@ -29,6 +29,8 @@ The stack file is treated as already normalized in NFD. The loader preserves tha
 /home/eroux/pvenvs/1/bin/python scripts/coverage_report/build_support_dataset.py --mode both
 ```
 
+`--mode both` runs ordinary Tibetan probes, Latin digit/punctuation probes, and BoCorpus stack probes. Use `--mode latin` when you only want to check ASCII digits and parentheses. The Latin probe set includes each character individually plus `0123456789` and `(0123456789)`.
+
 To use a plain newline-delimited stack list instead:
 
 ```bash
@@ -46,6 +48,11 @@ Useful smaller runs:
   --skt-ok 0 \
   --output scripts/coverage_report/out/normal_skt0.parquet
 
+# Check Latin digits and parentheses only.
+/home/eroux/pvenvs/1/bin/python scripts/coverage_report/build_support_dataset.py \
+  --mode latin \
+  --output scripts/coverage_report/out/latin_digits_punct.parquet
+
 # Test a small stack sample on a few fonts while tuning heuristics.
 /home/eroux/pvenvs/1/bin/python scripts/coverage_report/build_support_dataset.py \
   --stacks /path/to/tib-stacks_v2.txt \
@@ -54,7 +61,7 @@ Useful smaller runs:
   --limit-stacks 200
 ```
 
-The builder uses `uharfbuzz` with `script=tibt`, `language=bo`, and `direction=ltr`. Each row records glyph IDs, glyph names, clusters, advances, offsets, bounding box, ink area, HarfBuzz version, existing `skt_ok`, and stack metrics.
+The builder uses `uharfbuzz` with `direction=ltr`; Tibetan probes use `script=tibt`, `language=bo`, while non-Tibetan probes such as Latin digits use `script=latn`, `language=en`. Each row records glyph IDs, glyph names, clusters, advances, offsets, bounding box, ink area, HarfBuzz version, existing `skt_ok`, and stack metrics.
 
 When the stack input is `bocorpus_stacks.csv`, the `hunspell_bo` column is stored as `is_standard_tibetan`. If `is_standard_tibetan=0` and a font has `skt_ok=0`, the row is marked invalid without shaping:
 
@@ -142,6 +149,7 @@ Hard failures:
 Pass classes:
 
 - `normal_tibetan_ok`: ordinary Tibetan probe passed.
+- `latin_digit_punct_ok`: Latin digit/parenthesis probe passed.
 - `complex_stack_ok`: stack-list probe passed.
 - `fail`: shaped, but one of the hard failures was detected.
 - `font_error`: the font face could not be loaded.

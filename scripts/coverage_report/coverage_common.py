@@ -119,6 +119,23 @@ NORMAL_TIBETAN_PROBES = [
     "༠༡༢༣༤༥༦༧༨༩",
 ]
 
+LATIN_DIGIT_PUNCT_PROBES = [
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "(",
+    ")",
+    "0123456789",
+    "(0123456789)",
+]
+
 
 @dataclass(frozen=True)
 class FontRow:
@@ -369,6 +386,10 @@ def has_bottom_vowel(text: str) -> bool:
     return any(ch in BOTTOM_VOWELS for ch in text)
 
 
+def contains_tibetan(text: str) -> bool:
+    return any(TIBETAN_START <= ord(ch) <= TIBETAN_END for ch in text)
+
+
 def normalize_stack_probe(probe: str | StackProbe) -> StackProbe:
     if isinstance(probe, StackProbe):
         return probe
@@ -395,8 +416,12 @@ class HarfbuzzShaper:
     def shape(self, text: str) -> dict[str, object]:
         buf = hb.Buffer()
         buf.add_str(text)
-        buf.script = "tibt"
-        buf.language = "bo"
+        if contains_tibetan(text):
+            buf.script = "tibt"
+            buf.language = "bo"
+        else:
+            buf.script = "latn"
+            buf.language = "en"
         buf.direction = "ltr"
         try:
             hb.shape(self.font, buf, {})
@@ -999,7 +1024,10 @@ def shape_rows(
             shaped = shaper.shape(probe.stack)
             support_class = shaped["support_class"]
             if shaped["ok"]:
-                support_class = "normal_tibetan_ok" if test_kind == "normal" else "complex_stack_ok"
+                support_class = {
+                    "normal": "normal_tibetan_ok",
+                    "latin": "latin_digit_punct_ok",
+                }.get(test_kind, "complex_stack_ok")
             yield base_result_row(font_row, metrics, test_kind) | {
                 "hb_version": hb_version,
                 **shaped,

@@ -12,6 +12,7 @@ from coverage_common import (
     DEFAULT_FONTS_CSV,
     DEFAULT_OUT_DIR,
     DEFAULT_STACKS_CSV,
+    LATIN_DIGIT_PUNCT_PROBES,
     NORMAL_TIBETAN_PROBES,
     ParquetRowWriter,
     load_font_rows,
@@ -40,9 +41,9 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--mode",
-        choices=("stacks", "normal", "both"),
+        choices=("stacks", "normal", "latin", "both"),
         default="both",
-        help="Which probe set to run. 'normal' does not require --stacks.",
+        help="Which probe set to run. 'normal' and 'latin' do not require --stacks.",
     )
     parser.add_argument("--normal-probes", type=Path, help="Optional newline-delimited normal probes.")
     parser.add_argument("--out-dir", type=Path, default=DEFAULT_OUT_DIR)
@@ -100,6 +101,8 @@ def main() -> None:
             else NORMAL_TIBETAN_PROBES[: args.limit_stacks]
         )
         jobs.append(("normal", normal))
+    if args.mode in {"latin", "both"}:
+        jobs.append(("latin", LATIN_DIGIT_PUNCT_PROBES[: args.limit_stacks]))
     if args.mode in {"stacks", "both"}:
         assert stacks_path is not None
         jobs.append(
