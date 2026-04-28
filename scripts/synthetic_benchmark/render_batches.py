@@ -23,6 +23,7 @@ from PIL import Image
 from tqdm import tqdm
 
 from synthetic_common import (
+    BENCHMARK_DIR,
     DEFAULT_OUTPUT_DIR,
     DEFAULT_RENDER_PLAN,
     SHAD,
@@ -97,8 +98,25 @@ def fmt_dim(value: float) -> str:
     return f"{value:.3f}".rstrip("0").rstrip(".")
 
 
+def resolve_font_path(row: dict[str, object]) -> Path:
+    """Resolve font paths portably from render plans copied across machines."""
+    rel_font_path = str(row.get("font_path") or "").strip()
+    if rel_font_path:
+        candidate = BENCHMARK_DIR / rel_font_path
+        if candidate.exists():
+            return candidate
+
+    abs_font_path = Path(str(row["font_abs_path"]))
+    if abs_font_path.exists():
+        return abs_font_path
+
+    if rel_font_path:
+        return BENCHMARK_DIR / rel_font_path
+    return abs_font_path
+
+
 def fontspec_options(row: dict[str, object]) -> str:
-    font_path = Path(str(row["font_abs_path"]))
+    font_path = resolve_font_path(row)
     parts = [
         f"Path={font_path.parent.as_posix()}/",
         f"UprightFont={{{font_path.name}}}",
