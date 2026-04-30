@@ -5,9 +5,12 @@ from __future__ import annotations
 
 import csv
 import hashlib
+import math
 import re
 import sys
+import unicodedata
 from dataclasses import dataclass
+from functools import lru_cache
 from pathlib import Path
 from typing import Iterable, Iterator
 
@@ -22,6 +25,7 @@ DEFAULT_BENCHMARK_CSV = BENCHMARK_DIR / "catalog" / "Benchmark catalog - digital
 DEFAULT_SCRIPTS_CSV = BENCHMARK_DIR / "catalog" / "Script lists - Scripts.csv"
 DEFAULT_FONTS_CSV = BENCHMARK_DIR / "digital_fonts.filtered.csv"
 DEFAULT_BOCORPUS_PARQUET = COVERAGE_DIR / ".cache" / "bocorpus" / "bo_corpus.parquet"
+DEFAULT_STACKS_CSV = COVERAGE_DIR / "bocorpus_stacks.csv"
 DEFAULT_CHUNKS_PARQUET = SCRIPT_DIR / "out" / "bocorpus_chunks.parquet"
 DEFAULT_RENDER_PLAN = SCRIPT_DIR / "out" / "render_plan.parquet"
 DEFAULT_OUTPUT_DIR = SCRIPT_DIR / "out" / "dataset"
@@ -32,6 +36,8 @@ TSHEG = "་"
 SHAD = "།"
 TOC_TSHIG_RUN = TSHEG * 5
 EXCLUDED_SCRIPT_IDS = {"239"}
+DIFFICULTY_TOP_K = 10
+RARE_STACK_THRESHOLD = 0.8
 
 
 @dataclass(frozen=True)
@@ -108,6 +114,72 @@ def tokenize_tibetan_stacks(text: str) -> list[str]:
     from botok import tokenize_in_stacks
 
     return [stack for stack in tokenize_in_stacks(text) if is_pure_tibetan_stack(stack)]
+
+
+def has_tibetan_letter(stack: str) -> bool:
+    return any(unicodedata.category(ch).startswith("L") for ch in stack)
+
+
+@lru_cache(maxsize=4)
+def load_stack_rarity_scores(stacks_csv: str = str(DEFAULT_STACKS_CSV)) -> dict[str, float]:
+    """Load corpus stack counts and map each stack to a percentile-clipped rarity in [0, 1]."""
+    counts: dict[str, int] = {}
+    with Path(stacks_csv).open(encoding="utf-8", newline="") as f:
+        for row in csv.DictReader(f):
+            stack = (row.get("stack") or "").strip()
+            if not stack or not is_pure_tibetan_stack(stack) or not has_tibetan_letter(stack):
+                continue
+            count = parse_int(row.get("nb_occurences") or row.get("nb_occurrences"), 0)
+            if count > 0:
+                counts[stack] = count
+    if not counts:
+        return {}
+
+    total = sum(counts.values())
+    infos = sorted(-math.log(count / total) for count in counts.values())
+    lo = infos[int(0.05 * (len(infos) - 1))]
+    hi = infos[int(0.95 * (len(infos) - 1))]
+    scale = hi - lo
+    if scale <= 0:
+        return {stack: 0.0 for stack in counts}
+
+    return {
+        stack: min(1.0, max(0.0, ((-math.log(count / total)) - lo) / scale))
+        for stack, count in counts.items()
+    }
+
+
+def stack_difficulty_score(
+    text: str,
+    *,
+    stacks_csv: Path | str = DEFAULT_STACKS_CSV,
+    top_k: int = DIFFICULTY_TOP_K,
+    rare_threshold: float = RARE_STACK_THRESHOLD,
+) -> float:
+    """Return a [0, 1] page difficulty score based on corpus stack rarity.
+
+    Each Tibetan stack is assigned a rarity from `bocorpus_stacks.csv` using
+    percentile-clipped self-information: very common stacks approach 0 and rare
+    or unseen stacks approach 1. Punctuation-only stacks are ignored. The final
+    score combines the mean rarity of the rarest `top_k` stack tokens, the
+    density of rare stack tokens, and the ratio of unique rare stacks.
+    """
+    stacks = [stack for stack in tokenize_tibetan_stacks(text) if has_tibetan_letter(stack)]
+    if not stacks:
+        return 0.0
+
+    rarity_by_stack = load_stack_rarity_scores(str(stacks_csv))
+    rarities = [rarity_by_stack.get(stack, 1.0) for stack in stacks]
+    rare_tokens = [value for value in rarities if value >= rare_threshold]
+    unique_stacks = set(stacks)
+    unique_rare_count = sum(1 for stack in unique_stacks if rarity_by_stack.get(stack, 1.0) >= rare_threshold)
+
+    top_values = sorted(rarities, reverse=True)[: max(1, top_k)]
+    top_k_mean = sum(top_values) / len(top_values)
+    rare_density = len(rare_tokens) / len(rarities)
+    unique_rare_ratio = unique_rare_count / len(unique_stacks)
+    score = 0.5 * top_k_mean + 0.3 * rare_density + 0.2 * unique_rare_ratio
+    return min(1.0, max(0.0, score))
 
 
 def split_units(text: str) -> list[str]:
