@@ -24,6 +24,7 @@ from synthetic_common import (
     normalize_bocorpus_text,
     split_units,
     stable_chunk_id,
+    stack_difficulty_score,
     tokenize_tibetan_stacks,
 )
 
@@ -159,6 +160,7 @@ def main() -> None:
                         "stack_count": len(tokenized_stacks),
                         "unique_stack_count": len(stacks),
                         "stacks": " ".join(stacks),
+                        "stack_difficulty_score": stack_difficulty_score(chunk_text),
                     }
                 )
                 total += 1

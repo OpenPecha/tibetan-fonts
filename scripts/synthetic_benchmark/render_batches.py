@@ -434,6 +434,9 @@ def init_source_fields(row: dict[str, object]) -> dict[str, object]:
     row["_source_plan_image_ids"] = [str(row["image_id"])]
     row["_source_bocorpus_rows"] = [str(row["bocorpus_row"])]
     row["_source_char_ranges"] = [f"{row['char_start']}-{row['char_end']}"]
+    row["_source_etext_sources"] = [
+        str(row.get("etext_source") or f"bocorpus:{row['bocorpus_row']}:{row['char_start']}:{row['char_end']}")
+    ]
     return row
 
 
@@ -451,6 +454,11 @@ def merge_rows(first: dict[str, object], second: dict[str, object]) -> dict[str,
     first["_source_plan_image_ids"].extend(second["_source_plan_image_ids"])
     first["_source_bocorpus_rows"].extend(second["_source_bocorpus_rows"])
     first["_source_char_ranges"].extend(second["_source_char_ranges"])
+    first["_source_etext_sources"].extend(second["_source_etext_sources"])
+    first["stack_difficulty_score"] = max(
+        float(first.get("stack_difficulty_score") or 0.0),
+        float(second.get("stack_difficulty_score") or 0.0),
+    )
     return first
 
 
@@ -511,7 +519,11 @@ def add_prefix_to_alternating_pages(
     prepared: list[dict[str, object]] = []
     for i, row in enumerate(rows):
         item = dict(row)
-        should_prefix = enabled and (start_output_id + i) % 2 == 1
+        try:
+            output_id = int(item.get("image_id") or start_output_id + i)
+        except (TypeError, ValueError):
+            output_id = start_output_id + i
+        should_prefix = enabled and output_id % 2 == 1
         text = str(item["text"]).strip()
         if should_prefix and "༄" not in text[:5]:
             item["text"] = f"{prefix}{text}"
@@ -543,8 +555,11 @@ def write_text_and_catalog(
     next_output_id: int,
 ) -> int:
     for row in rows:
-        output_id = next_output_id
-        next_output_id += 1
+        try:
+            output_id = int(row.get("image_id") or next_output_id)
+        except (TypeError, ValueError):
+            output_id = next_output_id
+        next_output_id = max(next_output_id, output_id + 1)
         image_relpath = benchmark_image_relpath(output_id)
         pages = pages_by_chunk.get(str(row["render_id"]), [])
         text_pages = content_pages(pages)
@@ -577,6 +592,7 @@ def write_text_and_catalog(
                 "source_plan_image_ids": "|".join(row["_source_plan_image_ids"]),
                 "page_prefix_added": row.get("page_prefix_added", 0),
                 "font_file": row["font_file"],
+                "font_name": row.get("font_name") or row.get("ps_name") or row.get("basename") or "",
                 "font_path": row["font_path"],
                 "ps_name": row["ps_name"],
                 "ttc_face_index": row.get("ttc_face_index") or "",
@@ -585,7 +601,12 @@ def write_text_and_catalog(
                 "rendered_font_size_pt": row.get("rendered_font_size_pt") or "",
                 "script_id": row["script_id"],
                 "script_category": row["script_category"],
+                "script_8": row.get("script_8") or row.get("script_category") or "",
                 "script_type": row["script_type"],
+                "script": row.get("script") or normalized_script(str(row.get("script_type") or "")),
+                "etext_source": "|".join(row.get("_source_etext_sources") or [str(row.get("etext_source") or "")]),
+                "stack_difficulty_score": row.get("stack_difficulty_score"),
+                "suggested_split": row.get("suggested_split") or "",
                 "bocorpus_row": "|".join(row["_source_bocorpus_rows"]),
                 "char_start": row["char_start"],
                 "char_end": row["char_end"],
@@ -770,11 +791,15 @@ def render_batch(
         missing = [str(path) for path in rendered_pages if not path.exists()]
         print(f"WARNING: missing rendered page(s) for {batch_id}: {missing[:3]}")
         return False, next_output_id
-    output_id = next_output_id
-    for src in rendered_pages:
+    output_ids = []
+    for i, row in enumerate(render_rows):
+        try:
+            output_ids.append(int(row.get("image_id") or next_output_id + i))
+        except (TypeError, ValueError):
+            output_ids.append(next_output_id + i)
+    for src, output_id in zip(rendered_pages, output_ids):
         dest = args.out_dir / benchmark_image_relpath(output_id)
         save_grayscale_jpeg(src, dest, args.jpeg_quality)
-        output_id += 1
     next_output_id = write_text_and_catalog(
         render_rows,
         args.out_dir,
@@ -1023,6 +1048,15 @@ def write_benchmark_metadata(out_dir: Path, catalog_rows: list[dict[str, object]
                 "transcription": row["transcription"],
                 "dist_ocr": None,
                 "pagination": int(row["page_in_volume"]),
+                "font_name": row.get("font_name") or "",
+                "script_8": row.get("script_8") or "",
+                "etext_source": row.get("etext_source") or "",
+                "stack_difficulty_score": (
+                    float(row["stack_difficulty_score"])
+                    if row.get("stack_difficulty_score") not in (None, "")
+                    else None
+                ),
+                "suggested_split": row.get("suggested_split") or "",
             }
             for row in sorted(group_rows, key=catalog_sort_key)
         ]
